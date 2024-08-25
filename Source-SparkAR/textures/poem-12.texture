@@ -1,0 +1,37 @@
+{
+  "modelName": "texture",
+  "name": "poem-12",
+  "identifier": "texture:6735-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+  "alphaPremultiplicationMode": "should_premultiply",
+  "assetDataHash": "b4f9c80e92630948fda80a26fb1c0717",
+  "assetLocator": "textures/poem-12.png",
+  "colorEncoding": "linear",
+  "compressionQuality": "high",
+  "coordMapping": "none",
+  "excludeDuringExport": false,
+  "excludeFromPackage": false,
+  "filter": "bilinear",
+  "folder": "",
+  "hasOfflineMipmaps": false,
+  "height": 1024,
+  "importIssues": {},
+  "isExternalAsset": true,
+  "smartTextureTargetSizeLimit": "largest",
+  "targetSize": "largest",
+  "uWrapMode": "clamp",
+  "vWrapMode": "clamp",
+  "width": 576,
+  "children": [
+    {
+      "modelName": "data_texture_metadata_model",
+      "name": "data_texture_metadata_model0",
+      "assetDataHash": "b4f9c80e92630948fda80a26fb1c0717",
+      "colorCount": 11157,
+      "detectedAlphaChannel": "eight_bit_full_range",
+      "detectedOriginalFormat": "png",
+      "entropyOfDistribution": 5.55902161512662,
+      "pixelsHigh": 1024,
+      "pixelsWide": 576
+    }
+  ]
+}

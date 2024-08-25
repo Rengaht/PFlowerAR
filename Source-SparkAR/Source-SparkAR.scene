@@ -1,0 +1,1120 @@
+{
+  "modelName": "scene",
+  "identifier": "scene:7167-48a5eac7-3ad7-4a88-86d2-81b622b24430",
+  "animationMask": {
+    "position": false,
+    "rotation": false,
+    "scale": false
+  },
+  "cameraVisibility": "back|front",
+  "hidden": false,
+  "hitTestingEnabled": false,
+  "outputVisibility": "preview|capture",
+  "physicsEnabled": false,
+  "tags": [],
+  "transform": {
+    "rx": 0,
+    "ry": 0,
+    "rz": 0,
+    "sx": 1,
+    "sy": 1,
+    "sz": 1,
+    "x": 0,
+    "y": 0,
+    "z": 0
+  },
+  "children": [
+    {
+      "modelName": "device",
+      "name": "Device",
+      "identifier": "device:7223-48a5eac7-3ad7-4a88-86d2-81b622b24430",
+      "animationMask": {
+        "position": false,
+        "rotation": false,
+        "scale": false
+      },
+      "cameraVisibility": "back|front",
+      "hidden": false,
+      "hitTestingEnabled": false,
+      "layerIdentifier": "layer0",
+      "outputVisibility": "preview|capture",
+      "physicsEnabled": false,
+      "tags": [],
+      "transform": {
+        "rx": 0,
+        "ry": 0,
+        "rz": 0,
+        "sx": 1,
+        "sy": 1,
+        "sz": 1,
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "children": [
+        {
+          "modelName": "camera",
+          "name": "Camera",
+          "identifier": "camera:7225-48a5eac7-3ad7-4a88-86d2-81b622b24430",
+          "animationMask": {
+            "position": false,
+            "rotation": false,
+            "scale": false
+          },
+          "cameraVisibility": "back|front",
+          "hidden": false,
+          "hitTestingEnabled": false,
+          "layerIdentifier": "layer0",
+          "outputVisibility": "preview|capture",
+          "physicsEnabled": false,
+          "projectionType": "perspective",
+          "tags": [],
+          "transform": {
+            "rx": 0,
+            "ry": 0,
+            "rz": 0,
+            "sx": 1,
+            "sy": 1,
+            "sz": 1,
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "updateSource": "gyro",
+          "children": [
+            {
+              "modelName": "composition_model",
+              "name": "canvas0",
+              "identifier": "composition_model:8169-48a5eac7-3ad7-4a88-86d2-81b622b24430",
+              "animationMask": {
+                "position": false,
+                "rotation": false,
+                "scale": false
+              },
+              "cameraVisibility": "back|front",
+              "height": 325,
+              "hidden": false,
+              "hitTestingEnabled": false,
+              "layerIdentifier": "layer0",
+              "outputVisibility": "preview|capture",
+              "physicsEnabled": false,
+              "sizingMode": "full_screen",
+              "spaceMode": "camera_space",
+              "tags": [],
+              "transform": {
+                "rx": 0,
+                "ry": 0,
+                "rz": 0,
+                "sx": 0.0015384615398943424,
+                "sy": 0.0015384615398943424,
+                "sz": 0.0015384615398943424,
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "width": 150,
+              "children": [
+                {
+                  "modelName": "rectangle_model",
+                  "name": "hint",
+                  "identifier": "rectangle_model:8277-48a5eac7-3ad7-4a88-86d2-81b622b24430",
+                  "animationMask": {
+                    "position": false,
+                    "rotation": false,
+                    "scale": false
+                  },
+                  "aspectRatioValue": 4.12,
+                  "cameraVisibility": "back|front",
+                  "fillMode": "none",
+                  "height": {
+                    "unit": {
+                      "multiplier": 1,
+                      "unitBase": 10
+                    },
+                    "value": 20
+                  },
+                  "hidden": false,
+                  "hitTestingEnabled": false,
+                  "horizontalAlignment": "center",
+                  "isMaterialIdentifierEnabled": true,
+                  "layerIdentifier": "layer0",
+                  "locksAspectRatio": true,
+                  "materialIdentifier": "defaultMaterial:8502-48a5eac7-3ad7-4a88-86d2-81b622b24430",
+                  "outputVisibility": "preview|capture",
+                  "physicsEnabled": false,
+                  "pinnedBottom": false,
+                  "pinnedBottomValue": {
+                    "unit": {
+                      "multiplier": 1,
+                      "unitBase": 10
+                    },
+                    "value": 0
+                  },
+                  "pinnedHorizontalCenterValue": {
+                    "unit": {
+                      "multiplier": 1,
+                      "unitBase": 10
+                    },
+                    "value": 0
+                  },
+                  "pinnedLeft": true,
+                  "pinnedLeftValue": {
+                    "unit": {
+                      "multiplier": 1,
+                      "unitBase": 10
+                    },
+                    "value": 34
+                  },
+                  "pinnedRight": false,
+                  "pinnedRightValue": {
+                    "unit": {
+                      "multiplier": 1,
+                      "unitBase": 10
+                    },
+                    "value": 0
+                  },
+                  "pinnedTop": true,
+                  "pinnedTopValue": {
+                    "unit": {
+                      "multiplier": 1,
+                      "unitBase": 10
+                    },
+                    "value": 50
+                  },
+                  "pinnedVerticalCenterValue": {
+                    "unit": {
+                      "multiplier": 1,
+                      "unitBase": 10
+                    },
+                    "value": 0
+                  },
+                  "positionX": {
+                    "unit": {
+                      "multiplier": 1,
+                      "unitBase": 10
+                    },
+                    "value": 0
+                  },
+                  "positionY": {
+                    "unit": {
+                      "multiplier": 1,
+                      "unitBase": 10
+                    },
+                    "value": 0
+                  },
+                  "rotation": 0,
+                  "scaleX": 1,
+                  "scaleY": 1,
+                  "tags": [],
+                  "transform": {
+                    "rx": 0,
+                    "ry": 0,
+                    "rz": 0,
+                    "sx": 1,
+                    "sy": 1,
+                    "sz": 1,
+                    "x": 34,
+                    "y": 50,
+                    "z": -0.000030517578125
+                  },
+                  "usesFlexibleHeight": false,
+                  "usesFlexibleWidth": false,
+                  "verticalAlignment": "center",
+                  "width": {
+                    "unit": {
+                      "multiplier": 1,
+                      "unitBase": 10
+                    },
+                    "value": 82.4
+                  }
+                },
+                {
+                  "modelName": "rectangle_model",
+                  "name": "scan0",
+                  "identifier": "rectangle_model:1337-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+                  "animationMask": {
+                    "position": false,
+                    "rotation": false,
+                    "scale": false
+                  },
+                  "aspectRatioValue": 1,
+                  "cameraVisibility": "back|front",
+                  "fillMode": "none",
+                  "height": {
+                    "unit": {
+                      "multiplier": 1,
+                      "unitBase": 10
+                    },
+                    "value": 116
+                  },
+                  "hidden": false,
+                  "hitTestingEnabled": false,
+                  "horizontalAlignment": "center",
+                  "isMaterialIdentifierEnabled": true,
+                  "layerIdentifier": "layer0",
+                  "locksAspectRatio": false,
+                  "materialIdentifier": "defaultMaterial:8761-48a5eac7-3ad7-4a88-86d2-81b622b24430",
+                  "outputVisibility": "preview|capture",
+                  "physicsEnabled": false,
+                  "pinnedBottom": false,
+                  "pinnedBottomValue": {
+                    "unit": {
+                      "multiplier": 1,
+                      "unitBase": 10
+                    },
+                    "value": 0
+                  },
+                  "pinnedHorizontalCenterValue": {
+                    "unit": {
+                      "multiplier": 1,
+                      "unitBase": 10
+                    },
+                    "value": 0
+                  },
+                  "pinnedLeft": true,
+                  "pinnedLeftValue": {
+                    "unit": {
+                      "multiplier": 1,
+                      "unitBase": 10
+                    },
+                    "value": 21
+                  },
+                  "pinnedRight": false,
+                  "pinnedRightValue": {
+                    "unit": {
+                      "multiplier": 1,
+                      "unitBase": 10
+                    },
+                    "value": 0
+                  },
+                  "pinnedTop": true,
+                  "pinnedTopValue": {
+                    "unit": {
+                      "multiplier": 1,
+                      "unitBase": 10
+                    },
+                    "value": 104.5
+                  },
+                  "pinnedVerticalCenterValue": {
+                    "unit": {
+                      "multiplier": 1,
+                      "unitBase": 10
+                    },
+                    "value": 0
+                  },
+                  "positionX": {
+                    "unit": {
+                      "multiplier": 1,
+                      "unitBase": 10
+                    },
+                    "value": 0
+                  },
+                  "positionY": {
+                    "unit": {
+                      "multiplier": 1,
+                      "unitBase": 10
+                    },
+                    "value": 0
+                  },
+                  "rotation": 0,
+                  "scaleX": 1,
+                  "scaleY": 1,
+                  "tags": [],
+                  "transform": {
+                    "rx": 0,
+                    "ry": 0,
+                    "rz": 0,
+                    "sx": 1,
+                    "sy": 1,
+                    "sz": 1,
+                    "x": 21,
+                    "y": 104.5,
+                    "z": -0.000030517578125
+                  },
+                  "usesFlexibleHeight": false,
+                  "usesFlexibleWidth": false,
+                  "verticalAlignment": "center",
+                  "width": {
+                    "unit": {
+                      "multiplier": 1,
+                      "unitBase": 10
+                    },
+                    "value": 108
+                  }
+                }
+              ]
+            },
+            {
+              "modelName": "composition_model",
+              "name": "canvas1",
+              "identifier": "composition_model:9693-48a5eac7-3ad7-4a88-86d2-81b622b24430",
+              "animationMask": {
+                "position": false,
+                "rotation": false,
+                "scale": false
+              },
+              "cameraVisibility": "back|front",
+              "height": 325,
+              "hidden": true,
+              "hitTestingEnabled": false,
+              "layerIdentifier": "layer0",
+              "outputVisibility": "preview|capture",
+              "physicsEnabled": false,
+              "sizingMode": "full_screen",
+              "spaceMode": "camera_space",
+              "tags": [],
+              "transform": {
+                "rx": 0,
+                "ry": 0,
+                "rz": 0,
+                "sx": 0.0015384615398943424,
+                "sy": 0.0015384615398943424,
+                "sz": 0.0015384615398943424,
+                "x": 0,
+                "y": 0,
+                "z": 0
+              },
+              "width": 150,
+              "children": [
+                {
+                  "modelName": "rectangle_model",
+                  "name": "bg",
+                  "identifier": "rectangle_model:9855-48a5eac7-3ad7-4a88-86d2-81b622b24430",
+                  "animationMask": {
+                    "position": false,
+                    "rotation": false,
+                    "scale": false
+                  },
+                  "aspectRatioValue": 1,
+                  "cameraVisibility": "back|front",
+                  "fillMode": "none",
+                  "height": {
+                    "unit": {
+                      "multiplier": 1,
+                      "unitBase": 20
+                    },
+                    "value": 100
+                  },
+                  "hidden": false,
+                  "hitTestingEnabled": false,
+                  "horizontalAlignment": "center",
+                  "isMaterialIdentifierEnabled": true,
+                  "layerIdentifier": "layer0",
+                  "locksAspectRatio": false,
+                  "materialIdentifier": "defaultMaterial:9859-48a5eac7-3ad7-4a88-86d2-81b622b24430",
+                  "outputVisibility": "preview|capture",
+                  "physicsEnabled": false,
+                  "pinnedBottom": false,
+                  "pinnedBottomValue": {
+                    "unit": {
+                      "multiplier": 1,
+                      "unitBase": 10
+                    },
+                    "value": 0
+                  },
+                  "pinnedHorizontalCenterValue": {
+                    "unit": {
+                      "multiplier": 1,
+                      "unitBase": 10
+                    },
+                    "value": 0
+                  },
+                  "pinnedLeft": true,
+                  "pinnedLeftValue": {
+                    "unit": {
+                      "multiplier": 1,
+                      "unitBase": 10
+                    },
+                    "value": 0
+                  },
+                  "pinnedRight": false,
+                  "pinnedRightValue": {
+                    "unit": {
+                      "multiplier": 1,
+                      "unitBase": 10
+                    },
+                    "value": 0
+                  },
+                  "pinnedTop": true,
+                  "pinnedTopValue": {
+                    "unit": {
+                      "multiplier": 1,
+                      "unitBase": 10
+                    },
+                    "value": 0
+                  },
+                  "pinnedVerticalCenterValue": {
+                    "unit": {
+                      "multiplier": 1,
+                      "unitBase": 10
+                    },
+                    "value": 0
+                  },
+                  "positionX": {
+                    "unit": {
+                      "multiplier": 1,
+                      "unitBase": 10
+                    },
+                    "value": 0
+                  },
+                  "positionY": {
+                    "unit": {
+                      "multiplier": 1,
+                      "unitBase": 10
+                    },
+                    "value": 0
+                  },
+                  "rotation": 0,
+                  "scaleX": 1,
+                  "scaleY": 1,
+                  "tags": [],
+                  "transform": {
+                    "rx": 0,
+                    "ry": 0,
+                    "rz": 0,
+                    "sx": 1,
+                    "sy": 1,
+                    "sz": 1,
+                    "x": 0,
+                    "y": 0,
+                    "z": -0.000030517578125
+                  },
+                  "usesFlexibleHeight": true,
+                  "usesFlexibleWidth": true,
+                  "verticalAlignment": "center",
+                  "width": {
+                    "unit": {
+                      "multiplier": 1,
+                      "unitBase": 20
+                    },
+                    "value": 100
+                  }
+                },
+                {
+                  "modelName": "rectangle_model",
+                  "name": "flower",
+                  "identifier": "rectangle_model:5675-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+                  "animationMask": {
+                    "position": false,
+                    "rotation": false,
+                    "scale": false
+                  },
+                  "aspectRatioValue": 0.5625,
+                  "cameraVisibility": "back|front",
+                  "fillMode": "none",
+                  "height": {
+                    "unit": {
+                      "multiplier": 1,
+                      "unitBase": 10
+                    },
+                    "value": 266.66667
+                  },
+                  "hidden": false,
+                  "hitTestingEnabled": false,
+                  "horizontalAlignment": "center",
+                  "isMaterialIdentifierEnabled": true,
+                  "layerIdentifier": "layer0",
+                  "locksAspectRatio": true,
+                  "materialIdentifier": "defaultMaterial:5695-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+                  "outputVisibility": "preview|capture",
+                  "physicsEnabled": false,
+                  "pinnedBottom": false,
+                  "pinnedBottomValue": {
+                    "unit": {
+                      "multiplier": 1,
+                      "unitBase": 10
+                    },
+                    "value": 0
+                  },
+                  "pinnedHorizontalCenterValue": {
+                    "unit": {
+                      "multiplier": 1,
+                      "unitBase": 20
+                    },
+                    "value": 6.250000031589782E-7
+                  },
+                  "pinnedLeft": false,
+                  "pinnedLeftValue": {
+                    "unit": {
+                      "multiplier": 1,
+                      "unitBase": 10
+                    },
+                    "value": 0
+                  },
+                  "pinnedRight": false,
+                  "pinnedRightValue": {
+                    "unit": {
+                      "multiplier": 1,
+                      "unitBase": 10
+                    },
+                    "value": 0
+                  },
+                  "pinnedTop": false,
+                  "pinnedTopValue": {
+                    "unit": {
+                      "multiplier": 1,
+                      "unitBase": 10
+                    },
+                    "value": 0
+                  },
+                  "pinnedVerticalCenterValue": {
+                    "unit": {
+                      "multiplier": 1,
+                      "unitBase": 20
+                    },
+                    "value": -0.05126275841345992
+                  },
+                  "positionX": {
+                    "unit": {
+                      "multiplier": 1,
+                      "unitBase": 10
+                    },
+                    "value": 0
+                  },
+                  "positionY": {
+                    "unit": {
+                      "multiplier": 1,
+                      "unitBase": 10
+                    },
+                    "value": 0
+                  },
+                  "rotation": 0,
+                  "scaleX": 1,
+                  "scaleY": 1,
+                  "tags": [],
+                  "transform": {
+                    "rx": 1.862644793959589E-8,
+                    "ry": -2.2351741790771484E-8,
+                    "rz": 2.3283064365386963E-10,
+                    "sx": 1,
+                    "sy": 1.0000004768371582,
+                    "sz": 1.000000238418579,
+                    "x": 0,
+                    "y": 29.00006103515625,
+                    "z": -0.00006103516352595761
+                  },
+                  "usesFlexibleHeight": false,
+                  "usesFlexibleWidth": false,
+                  "verticalAlignment": "center",
+                  "width": {
+                    "unit": {
+                      "multiplier": 1,
+                      "unitBase": 10
+                    },
+                    "value": 150.000001875
+                  },
+                  "children": [
+                    {
+                      "modelName": "rectangle_model",
+                      "name": "vase",
+                      "identifier": "rectangle_model:1972-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+                      "animationMask": {
+                        "position": false,
+                        "rotation": false,
+                        "scale": false
+                      },
+                      "aspectRatioValue": 1,
+                      "cameraVisibility": "back|front",
+                      "fillMode": "none",
+                      "height": {
+                        "unit": {
+                          "multiplier": 1,
+                          "unitBase": 20
+                        },
+                        "value": 100
+                      },
+                      "hidden": false,
+                      "hitTestingEnabled": false,
+                      "horizontalAlignment": "center",
+                      "isMaterialIdentifierEnabled": true,
+                      "layerIdentifier": "layer0",
+                      "locksAspectRatio": false,
+                      "materialIdentifier": "defaultMaterial:1503-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+                      "outputVisibility": "preview|capture",
+                      "physicsEnabled": false,
+                      "pinnedBottom": false,
+                      "pinnedBottomValue": {
+                        "unit": {
+                          "multiplier": 1,
+                          "unitBase": 10
+                        },
+                        "value": 0
+                      },
+                      "pinnedHorizontalCenterValue": {
+                        "unit": {
+                          "multiplier": 1,
+                          "unitBase": 20
+                        },
+                        "value": 6.250000031589782E-7
+                      },
+                      "pinnedLeft": false,
+                      "pinnedLeftValue": {
+                        "unit": {
+                          "multiplier": 1,
+                          "unitBase": 10
+                        },
+                        "value": 0
+                      },
+                      "pinnedRight": false,
+                      "pinnedRightValue": {
+                        "unit": {
+                          "multiplier": 1,
+                          "unitBase": 10
+                        },
+                        "value": 0
+                      },
+                      "pinnedTop": false,
+                      "pinnedTopValue": {
+                        "unit": {
+                          "multiplier": 1,
+                          "unitBase": 10
+                        },
+                        "value": 0
+                      },
+                      "pinnedVerticalCenterValue": {
+                        "unit": {
+                          "multiplier": 1,
+                          "unitBase": 20
+                        },
+                        "value": -0.05125555676481266
+                      },
+                      "positionX": {
+                        "unit": {
+                          "multiplier": 1,
+                          "unitBase": 10
+                        },
+                        "value": 0
+                      },
+                      "positionY": {
+                        "unit": {
+                          "multiplier": 1,
+                          "unitBase": 10
+                        },
+                        "value": 0
+                      },
+                      "rotation": 0,
+                      "scaleX": 1,
+                      "scaleY": 1,
+                      "tags": [],
+                      "transform": {
+                        "rx": 1.7763570511584873E-15,
+                        "ry": -0,
+                        "rz": -3.1763735522036263E-22,
+                        "sx": 1,
+                        "sy": 1,
+                        "sz": 0.9999999403953552,
+                        "x": 0,
+                        "y": -0.136688232421875,
+                        "z": 0.03996238112449646
+                      },
+                      "usesFlexibleHeight": true,
+                      "usesFlexibleWidth": true,
+                      "verticalAlignment": "center",
+                      "width": {
+                        "unit": {
+                          "multiplier": 1,
+                          "unitBase": 20
+                        },
+                        "value": 100
+                      }
+                    }
+                  ]
+                },
+                {
+                  "modelName": "rectangle_model",
+                  "name": "hint0",
+                  "identifier": "rectangle_model:10305-48a5eac7-3ad7-4a88-86d2-81b622b24430",
+                  "animationMask": {
+                    "position": false,
+                    "rotation": false,
+                    "scale": false
+                  },
+                  "aspectRatioValue": 1,
+                  "cameraVisibility": "back|front",
+                  "fillMode": "none",
+                  "height": {
+                    "unit": {
+                      "multiplier": 1,
+                      "unitBase": 10
+                    },
+                    "value": 25
+                  },
+                  "hidden": false,
+                  "hitTestingEnabled": false,
+                  "horizontalAlignment": "center",
+                  "isMaterialIdentifierEnabled": true,
+                  "layerIdentifier": "layer0",
+                  "locksAspectRatio": false,
+                  "materialIdentifier": "defaultMaterial:10140-48a5eac7-3ad7-4a88-86d2-81b622b24430",
+                  "outputVisibility": "preview|capture",
+                  "physicsEnabled": false,
+                  "pinnedBottom": false,
+                  "pinnedBottomValue": {
+                    "unit": {
+                      "multiplier": 1,
+                      "unitBase": 10
+                    },
+                    "value": 0
+                  },
+                  "pinnedHorizontalCenterValue": {
+                    "unit": {
+                      "multiplier": 1,
+                      "unitBase": 10
+                    },
+                    "value": 0
+                  },
+                  "pinnedLeft": true,
+                  "pinnedLeftValue": {
+                    "unit": {
+                      "multiplier": 1,
+                      "unitBase": 10
+                    },
+                    "value": 15
+                  },
+                  "pinnedRight": false,
+                  "pinnedRightValue": {
+                    "unit": {
+                      "multiplier": 1,
+                      "unitBase": 10
+                    },
+                    "value": 0
+                  },
+                  "pinnedTop": true,
+                  "pinnedTopValue": {
+                    "unit": {
+                      "multiplier": 1,
+                      "unitBase": 10
+                    },
+                    "value": 47
+                  },
+                  "pinnedVerticalCenterValue": {
+                    "unit": {
+                      "multiplier": 1,
+                      "unitBase": 10
+                    },
+                    "value": 0
+                  },
+                  "positionX": {
+                    "unit": {
+                      "multiplier": 1,
+                      "unitBase": 10
+                    },
+                    "value": 0
+                  },
+                  "positionY": {
+                    "unit": {
+                      "multiplier": 1,
+                      "unitBase": 10
+                    },
+                    "value": 0
+                  },
+                  "rotation": 0,
+                  "scaleX": 1,
+                  "scaleY": 1,
+                  "tags": [],
+                  "transform": {
+                    "rx": 0,
+                    "ry": 0,
+                    "rz": 0,
+                    "sx": 1,
+                    "sy": 1,
+                    "sz": 1,
+                    "x": 15,
+                    "y": 47,
+                    "z": -0.000030517578125
+                  },
+                  "usesFlexibleHeight": false,
+                  "usesFlexibleWidth": false,
+                  "verticalAlignment": "center",
+                  "width": {
+                    "unit": {
+                      "multiplier": 1,
+                      "unitBase": 10
+                    },
+                    "value": 125
+                  }
+                }
+              ]
+            },
+            {
+              "modelName": "composition_model",
+              "name": "canvas2",
+              "identifier": "composition_model:6105-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+              "animationMask": {
+                "position": false,
+                "rotation": false,
+                "scale": false
+              },
+              "cameraVisibility": "back|front",
+              "height": 325,
+              "hidden": true,
+              "hitTestingEnabled": false,
+              "layerIdentifier": "layer0",
+              "outputVisibility": "preview|capture",
+              "physicsEnabled": false,
+              "sizingMode": "full_screen",
+              "spaceMode": "camera_space",
+              "tags": [],
+              "transform": {
+                "rx": 0,
+                "ry": -0,
+                "rz": 0,
+                "sx": 0.0000023668640096730087,
+                "sy": 0.0000023668649191677105,
+                "sz": 0.0000023668644644203596,
+                "x": 0,
+                "y": 29.00006103515625,
+                "z": -0.00006103516352595761
+              },
+              "width": 150,
+              "children": [
+                {
+                  "modelName": "rectangle_model",
+                  "name": "poem",
+                  "identifier": "rectangle_model:6489-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+                  "animationMask": {
+                    "position": false,
+                    "rotation": false,
+                    "scale": false
+                  },
+                  "aspectRatioValue": 0.5625,
+                  "cameraVisibility": "back|front",
+                  "fillMode": "none",
+                  "height": {
+                    "unit": {
+                      "multiplier": 1,
+                      "unitBase": 10
+                    },
+                    "value": 266.6666564941406
+                  },
+                  "hidden": false,
+                  "hitTestingEnabled": false,
+                  "horizontalAlignment": "center",
+                  "isMaterialIdentifierEnabled": true,
+                  "layerIdentifier": "layer0",
+                  "locksAspectRatio": true,
+                  "materialIdentifier": "defaultMaterial:6493-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+                  "outputVisibility": "preview|capture",
+                  "physicsEnabled": false,
+                  "pinnedBottom": false,
+                  "pinnedBottomValue": {
+                    "unit": {
+                      "multiplier": 1,
+                      "unitBase": 10
+                    },
+                    "value": 0
+                  },
+                  "pinnedHorizontalCenterValue": {
+                    "unit": {
+                      "multiplier": 1,
+                      "unitBase": 10
+                    },
+                    "value": 0
+                  },
+                  "pinnedLeft": true,
+                  "pinnedLeftValue": {
+                    "unit": {
+                      "multiplier": 1,
+                      "unitBase": 10
+                    },
+                    "value": 20
+                  },
+                  "pinnedRight": false,
+                  "pinnedRightValue": {
+                    "unit": {
+                      "multiplier": 1,
+                      "unitBase": 10
+                    },
+                    "value": 0
+                  },
+                  "pinnedTop": true,
+                  "pinnedTopValue": {
+                    "unit": {
+                      "multiplier": 1,
+                      "unitBase": 10
+                    },
+                    "value": 46.0000114440918
+                  },
+                  "pinnedVerticalCenterValue": {
+                    "unit": {
+                      "multiplier": 1,
+                      "unitBase": 10
+                    },
+                    "value": 0
+                  },
+                  "positionX": {
+                    "unit": {
+                      "multiplier": 1,
+                      "unitBase": 10
+                    },
+                    "value": 0
+                  },
+                  "positionY": {
+                    "unit": {
+                      "multiplier": 1,
+                      "unitBase": 10
+                    },
+                    "value": 0
+                  },
+                  "rotation": 0,
+                  "scaleX": 1,
+                  "scaleY": 1,
+                  "tags": [],
+                  "transform": {
+                    "rx": -0,
+                    "ry": -3.725290298461914E-9,
+                    "rz": 0,
+                    "sx": 1,
+                    "sy": 1.0000001192092896,
+                    "sz": 1.0000001192092896,
+                    "x": 0,
+                    "y": 30,
+                    "z": -0.00006103516352595761
+                  },
+                  "usesFlexibleHeight": false,
+                  "usesFlexibleWidth": false,
+                  "verticalAlignment": "center",
+                  "width": {
+                    "unit": {
+                      "multiplier": 1,
+                      "unitBase": 10
+                    },
+                    "value": 150
+                  }
+                }
+              ]
+            },
+            {
+              "modelName": "focalDistance",
+              "name": "Focal Distance",
+              "identifier": "focalDistance:7227-48a5eac7-3ad7-4a88-86d2-81b622b24430",
+              "animationMask": {
+                "position": false,
+                "rotation": false,
+                "scale": false
+              },
+              "cameraVisibility": "back|front",
+              "hidden": false,
+              "hitTestingEnabled": false,
+              "layerIdentifier": "layer0",
+              "outputVisibility": "preview|capture",
+              "physicsEnabled": false,
+              "tags": [],
+              "transform": {
+                "rx": 0,
+                "ry": 0,
+                "rz": 0,
+                "sx": 1,
+                "sy": 1,
+                "sz": 1,
+                "x": 0,
+                "y": 0,
+                "z": -0.5361266732215881
+              },
+              "children": [
+                {
+                  "modelName": "ambient_light_source_model",
+                  "name": "ambientLight0",
+                  "identifier": "ambient_light_source_model:7233-48a5eac7-3ad7-4a88-86d2-81b622b24430",
+                  "animationMask": {
+                    "position": false,
+                    "rotation": false,
+                    "scale": false
+                  },
+                  "cameraVisibility": "back|front",
+                  "color": "0xffffffff",
+                  "hidden": false,
+                  "hitTestingEnabled": false,
+                  "intensity": 0.20000000298023224,
+                  "layerIdentifier": "layer0",
+                  "outputVisibility": "preview|capture",
+                  "physicsEnabled": false,
+                  "tags": [],
+                  "transform": {
+                    "rx": 0,
+                    "ry": 0,
+                    "rz": 0,
+                    "sx": 1,
+                    "sy": 1,
+                    "sz": 1,
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  }
+                },
+                {
+                  "modelName": "directional_light_source_model",
+                  "name": "directionalLight0",
+                  "identifier": "directional_light_source_model:7235-48a5eac7-3ad7-4a88-86d2-81b622b24430",
+                  "animationMask": {
+                    "position": false,
+                    "rotation": false,
+                    "scale": false
+                  },
+                  "cameraVisibility": "back|front",
+                  "castShadow": false,
+                  "color": "0xffffffff",
+                  "hidden": false,
+                  "hitTestingEnabled": false,
+                  "intensity": 0.800000011920929,
+                  "layerIdentifier": "layer0",
+                  "outputVisibility": "preview|capture",
+                  "physicsEnabled": false,
+                  "shadowBias": 0.05000000074505806,
+                  "shadowFrustumDepth": 1,
+                  "shadowFrustumSize": 0.5,
+                  "shadowNear": 0.05,
+                  "shadowSoftness": 0,
+                  "shadowStrength": 1,
+                  "shadowTextureSize": 512,
+                  "tags": [],
+                  "transform": {
+                    "rx": -0.7853981633974483,
+                    "ry": 0.08726646259971647,
+                    "rz": 0,
+                    "sx": 1,
+                    "sy": 1,
+                    "sz": 1,
+                    "x": 0.03,
+                    "y": 0.25,
+                    "z": 0.3
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "modelName": "microphone_model",
+          "name": "Microphone",
+          "identifier": "microphone_model:7229-48a5eac7-3ad7-4a88-86d2-81b622b24430",
+          "animationMask": {
+            "position": false,
+            "rotation": false,
+            "scale": false
+          },
+          "cameraVisibility": "back|front",
+          "disabled": false,
+          "hidden": false,
+          "hitTestingEnabled": false,
+          "layerIdentifier": "layer0",
+          "outputVisibility": "preview|capture",
+          "physicsEnabled": false,
+          "previewAudioSource": "default",
+          "tags": [],
+          "transform": {
+            "rx": 0,
+            "ry": 0,
+            "rz": 0,
+            "sx": 1,
+            "sy": 1,
+            "sz": 1,
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        }
+      ]
+    }
+  ]
+}

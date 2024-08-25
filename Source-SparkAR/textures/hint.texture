@@ -1,0 +1,37 @@
+{
+  "modelName": "texture",
+  "name": "hint",
+  "identifier": "texture:8614-48a5eac7-3ad7-4a88-86d2-81b622b24430",
+  "alphaPremultiplicationMode": "should_premultiply",
+  "assetDataHash": "40fd8675c50d43ff89a611d371ca4429",
+  "assetLocator": "textures/hint.png",
+  "colorEncoding": "linear",
+  "compressionQuality": "high",
+  "coordMapping": "none",
+  "excludeDuringExport": false,
+  "excludeFromPackage": false,
+  "filter": "bilinear",
+  "folder": "",
+  "hasOfflineMipmaps": false,
+  "height": 100,
+  "importIssues": {},
+  "isExternalAsset": true,
+  "smartTextureTargetSizeLimit": "largest",
+  "targetSize": "largest",
+  "uWrapMode": "clamp",
+  "vWrapMode": "clamp",
+  "width": 412,
+  "children": [
+    {
+      "modelName": "data_texture_metadata_model",
+      "name": "data_texture_metadata_model0",
+      "assetDataHash": "40fd8675c50d43ff89a611d371ca4429",
+      "colorCount": 84,
+      "detectedAlphaChannel": "eight_bit_full_range",
+      "detectedOriginalFormat": "png",
+      "entropyOfDistribution": 1.0700798929076247,
+      "pixelsHigh": 100,
+      "pixelsWide": 412
+    }
+  ]
+}
