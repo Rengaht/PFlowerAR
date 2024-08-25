@@ -1,0 +1,1915 @@
+{
+  "modelName": "document",
+  "name": "Effect",
+  "identifier": "document:7153-48a5eac7-3ad7-4a88-86d2-81b622b24430",
+  "id": "715148a5eac73ad74a8886d281b622b24430",
+  "revision": "51123b97cc5c41dee4633a13be03bfcef069f",
+  "version": {
+    "dev": 0,
+    "patch": 0,
+    "prod": 187
+  },
+  "creatorIdentifier": "com.facebook.arstudio.skylight",
+  "creatorPlatform": "macosx",
+  "creatorFileVersion": {
+    "dev": 0,
+    "patch": 0,
+    "prod": 187
+  },
+  "cameraFar": 50,
+  "cameraNear": 0.009999999776482582,
+  "measurementUnit": "meter",
+  "objects": [
+    {
+      "modelName": "assets_config_model",
+      "identifier": "assets_config_model:7344-48a5eac7-3ad7-4a88-86d2-81b622b24430",
+      "categoriesOrder": [
+        "materials",
+        "textures",
+        "scripts"
+      ]
+    }
+  ],
+  "projectFormatType": "separated_files",
+  "usingPatchesV2": true,
+  "visual_programming": {
+    "graphs": [
+      {
+        "modelName": "patch_graph",
+        "identifier": "patch_graph:7239-48a5eac7-3ad7-4a88-86d2-81b622b24430"
+      }
+    ]
+  },
+  "children": [
+    {
+      "modelName": "textures",
+      "identifier": "textures:7159-48a5eac7-3ad7-4a88-86d2-81b622b24430",
+      "children": [
+        {
+          "modelName": "texture",
+          "name": "hint",
+          "identifier": "texture:8614-48a5eac7-3ad7-4a88-86d2-81b622b24430",
+          "assetDataHash": "40fd8675c50d43ff89a611d371ca4429",
+          "assetLocator": "textures/hint.png",
+          "fileLocator": {
+            "path": "textures/hint.texture"
+          },
+          "height": 100,
+          "isExternalAsset": true,
+          "width": 412,
+          "children": [
+            {
+              "modelName": "data_texture_metadata_model",
+              "name": "data_texture_metadata_model0",
+              "assetDataHash": "40fd8675c50d43ff89a611d371ca4429",
+              "colorCount": 84,
+              "detectedAlphaChannel": "eight_bit_full_range",
+              "detectedOriginalFormat": "png",
+              "entropyOfDistribution": 1.0700798929076247,
+              "pixelsHigh": 100,
+              "pixelsWide": 412
+            }
+          ]
+        },
+        {
+          "modelName": "texture",
+          "name": "scan",
+          "identifier": "texture:9237-48a5eac7-3ad7-4a88-86d2-81b622b24430",
+          "assetDataHash": "96d792daf4e9903ea907f9d50e0e7bfe",
+          "assetLocator": "textures/scan.png",
+          "fileLocator": {
+            "path": "textures/scan.texture"
+          },
+          "height": 626,
+          "isExternalAsset": true,
+          "width": 557,
+          "children": [
+            {
+              "modelName": "data_texture_metadata_model",
+              "name": "data_texture_metadata_model0",
+              "assetDataHash": "96d792daf4e9903ea907f9d50e0e7bfe",
+              "colorCount": 170,
+              "detectedAlphaChannel": "eight_bit_full_range",
+              "detectedOriginalFormat": "png",
+              "entropyOfDistribution": 0.26752069620716773,
+              "pixelsHigh": 626,
+              "pixelsWide": 557
+            }
+          ]
+        },
+        {
+          "modelName": "texture",
+          "name": "hint-2",
+          "identifier": "texture:10463-48a5eac7-3ad7-4a88-86d2-81b622b24430",
+          "assetDataHash": "b63fbc3a84f6cd6980a7b9878a29bd65",
+          "assetLocator": "textures/hint-2.png",
+          "fileLocator": {
+            "path": "textures/hint-2.texture"
+          },
+          "height": 100,
+          "isExternalAsset": true,
+          "width": 500,
+          "children": [
+            {
+              "modelName": "data_texture_metadata_model",
+              "name": "data_texture_metadata_model0",
+              "assetDataHash": "b63fbc3a84f6cd6980a7b9878a29bd65",
+              "colorCount": 84,
+              "detectedAlphaChannel": "eight_bit_full_range",
+              "detectedOriginalFormat": "png",
+              "entropyOfDistribution": 1.264795115652921,
+              "pixelsHigh": 100,
+              "pixelsWide": 500
+            }
+          ]
+        },
+        {
+          "modelName": "texture",
+          "name": "BG_01(1)",
+          "identifier": "texture:4100-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+          "assetDataHash": "fb936482eb556577ace47ac61a80b96c",
+          "assetLocator": "textures/BG_01(1).png",
+          "fileLocator": {
+            "path": "textures/BG_01(1).texture"
+          },
+          "height": 1024,
+          "isExternalAsset": true,
+          "width": 576,
+          "children": [
+            {
+              "modelName": "data_texture_metadata_model",
+              "name": "data_texture_metadata_model0",
+              "assetDataHash": "fb936482eb556577ace47ac61a80b96c",
+              "colorCount": 4386,
+              "detectedAlphaChannel": "eight_bit_full_range",
+              "detectedOriginalFormat": "png",
+              "entropyOfDistribution": 10.485181603909698,
+              "pixelsHigh": 1024,
+              "pixelsWide": 576
+            }
+          ]
+        },
+        {
+          "modelName": "texture",
+          "name": "Flower_01",
+          "identifier": "texture:4104-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+          "assetDataHash": "83f43e6eef18be67e1ba8a6aeb9ca3b6",
+          "assetLocator": "textures/Flower_01.png",
+          "fileLocator": {
+            "path": "textures/Flower_01.texture"
+          },
+          "height": 1024,
+          "isExternalAsset": true,
+          "width": 576,
+          "children": [
+            {
+              "modelName": "data_texture_metadata_model",
+              "name": "data_texture_metadata_model0",
+              "assetDataHash": "83f43e6eef18be67e1ba8a6aeb9ca3b6",
+              "colorCount": 81392,
+              "detectedAlphaChannel": "eight_bit_full_range",
+              "detectedOriginalFormat": "png",
+              "entropyOfDistribution": 4.689547379710747,
+              "pixelsHigh": 1024,
+              "pixelsWide": 576
+            }
+          ]
+        },
+        {
+          "modelName": "texture",
+          "name": "Flower_02",
+          "identifier": "texture:4108-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+          "assetDataHash": "813f92dfdb1c950a29bcda2c979b857b",
+          "assetLocator": "textures/Flower_02.png",
+          "fileLocator": {
+            "path": "textures/Flower_02.texture"
+          },
+          "height": 1024,
+          "isExternalAsset": true,
+          "width": 576,
+          "children": [
+            {
+              "modelName": "data_texture_metadata_model",
+              "name": "data_texture_metadata_model0",
+              "assetDataHash": "813f92dfdb1c950a29bcda2c979b857b",
+              "colorCount": 77688,
+              "detectedAlphaChannel": "eight_bit_full_range",
+              "detectedOriginalFormat": "png",
+              "entropyOfDistribution": 4.448456074531687,
+              "pixelsHigh": 1024,
+              "pixelsWide": 576
+            }
+          ]
+        },
+        {
+          "modelName": "texture",
+          "name": "Flower_03",
+          "identifier": "texture:4112-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+          "assetDataHash": "177fef2bf3f5dbf6166057747e147e0a",
+          "assetLocator": "textures/Flower_03.png",
+          "fileLocator": {
+            "path": "textures/Flower_03.texture"
+          },
+          "height": 1024,
+          "isExternalAsset": true,
+          "width": 576,
+          "children": [
+            {
+              "modelName": "data_texture_metadata_model",
+              "name": "data_texture_metadata_model0",
+              "assetDataHash": "177fef2bf3f5dbf6166057747e147e0a",
+              "colorCount": 80801,
+              "detectedAlphaChannel": "eight_bit_full_range",
+              "detectedOriginalFormat": "png",
+              "entropyOfDistribution": 4.6988733699533975,
+              "pixelsHigh": 1024,
+              "pixelsWide": 576
+            }
+          ]
+        },
+        {
+          "modelName": "texture",
+          "name": "Flower_04",
+          "identifier": "texture:4116-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+          "assetDataHash": "614f85fb0e5582e60ac00f1a9aafdaaf",
+          "assetLocator": "textures/Flower_04.png",
+          "fileLocator": {
+            "path": "textures/Flower_04.texture"
+          },
+          "height": 1024,
+          "isExternalAsset": true,
+          "width": 576,
+          "children": [
+            {
+              "modelName": "data_texture_metadata_model",
+              "name": "data_texture_metadata_model0",
+              "assetDataHash": "614f85fb0e5582e60ac00f1a9aafdaaf",
+              "colorCount": 75228,
+              "detectedAlphaChannel": "eight_bit_full_range",
+              "detectedOriginalFormat": "png",
+              "entropyOfDistribution": 4.591442817613243,
+              "pixelsHigh": 1024,
+              "pixelsWide": 576
+            }
+          ]
+        },
+        {
+          "modelName": "texture",
+          "name": "Vase_01",
+          "identifier": "texture:4120-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+          "assetDataHash": "b554eede296c55d807358c610c2502f7",
+          "assetLocator": "textures/Vase_01.png",
+          "fileLocator": {
+            "path": "textures/Vase_01-2.texture"
+          },
+          "height": 1024,
+          "isExternalAsset": true,
+          "width": 576,
+          "children": [
+            {
+              "modelName": "data_texture_metadata_model",
+              "name": "data_texture_metadata_model0",
+              "assetDataHash": "b554eede296c55d807358c610c2502f7",
+              "colorCount": 50941,
+              "detectedAlphaChannel": "eight_bit_full_range",
+              "detectedOriginalFormat": "png",
+              "entropyOfDistribution": 3.167150050970595,
+              "pixelsHigh": 1024,
+              "pixelsWide": 576
+            }
+          ]
+        },
+        {
+          "modelName": "texture",
+          "name": "poem-1",
+          "identifier": "texture:37500-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+          "assetDataHash": "a55b092240c1286a8fcff7c734cd1c94",
+          "assetLocator": "textures/poem-1.png",
+          "fileLocator": {
+            "path": "textures/poem-1-2.texture"
+          },
+          "height": 1024,
+          "isExternalAsset": true,
+          "width": 577,
+          "children": [
+            {
+              "modelName": "data_texture_metadata_model",
+              "name": "data_texture_metadata_model0",
+              "assetDataHash": "a55b092240c1286a8fcff7c734cd1c94",
+              "colorCount": 7760,
+              "detectedAlphaChannel": "eight_bit_full_range",
+              "detectedOriginalFormat": "png",
+              "entropyOfDistribution": 5.444541980944936,
+              "pixelsHigh": 1024,
+              "pixelsWide": 577
+            }
+          ]
+        },
+        {
+          "modelName": "texture",
+          "name": "poem-2",
+          "identifier": "texture:37504-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+          "assetDataHash": "a881282e3a47f428e2f8d31fcd821543",
+          "assetLocator": "textures/poem-2.png",
+          "fileLocator": {
+            "path": "textures/poem-2-2.texture"
+          },
+          "height": 1024,
+          "isExternalAsset": true,
+          "width": 576,
+          "children": [
+            {
+              "modelName": "data_texture_metadata_model",
+              "name": "data_texture_metadata_model0",
+              "assetDataHash": "a881282e3a47f428e2f8d31fcd821543",
+              "colorCount": 7944,
+              "detectedAlphaChannel": "eight_bit_full_range",
+              "detectedOriginalFormat": "png",
+              "entropyOfDistribution": 5.470254106890189,
+              "pixelsHigh": 1024,
+              "pixelsWide": 576
+            }
+          ]
+        },
+        {
+          "modelName": "texture",
+          "name": "poem-3",
+          "identifier": "texture:37508-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+          "assetDataHash": "d377ec6b6cded4bce1c720818003d9e2",
+          "assetLocator": "textures/poem-3.png",
+          "fileLocator": {
+            "path": "textures/poem-3-2.texture"
+          },
+          "height": 1024,
+          "isExternalAsset": true,
+          "width": 577,
+          "children": [
+            {
+              "modelName": "data_texture_metadata_model",
+              "name": "data_texture_metadata_model0",
+              "assetDataHash": "d377ec6b6cded4bce1c720818003d9e2",
+              "colorCount": 10022,
+              "detectedAlphaChannel": "eight_bit_full_range",
+              "detectedOriginalFormat": "png",
+              "entropyOfDistribution": 5.393647479356496,
+              "pixelsHigh": 1024,
+              "pixelsWide": 577
+            }
+          ]
+        },
+        {
+          "modelName": "texture",
+          "name": "poem-4",
+          "identifier": "texture:37512-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+          "assetDataHash": "d7b0c69e9e0f3f0b8ceb70429bb5b890",
+          "assetLocator": "textures/poem-4.png",
+          "fileLocator": {
+            "path": "textures/poem-4-2.texture"
+          },
+          "height": 1024,
+          "isExternalAsset": true,
+          "width": 576,
+          "children": [
+            {
+              "modelName": "data_texture_metadata_model",
+              "name": "data_texture_metadata_model0",
+              "assetDataHash": "d7b0c69e9e0f3f0b8ceb70429bb5b890",
+              "colorCount": 7381,
+              "detectedAlphaChannel": "eight_bit_full_range",
+              "detectedOriginalFormat": "png",
+              "entropyOfDistribution": 5.460477176196476,
+              "pixelsHigh": 1024,
+              "pixelsWide": 576
+            }
+          ]
+        },
+        {
+          "modelName": "texture",
+          "name": "poem-5",
+          "identifier": "texture:37516-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+          "assetDataHash": "301713feabc63e66479922228a7c2cd1",
+          "assetLocator": "textures/poem-5.png",
+          "fileLocator": {
+            "path": "textures/poem-5-2.texture"
+          },
+          "height": 1024,
+          "isExternalAsset": true,
+          "width": 576,
+          "children": [
+            {
+              "modelName": "data_texture_metadata_model",
+              "name": "data_texture_metadata_model0",
+              "assetDataHash": "301713feabc63e66479922228a7c2cd1",
+              "colorCount": 7643,
+              "detectedAlphaChannel": "eight_bit_full_range",
+              "detectedOriginalFormat": "png",
+              "entropyOfDistribution": 5.43172266612623,
+              "pixelsHigh": 1024,
+              "pixelsWide": 576
+            }
+          ]
+        },
+        {
+          "modelName": "texture",
+          "name": "poem-6",
+          "identifier": "texture:37520-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+          "assetDataHash": "dc9c1fa30a2413f7244ddf40dec82881",
+          "assetLocator": "textures/poem-6.png",
+          "fileLocator": {
+            "path": "textures/poem-6-2.texture"
+          },
+          "height": 1024,
+          "isExternalAsset": true,
+          "width": 575,
+          "children": [
+            {
+              "modelName": "data_texture_metadata_model",
+              "name": "data_texture_metadata_model0",
+              "assetDataHash": "dc9c1fa30a2413f7244ddf40dec82881",
+              "colorCount": 8009,
+              "detectedAlphaChannel": "eight_bit_full_range",
+              "detectedOriginalFormat": "png",
+              "entropyOfDistribution": 5.451187281730081,
+              "pixelsHigh": 1024,
+              "pixelsWide": 575
+            }
+          ]
+        },
+        {
+          "modelName": "texture",
+          "name": "poem-7",
+          "identifier": "texture:37524-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+          "assetDataHash": "36c317860ac6c86800cff6616d0570ed",
+          "assetLocator": "textures/poem-7.png",
+          "fileLocator": {
+            "path": "textures/poem-7-2.texture"
+          },
+          "height": 1024,
+          "isExternalAsset": true,
+          "width": 576,
+          "children": [
+            {
+              "modelName": "data_texture_metadata_model",
+              "name": "data_texture_metadata_model0",
+              "assetDataHash": "36c317860ac6c86800cff6616d0570ed",
+              "colorCount": 8422,
+              "detectedAlphaChannel": "eight_bit_full_range",
+              "detectedOriginalFormat": "png",
+              "entropyOfDistribution": 5.480855231791931,
+              "pixelsHigh": 1024,
+              "pixelsWide": 576
+            }
+          ]
+        },
+        {
+          "modelName": "texture",
+          "name": "poem-8",
+          "identifier": "texture:37528-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+          "assetDataHash": "93794170e793a0f1936ee65b9c045673",
+          "assetLocator": "textures/poem-8.png",
+          "fileLocator": {
+            "path": "textures/poem-8-2.texture"
+          },
+          "height": 1024,
+          "isExternalAsset": true,
+          "width": 575,
+          "children": [
+            {
+              "modelName": "data_texture_metadata_model",
+              "name": "data_texture_metadata_model0",
+              "assetDataHash": "93794170e793a0f1936ee65b9c045673",
+              "colorCount": 9853,
+              "detectedAlphaChannel": "eight_bit_full_range",
+              "detectedOriginalFormat": "png",
+              "entropyOfDistribution": 5.45550524492923,
+              "pixelsHigh": 1024,
+              "pixelsWide": 575
+            }
+          ]
+        },
+        {
+          "modelName": "texture",
+          "name": "poem-9",
+          "identifier": "texture:37532-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+          "assetDataHash": "39456b6d56d365429f954f3f2ec835c6",
+          "assetLocator": "textures/poem-9.png",
+          "fileLocator": {
+            "path": "textures/poem-9-2.texture"
+          },
+          "height": 1024,
+          "isExternalAsset": true,
+          "width": 577,
+          "children": [
+            {
+              "modelName": "data_texture_metadata_model",
+              "name": "data_texture_metadata_model0",
+              "assetDataHash": "39456b6d56d365429f954f3f2ec835c6",
+              "colorCount": 8282,
+              "detectedAlphaChannel": "eight_bit_full_range",
+              "detectedOriginalFormat": "png",
+              "entropyOfDistribution": 5.459058637958255,
+              "pixelsHigh": 1024,
+              "pixelsWide": 577
+            }
+          ]
+        },
+        {
+          "modelName": "texture",
+          "name": "poem-10",
+          "identifier": "texture:37536-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+          "assetDataHash": "4c024ccca1069a0519fe64248bbec112",
+          "assetLocator": "textures/poem-10.png",
+          "fileLocator": {
+            "path": "textures/poem-10-2.texture"
+          },
+          "height": 1024,
+          "isExternalAsset": true,
+          "width": 576,
+          "children": [
+            {
+              "modelName": "data_texture_metadata_model",
+              "name": "data_texture_metadata_model0",
+              "assetDataHash": "4c024ccca1069a0519fe64248bbec112",
+              "colorCount": 9791,
+              "detectedAlphaChannel": "eight_bit_full_range",
+              "detectedOriginalFormat": "png",
+              "entropyOfDistribution": 5.413283774949798,
+              "pixelsHigh": 1024,
+              "pixelsWide": 576
+            }
+          ]
+        },
+        {
+          "modelName": "texture",
+          "name": "poem-11",
+          "identifier": "texture:37540-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+          "assetDataHash": "2e9cc6642264bb40420ff1c8db658506",
+          "assetLocator": "textures/poem-11.png",
+          "fileLocator": {
+            "path": "textures/poem-11-2.texture"
+          },
+          "height": 1024,
+          "isExternalAsset": true,
+          "width": 577,
+          "children": [
+            {
+              "modelName": "data_texture_metadata_model",
+              "name": "data_texture_metadata_model0",
+              "assetDataHash": "2e9cc6642264bb40420ff1c8db658506",
+              "colorCount": 9853,
+              "detectedAlphaChannel": "eight_bit_full_range",
+              "detectedOriginalFormat": "png",
+              "entropyOfDistribution": 5.458483767995443,
+              "pixelsHigh": 1024,
+              "pixelsWide": 577
+            }
+          ]
+        },
+        {
+          "modelName": "texture",
+          "name": "poem-12",
+          "identifier": "texture:37544-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+          "assetDataHash": "7b699bb125eadb0378b7d1150f75a454",
+          "assetLocator": "textures/poem-12.png",
+          "fileLocator": {
+            "path": "textures/poem-12-2.texture"
+          },
+          "height": 1024,
+          "isExternalAsset": true,
+          "width": 576,
+          "children": [
+            {
+              "modelName": "data_texture_metadata_model",
+              "name": "data_texture_metadata_model0",
+              "assetDataHash": "7b699bb125eadb0378b7d1150f75a454",
+              "colorCount": 7511,
+              "detectedAlphaChannel": "eight_bit_full_range",
+              "detectedOriginalFormat": "png",
+              "entropyOfDistribution": 5.372064384338795,
+              "pixelsHigh": 1024,
+              "pixelsWide": 576
+            }
+          ]
+        },
+        {
+          "modelName": "texture",
+          "name": "title-1",
+          "identifier": "texture:37548-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+          "assetDataHash": "c0aaa5c4163441f387bd3c36434ddae5",
+          "assetLocator": "textures/title-1.png",
+          "fileLocator": {
+            "path": "textures/title-1.texture"
+          },
+          "height": 1024,
+          "isExternalAsset": true,
+          "width": 575,
+          "children": [
+            {
+              "modelName": "data_texture_metadata_model",
+              "name": "data_texture_metadata_model0",
+              "assetDataHash": "c0aaa5c4163441f387bd3c36434ddae5",
+              "colorCount": 4002,
+              "detectedAlphaChannel": "eight_bit_full_range",
+              "detectedOriginalFormat": "png",
+              "entropyOfDistribution": 0.4805473446459985,
+              "pixelsHigh": 1024,
+              "pixelsWide": 575
+            }
+          ]
+        },
+        {
+          "modelName": "texture",
+          "name": "title-2",
+          "identifier": "texture:37552-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+          "assetDataHash": "e65f992bee2e1f045e72ce33b8f4f712",
+          "assetLocator": "textures/title-2.png",
+          "fileLocator": {
+            "path": "textures/title-2.texture"
+          },
+          "height": 1024,
+          "isExternalAsset": true,
+          "width": 576,
+          "children": [
+            {
+              "modelName": "data_texture_metadata_model",
+              "name": "data_texture_metadata_model0",
+              "assetDataHash": "e65f992bee2e1f045e72ce33b8f4f712",
+              "colorCount": 3531,
+              "detectedAlphaChannel": "eight_bit_full_range",
+              "detectedOriginalFormat": "png",
+              "entropyOfDistribution": 0.4716038583968525,
+              "pixelsHigh": 1024,
+              "pixelsWide": 576
+            }
+          ]
+        },
+        {
+          "modelName": "texture",
+          "name": "title-3",
+          "identifier": "texture:37556-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+          "assetDataHash": "e7d3215f92832ec7e7e1bada64a1776e",
+          "assetLocator": "textures/title-3.png",
+          "fileLocator": {
+            "path": "textures/title-3.texture"
+          },
+          "height": 1024,
+          "isExternalAsset": true,
+          "width": 575,
+          "children": [
+            {
+              "modelName": "data_texture_metadata_model",
+              "name": "data_texture_metadata_model0",
+              "assetDataHash": "e7d3215f92832ec7e7e1bada64a1776e",
+              "colorCount": 3667,
+              "detectedAlphaChannel": "eight_bit_full_range",
+              "detectedOriginalFormat": "png",
+              "entropyOfDistribution": 0.47529560470338506,
+              "pixelsHigh": 1024,
+              "pixelsWide": 575
+            }
+          ]
+        },
+        {
+          "modelName": "texture",
+          "name": "title-4",
+          "identifier": "texture:37560-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+          "assetDataHash": "928717c533d1b84fe11a2959dacad451",
+          "assetLocator": "textures/title-4.png",
+          "fileLocator": {
+            "path": "textures/title-4.texture"
+          },
+          "height": 1024,
+          "isExternalAsset": true,
+          "width": 576,
+          "children": [
+            {
+              "modelName": "data_texture_metadata_model",
+              "name": "data_texture_metadata_model0",
+              "assetDataHash": "928717c533d1b84fe11a2959dacad451",
+              "colorCount": 3417,
+              "detectedAlphaChannel": "eight_bit_full_range",
+              "detectedOriginalFormat": "png",
+              "entropyOfDistribution": 0.5019727452555951,
+              "pixelsHigh": 1024,
+              "pixelsWide": 576
+            }
+          ]
+        },
+        {
+          "modelName": "texture",
+          "name": "title-5",
+          "identifier": "texture:37564-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+          "assetDataHash": "a49649f0d96444fee337e62e6d00eff8",
+          "assetLocator": "textures/title-5.png",
+          "fileLocator": {
+            "path": "textures/title-5.texture"
+          },
+          "height": 1024,
+          "isExternalAsset": true,
+          "width": 576,
+          "children": [
+            {
+              "modelName": "data_texture_metadata_model",
+              "name": "data_texture_metadata_model0",
+              "assetDataHash": "a49649f0d96444fee337e62e6d00eff8",
+              "colorCount": 3959,
+              "detectedAlphaChannel": "eight_bit_full_range",
+              "detectedOriginalFormat": "png",
+              "entropyOfDistribution": 0.482770645306896,
+              "pixelsHigh": 1024,
+              "pixelsWide": 576
+            }
+          ]
+        },
+        {
+          "modelName": "texture",
+          "name": "title-6",
+          "identifier": "texture:37568-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+          "assetDataHash": "1527d0ee37787ea9e263463bbd72a52a",
+          "assetLocator": "textures/title-6.png",
+          "fileLocator": {
+            "path": "textures/title-6.texture"
+          },
+          "height": 1024,
+          "isExternalAsset": true,
+          "width": 577,
+          "children": [
+            {
+              "modelName": "data_texture_metadata_model",
+              "name": "data_texture_metadata_model0",
+              "assetDataHash": "1527d0ee37787ea9e263463bbd72a52a",
+              "colorCount": 3986,
+              "detectedAlphaChannel": "eight_bit_full_range",
+              "detectedOriginalFormat": "png",
+              "entropyOfDistribution": 0.4841662599007514,
+              "pixelsHigh": 1024,
+              "pixelsWide": 577
+            }
+          ]
+        },
+        {
+          "modelName": "texture",
+          "name": "title-7",
+          "identifier": "texture:37572-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+          "assetDataHash": "ab76140c7faefc13488fb00eb56fa116",
+          "assetLocator": "textures/title-7.png",
+          "fileLocator": {
+            "path": "textures/title-7.texture"
+          },
+          "height": 1024,
+          "isExternalAsset": true,
+          "width": 576,
+          "children": [
+            {
+              "modelName": "data_texture_metadata_model",
+              "name": "data_texture_metadata_model0",
+              "assetDataHash": "ab76140c7faefc13488fb00eb56fa116",
+              "colorCount": 3352,
+              "detectedAlphaChannel": "eight_bit_full_range",
+              "detectedOriginalFormat": "png",
+              "entropyOfDistribution": 0.49619876203973823,
+              "pixelsHigh": 1024,
+              "pixelsWide": 576
+            }
+          ]
+        },
+        {
+          "modelName": "texture",
+          "name": "title-8",
+          "identifier": "texture:37576-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+          "assetDataHash": "7f1823c41cd1aa65d531d0b77f1b167d",
+          "assetLocator": "textures/title-8.png",
+          "fileLocator": {
+            "path": "textures/title-8.texture"
+          },
+          "height": 1024,
+          "isExternalAsset": true,
+          "width": 577,
+          "children": [
+            {
+              "modelName": "data_texture_metadata_model",
+              "name": "data_texture_metadata_model0",
+              "assetDataHash": "7f1823c41cd1aa65d531d0b77f1b167d",
+              "colorCount": 3619,
+              "detectedAlphaChannel": "eight_bit_full_range",
+              "detectedOriginalFormat": "png",
+              "entropyOfDistribution": 0.4699632369189714,
+              "pixelsHigh": 1024,
+              "pixelsWide": 577
+            }
+          ]
+        },
+        {
+          "modelName": "texture",
+          "name": "title-9",
+          "identifier": "texture:37580-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+          "assetDataHash": "76cf5d6c0a6e241ab41389826b4dfa9e",
+          "assetLocator": "textures/title-9.png",
+          "fileLocator": {
+            "path": "textures/title-9.texture"
+          },
+          "height": 1024,
+          "isExternalAsset": true,
+          "width": 575,
+          "children": [
+            {
+              "modelName": "data_texture_metadata_model",
+              "name": "data_texture_metadata_model0",
+              "assetDataHash": "76cf5d6c0a6e241ab41389826b4dfa9e",
+              "colorCount": 3971,
+              "detectedAlphaChannel": "eight_bit_full_range",
+              "detectedOriginalFormat": "png",
+              "entropyOfDistribution": 0.48328403795289643,
+              "pixelsHigh": 1024,
+              "pixelsWide": 575
+            }
+          ]
+        },
+        {
+          "modelName": "texture",
+          "name": "title-10",
+          "identifier": "texture:37584-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+          "assetDataHash": "86ab2db569e753bf26fab73691c1badd",
+          "assetLocator": "textures/title-10.png",
+          "fileLocator": {
+            "path": "textures/title-10.texture"
+          },
+          "height": 1024,
+          "isExternalAsset": true,
+          "width": 576,
+          "children": [
+            {
+              "modelName": "data_texture_metadata_model",
+              "name": "data_texture_metadata_model0",
+              "assetDataHash": "86ab2db569e753bf26fab73691c1badd",
+              "colorCount": 3434,
+              "detectedAlphaChannel": "eight_bit_full_range",
+              "detectedOriginalFormat": "png",
+              "entropyOfDistribution": 0.4996651353373913,
+              "pixelsHigh": 1024,
+              "pixelsWide": 576
+            }
+          ]
+        },
+        {
+          "modelName": "texture",
+          "name": "title-11",
+          "identifier": "texture:37588-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+          "assetDataHash": "1d9310299619cbf70a1c34421a7a006a",
+          "assetLocator": "textures/title-11.png",
+          "fileLocator": {
+            "path": "textures/title-11.texture"
+          },
+          "height": 1024,
+          "isExternalAsset": true,
+          "width": 575,
+          "children": [
+            {
+              "modelName": "data_texture_metadata_model",
+              "name": "data_texture_metadata_model0",
+              "assetDataHash": "1d9310299619cbf70a1c34421a7a006a",
+              "colorCount": 3914,
+              "detectedAlphaChannel": "eight_bit_full_range",
+              "detectedOriginalFormat": "png",
+              "entropyOfDistribution": 0.4806646349506478,
+              "pixelsHigh": 1024,
+              "pixelsWide": 575
+            }
+          ]
+        },
+        {
+          "modelName": "texture",
+          "name": "title-12",
+          "identifier": "texture:37592-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+          "assetDataHash": "72ee6c29c54568eed98927b8a792db30",
+          "assetLocator": "textures/title-12.png",
+          "fileLocator": {
+            "path": "textures/title-12.texture"
+          },
+          "height": 1024,
+          "isExternalAsset": true,
+          "width": 576,
+          "children": [
+            {
+              "modelName": "data_texture_metadata_model",
+              "name": "data_texture_metadata_model0",
+              "assetDataHash": "72ee6c29c54568eed98927b8a792db30",
+              "colorCount": 2502,
+              "detectedAlphaChannel": "eight_bit_full_range",
+              "detectedOriginalFormat": "png",
+              "entropyOfDistribution": 0.33705276707007364,
+              "pixelsHigh": 1024,
+              "pixelsWide": 576
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "modelName": "materials",
+      "identifier": "materials:7161-48a5eac7-3ad7-4a88-86d2-81b622b24430",
+      "children": [
+        {
+          "modelName": "defaultMaterial",
+          "name": "material-hint",
+          "identifier": "defaultMaterial:8502-48a5eac7-3ad7-4a88-86d2-81b622b24430",
+          "diffuseTextureName": "texture:8614-48a5eac7-3ad7-4a88-86d2-81b622b24430",
+          "fileLocator": {
+            "path": "materials/material-hint.material"
+          },
+          "isDiffuseTextureIdentifierEnabled": true,
+          "lightingEnabled": true
+        },
+        {
+          "modelName": "defaultMaterial",
+          "name": "material-scan-frame",
+          "identifier": "defaultMaterial:8761-48a5eac7-3ad7-4a88-86d2-81b622b24430",
+          "diffuseTextureName": "texture:9237-48a5eac7-3ad7-4a88-86d2-81b622b24430",
+          "fileLocator": {
+            "path": "materials/material-scan-frame.material"
+          },
+          "isDiffuseTextureIdentifierEnabled": true,
+          "lightingEnabled": true
+        },
+        {
+          "modelName": "defaultMaterial",
+          "name": "material-bg",
+          "identifier": "defaultMaterial:9859-48a5eac7-3ad7-4a88-86d2-81b622b24430",
+          "diffuseTextureName": "texture:4100-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+          "fileLocator": {
+            "path": "materials/material-bg.material"
+          },
+          "isDiffuseTextureIdentifierEnabled": true,
+          "lightingEnabled": true
+        },
+        {
+          "modelName": "defaultMaterial",
+          "name": "material-hint-2",
+          "identifier": "defaultMaterial:10140-48a5eac7-3ad7-4a88-86d2-81b622b24430",
+          "diffuseTextureName": "texture:10463-48a5eac7-3ad7-4a88-86d2-81b622b24430",
+          "fileLocator": {
+            "path": "materials/material-hint-2.material"
+          },
+          "isDiffuseTextureIdentifierEnabled": true,
+          "lightingEnabled": true
+        },
+        {
+          "modelName": "defaultMaterial",
+          "name": "material-vase",
+          "identifier": "defaultMaterial:1503-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+          "diffuseTextureName": "texture:4120-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+          "fileLocator": {
+            "path": "materials/material-vase.material"
+          },
+          "isDiffuseTextureIdentifierEnabled": true,
+          "lightingEnabled": true
+        },
+        {
+          "modelName": "defaultMaterial",
+          "name": "material-flower",
+          "identifier": "defaultMaterial:5695-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+          "diffuseTextureName": "texture:4104-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+          "fileLocator": {
+            "path": "materials/material-flower.material"
+          },
+          "isDiffuseTextureIdentifierEnabled": true,
+          "lightingEnabled": true
+        },
+        {
+          "modelName": "defaultMaterial",
+          "name": "material-poem",
+          "identifier": "defaultMaterial:6493-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+          "fileLocator": {
+            "path": "materials/material-poem.material"
+          },
+          "isDiffuseTextureIdentifierEnabled": true,
+          "lightingEnabled": true
+        },
+        {
+          "modelName": "defaultMaterial",
+          "name": "material-title",
+          "identifier": "defaultMaterial:37866-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+          "diffuseTextureName": "texture:37548-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+          "fileLocator": {
+            "path": "materials/material-title.material"
+          },
+          "isDiffuseTextureIdentifierEnabled": true,
+          "lightingEnabled": true
+        }
+      ]
+    },
+    {
+      "modelName": "scene",
+      "identifier": "scene:7167-48a5eac7-3ad7-4a88-86d2-81b622b24430",
+      "fileLocator": {
+        "path": "Source-SparkAR.scene"
+      },
+      "children": [
+        {
+          "modelName": "device",
+          "name": "Device",
+          "identifier": "device:7223-48a5eac7-3ad7-4a88-86d2-81b622b24430",
+          "layerIdentifier": "layer0",
+          "children": [
+            {
+              "modelName": "camera",
+              "name": "Camera",
+              "identifier": "camera:7225-48a5eac7-3ad7-4a88-86d2-81b622b24430",
+              "layerIdentifier": "layer0",
+              "children": [
+                {
+                  "modelName": "composition_model",
+                  "name": "canvas0",
+                  "identifier": "composition_model:8169-48a5eac7-3ad7-4a88-86d2-81b622b24430",
+                  "height": 325,
+                  "layerIdentifier": "layer0",
+                  "transform": {
+                    "rx": 0,
+                    "ry": 0,
+                    "rz": 0,
+                    "sx": 0.0015384615398943424,
+                    "sy": 0.0015384615398943424,
+                    "sz": 0.0015384615398943424,
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "width": 150,
+                  "children": [
+                    {
+                      "modelName": "rectangle_model",
+                      "name": "hint",
+                      "identifier": "rectangle_model:8277-48a5eac7-3ad7-4a88-86d2-81b622b24430",
+                      "aspectRatioValue": 4.12,
+                      "height": {
+                        "unit": {
+                          "multiplier": 1,
+                          "unitBase": 10
+                        },
+                        "value": 20
+                      },
+                      "layerIdentifier": "layer0",
+                      "locksAspectRatio": true,
+                      "materialIdentifier": "defaultMaterial:8502-48a5eac7-3ad7-4a88-86d2-81b622b24430",
+                      "pinnedLeft": true,
+                      "pinnedLeftValue": {
+                        "unit": {
+                          "multiplier": 1,
+                          "unitBase": 10
+                        },
+                        "value": 34
+                      },
+                      "pinnedTop": true,
+                      "pinnedTopValue": {
+                        "unit": {
+                          "multiplier": 1,
+                          "unitBase": 10
+                        },
+                        "value": 50
+                      },
+                      "transform": {
+                        "rx": 0,
+                        "ry": 0,
+                        "rz": 0,
+                        "sx": 1,
+                        "sy": 1,
+                        "sz": 1,
+                        "x": 34,
+                        "y": 50,
+                        "z": -0.000030517578125
+                      },
+                      "width": {
+                        "unit": {
+                          "multiplier": 1,
+                          "unitBase": 10
+                        },
+                        "value": 82.4000015258789
+                      }
+                    },
+                    {
+                      "modelName": "rectangle_model",
+                      "name": "scan0",
+                      "identifier": "rectangle_model:1337-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+                      "height": {
+                        "unit": {
+                          "multiplier": 1,
+                          "unitBase": 10
+                        },
+                        "value": 116
+                      },
+                      "layerIdentifier": "layer0",
+                      "materialIdentifier": "defaultMaterial:8761-48a5eac7-3ad7-4a88-86d2-81b622b24430",
+                      "pinnedLeft": true,
+                      "pinnedLeftValue": {
+                        "unit": {
+                          "multiplier": 1,
+                          "unitBase": 10
+                        },
+                        "value": 21
+                      },
+                      "pinnedTop": true,
+                      "pinnedTopValue": {
+                        "unit": {
+                          "multiplier": 1,
+                          "unitBase": 10
+                        },
+                        "value": 104.5
+                      },
+                      "transform": {
+                        "rx": 0,
+                        "ry": 0,
+                        "rz": 0,
+                        "sx": 1,
+                        "sy": 1,
+                        "sz": 1,
+                        "x": 21,
+                        "y": 104.5,
+                        "z": -0.000030517578125
+                      },
+                      "width": {
+                        "unit": {
+                          "multiplier": 1,
+                          "unitBase": 10
+                        },
+                        "value": 108
+                      }
+                    }
+                  ]
+                },
+                {
+                  "modelName": "composition_model",
+                  "name": "canvas1",
+                  "identifier": "composition_model:9693-48a5eac7-3ad7-4a88-86d2-81b622b24430",
+                  "height": 325,
+                  "hidden": true,
+                  "layerIdentifier": "layer0",
+                  "transform": {
+                    "rx": 0,
+                    "ry": 0,
+                    "rz": 0,
+                    "sx": 0.0015384615398943424,
+                    "sy": 0.0015384615398943424,
+                    "sz": 0.0015384615398943424,
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "width": 150,
+                  "children": [
+                    {
+                      "modelName": "rectangle_model",
+                      "name": "bg",
+                      "identifier": "rectangle_model:9855-48a5eac7-3ad7-4a88-86d2-81b622b24430",
+                      "height": {
+                        "unit": {
+                          "multiplier": 1,
+                          "unitBase": 20
+                        },
+                        "value": 100
+                      },
+                      "layerIdentifier": "layer0",
+                      "materialIdentifier": "defaultMaterial:9859-48a5eac7-3ad7-4a88-86d2-81b622b24430",
+                      "pinnedLeft": true,
+                      "pinnedTop": true,
+                      "transform": {
+                        "rx": 0,
+                        "ry": 0,
+                        "rz": 0,
+                        "sx": 1,
+                        "sy": 1,
+                        "sz": 1,
+                        "x": 0,
+                        "y": 0,
+                        "z": -0.000030517578125
+                      },
+                      "usesFlexibleHeight": true,
+                      "usesFlexibleWidth": true,
+                      "width": {
+                        "unit": {
+                          "multiplier": 1,
+                          "unitBase": 20
+                        },
+                        "value": 100
+                      }
+                    },
+                    {
+                      "modelName": "rectangle_model",
+                      "name": "flower",
+                      "identifier": "rectangle_model:5675-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+                      "aspectRatioValue": 0.5625,
+                      "height": {
+                        "unit": {
+                          "multiplier": 1,
+                          "unitBase": 10
+                        },
+                        "value": 266.6666564941406
+                      },
+                      "layerIdentifier": "layer0",
+                      "locksAspectRatio": true,
+                      "materialIdentifier": "defaultMaterial:5695-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+                      "pinnedHorizontalCenterValue": {
+                        "unit": {
+                          "multiplier": 1,
+                          "unitBase": 20
+                        },
+                        "value": 6.250000031589782E-7
+                      },
+                      "pinnedVerticalCenterValue": {
+                        "unit": {
+                          "multiplier": 1,
+                          "unitBase": 20
+                        },
+                        "value": -0.05126275841345992
+                      },
+                      "transform": {
+                        "rx": 1.862644793959589E-8,
+                        "ry": -2.2351741790771484E-8,
+                        "rz": 2.3283064365386963E-10,
+                        "sx": 1,
+                        "sy": 1.0000004768371582,
+                        "sz": 1.000000238418579,
+                        "x": 0,
+                        "y": 29.00006103515625,
+                        "z": -0.00006103516352595761
+                      },
+                      "width": {
+                        "unit": {
+                          "multiplier": 1,
+                          "unitBase": 10
+                        },
+                        "value": 150
+                      },
+                      "children": [
+                        {
+                          "modelName": "rectangle_model",
+                          "name": "vase",
+                          "identifier": "rectangle_model:1972-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+                          "height": {
+                            "unit": {
+                              "multiplier": 1,
+                              "unitBase": 20
+                            },
+                            "value": 100
+                          },
+                          "layerIdentifier": "layer0",
+                          "materialIdentifier": "defaultMaterial:1503-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+                          "pinnedHorizontalCenterValue": {
+                            "unit": {
+                              "multiplier": 1,
+                              "unitBase": 20
+                            },
+                            "value": 6.250000031589782E-7
+                          },
+                          "pinnedVerticalCenterValue": {
+                            "unit": {
+                              "multiplier": 1,
+                              "unitBase": 20
+                            },
+                            "value": -0.05125555676481266
+                          },
+                          "transform": {
+                            "rx": 1.7763570511584873E-15,
+                            "ry": 0,
+                            "rz": -3.1763735522036263E-22,
+                            "sx": 1,
+                            "sy": 1,
+                            "sz": 0.9999999403953552,
+                            "x": 0,
+                            "y": -0.136688232421875,
+                            "z": 0.03996238112449646
+                          },
+                          "usesFlexibleHeight": true,
+                          "usesFlexibleWidth": true,
+                          "width": {
+                            "unit": {
+                              "multiplier": 1,
+                              "unitBase": 20
+                            },
+                            "value": 100
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "modelName": "rectangle_model",
+                      "name": "hint0",
+                      "identifier": "rectangle_model:10305-48a5eac7-3ad7-4a88-86d2-81b622b24430",
+                      "height": {
+                        "unit": {
+                          "multiplier": 1,
+                          "unitBase": 10
+                        },
+                        "value": 25
+                      },
+                      "layerIdentifier": "layer0",
+                      "materialIdentifier": "defaultMaterial:10140-48a5eac7-3ad7-4a88-86d2-81b622b24430",
+                      "pinnedLeft": true,
+                      "pinnedLeftValue": {
+                        "unit": {
+                          "multiplier": 1,
+                          "unitBase": 10
+                        },
+                        "value": 15
+                      },
+                      "pinnedTop": true,
+                      "pinnedTopValue": {
+                        "unit": {
+                          "multiplier": 1,
+                          "unitBase": 10
+                        },
+                        "value": 47
+                      },
+                      "transform": {
+                        "rx": 0,
+                        "ry": 0,
+                        "rz": 0,
+                        "sx": 1,
+                        "sy": 1,
+                        "sz": 1,
+                        "x": 15,
+                        "y": 47,
+                        "z": -0.000030517578125
+                      },
+                      "width": {
+                        "unit": {
+                          "multiplier": 1,
+                          "unitBase": 10
+                        },
+                        "value": 125
+                      }
+                    }
+                  ]
+                },
+                {
+                  "modelName": "composition_model",
+                  "name": "canvas2",
+                  "identifier": "composition_model:6105-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+                  "height": 325,
+                  "hidden": true,
+                  "layerIdentifier": "layer0",
+                  "transform": {
+                    "rx": 0,
+                    "ry": 0,
+                    "rz": 0,
+                    "sx": 0.0015384615398943424,
+                    "sy": 0.0015384615398943424,
+                    "sz": 0.0015384615398943424,
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "width": 150,
+                  "children": [
+                    {
+                      "modelName": "rectangle_model",
+                      "name": "poem",
+                      "identifier": "rectangle_model:6489-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+                      "aspectRatioValue": 0.5625,
+                      "height": {
+                        "unit": {
+                          "multiplier": 1,
+                          "unitBase": 10
+                        },
+                        "value": 266.66667
+                      },
+                      "layerIdentifier": "layer0",
+                      "locksAspectRatio": true,
+                      "materialIdentifier": "defaultMaterial:6493-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+                      "pinnedLeft": true,
+                      "pinnedTop": true,
+                      "pinnedTopValue": {
+                        "unit": {
+                          "multiplier": 1,
+                          "unitBase": 10
+                        },
+                        "value": 30
+                      },
+                      "transform": {
+                        "rx": 0,
+                        "ry": -3.725290298461914E-9,
+                        "rz": 0,
+                        "sx": 1,
+                        "sy": 1.0000001192092896,
+                        "sz": 1.0000001192092896,
+                        "x": 0,
+                        "y": 30,
+                        "z": -0.00006103516352595761
+                      },
+                      "width": {
+                        "unit": {
+                          "multiplier": 1,
+                          "unitBase": 10
+                        },
+                        "value": 150.000001875
+                      }
+                    },
+                    {
+                      "modelName": "rectangle_model",
+                      "name": "title",
+                      "identifier": "rectangle_model:37312-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+                      "aspectRatioValue": 0.5625,
+                      "height": {
+                        "unit": {
+                          "multiplier": 1,
+                          "unitBase": 10
+                        },
+                        "value": 266.66667
+                      },
+                      "layerIdentifier": "layer0",
+                      "locksAspectRatio": true,
+                      "materialIdentifier": "defaultMaterial:37866-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+                      "pinnedLeft": true,
+                      "pinnedTop": true,
+                      "pinnedTopValue": {
+                        "unit": {
+                          "multiplier": 1,
+                          "unitBase": 10
+                        },
+                        "value": 30
+                      },
+                      "transform": {
+                        "rx": 0,
+                        "ry": -3.725290298461914E-9,
+                        "rz": 0,
+                        "sx": 1,
+                        "sy": 1.0000001192092896,
+                        "sz": 1.0000001192092896,
+                        "x": 0,
+                        "y": 30,
+                        "z": -0.00006103516352595761
+                      },
+                      "width": {
+                        "unit": {
+                          "multiplier": 1,
+                          "unitBase": 10
+                        },
+                        "value": 150.000001875
+                      }
+                    }
+                  ]
+                },
+                {
+                  "modelName": "focalDistance",
+                  "name": "Focal Distance",
+                  "identifier": "focalDistance:7227-48a5eac7-3ad7-4a88-86d2-81b622b24430",
+                  "layerIdentifier": "layer0",
+                  "transform": {
+                    "rx": 0,
+                    "ry": 0,
+                    "rz": 0,
+                    "sx": 1,
+                    "sy": 1,
+                    "sz": 1,
+                    "x": 0,
+                    "y": 0,
+                    "z": -0.5361266732215881
+                  },
+                  "children": [
+                    {
+                      "modelName": "ambient_light_source_model",
+                      "name": "ambientLight0",
+                      "identifier": "ambient_light_source_model:7233-48a5eac7-3ad7-4a88-86d2-81b622b24430",
+                      "layerIdentifier": "layer0"
+                    },
+                    {
+                      "modelName": "directional_light_source_model",
+                      "name": "directionalLight0",
+                      "identifier": "directional_light_source_model:7235-48a5eac7-3ad7-4a88-86d2-81b622b24430",
+                      "intensity": 0.800000011920929,
+                      "layerIdentifier": "layer0",
+                      "transform": {
+                        "rx": -0.7853981633974483,
+                        "ry": 0.08726646259971647,
+                        "rz": 0,
+                        "sx": 1,
+                        "sy": 1,
+                        "sz": 1,
+                        "x": 0.03,
+                        "y": 0.25,
+                        "z": 0.3
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "modelName": "microphone_model",
+              "name": "Microphone",
+              "identifier": "microphone_model:7229-48a5eac7-3ad7-4a88-86d2-81b622b24430",
+              "layerIdentifier": "layer0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "modelName": "layers",
+      "identifier": "layers:7169-48a5eac7-3ad7-4a88-86d2-81b622b24430",
+      "children": [
+        {
+          "modelName": "layer",
+          "name": "layer0",
+          "identifier": "layer:7231-48a5eac7-3ad7-4a88-86d2-81b622b24430",
+          "color": "0xff8c72ca"
+        }
+      ]
+    },
+    {
+      "modelName": "scripts_model",
+      "identifier": "scripts_model:7185-48a5eac7-3ad7-4a88-86d2-81b622b24430",
+      "children": [
+        {
+          "modelName": "script_bridging_variables_model",
+          "identifier": "script_bridging_variables_model:7187-48a5eac7-3ad7-4a88-86d2-81b622b24430"
+        },
+        {
+          "modelName": "script",
+          "name": "script0",
+          "identifier": "script:10515-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+          "assetDataHash": "4be66fe85ea270feed16d9b361a233ee",
+          "assetLocator": "scripts/script.js",
+          "isExternalAsset": true
+        }
+      ]
+    },
+    {
+      "modelName": "bundled_packages_model",
+      "identifier": "bundled_packages_model:7193-48a5eac7-3ad7-4a88-86d2-81b622b24430"
+    },
+    {
+      "modelName": "exportConfig",
+      "identifier": "exportConfig:7197-48a5eac7-3ad7-4a88-86d2-81b622b24430"
+    },
+    {
+      "modelName": "manifest",
+      "identifier": "manifest:7199-48a5eac7-3ad7-4a88-86d2-81b622b24430",
+      "additionalEnabledChanges": null,
+      "assistantAppIDs": [
+        "2320137961422959"
+      ],
+      "assistantClientToken": null,
+      "assistantIncludeInDevelopmentArtifacts": false,
+      "assistantQuickTestEnabled": true,
+      "assistantStorageEnabled": true,
+      "assistantUseWit": false,
+      "audioEnableAudioGraphComponents": false,
+      "audioEnableAudioTransformationsApi": false,
+      "bodyTracking3DMinVersion": 181,
+      "bodyTrackingMinVersion": 101,
+      "cameraControlDefaultCameraFacing": "unspecified",
+      "dynamicTextAltitude": false,
+      "dynamicTextDate": false,
+      "dynamicTextLocation": false,
+      "dynamicTextTranslation": false,
+      "dynamicTextWeather": false,
+      "effectDisablesAudioPreview": false,
+      "effectDisablesMicrophone": false,
+      "effectForceAsyncScripting": false,
+      "effectForcesSynchronousScripting": false,
+      "effectHasAmbientAudio": false,
+      "effectHasAudioGraphApi": false,
+      "effectHasTriggeredAudio": false,
+      "effectImageAntiAliasingEdgeSharpness": 0.5,
+      "effectImageAntiAliasingEdgeThreshold": 0.5,
+      "effectImageAntiAliasingTechnique": "fxaa",
+      "effectPbrClearcoatMaterialExtension": false,
+      "effectPbrIorMaterialExtension": false,
+      "effectPbrSheenMaterialExtension": false,
+      "effectPbrSpecularMaterialExtension": false,
+      "effectPbrTransmissionMaterialExtension": false,
+      "effectUses3DModelAssets": false,
+      "effectUses4KTextures": false,
+      "effectUsesAheadOfTimeShaders": false,
+      "effectUsesAnimationPlaybackController": false,
+      "effectUsesAnimationScriptingModule": true,
+      "effectUsesAppLauncher": false,
+      "effectUsesAssistant": false,
+      "effectUsesAudio": false,
+      "effectUsesAudioLegacyMicFork": false,
+      "effectUsesAudioMixer": false,
+      "effectUsesAudioSpatialEmitter": false,
+      "effectUsesAudioTimestamps": false,
+      "effectUsesAugmentAdjacency": false,
+      "effectUsesAugmentControl": false,
+      "effectUsesAugmentGrouping": false,
+      "effectUsesAugmentSharableConfig": false,
+      "effectUsesAugmentSizeControl": false,
+      "effectUsesAutomaticAlphaSort": false,
+      "effectUsesAutomaticInstructions": true,
+      "effectUsesBlockModulesConfigExtras": false,
+      "effectUsesBlocks": false,
+      "effectUsesBlocksDownloadable": false,
+      "effectUsesBlocksScripting": false,
+      "effectUsesBodyTracking": false,
+      "effectUsesBodyTracking2DKeyPoints": false,
+      "effectUsesBoundingBoxScripting": false,
+      "effectUsesBoundingBoxUtilities": false,
+      "effectUsesCameraControl": false,
+      "effectUsesCameraInfoScriptingModule": false,
+      "effectUsesCameraShare": false,
+      "effectUsesComponentEvaluation": false,
+      "effectUsesComposedLocally": false,
+      "effectUsesComposedMaterial": false,
+      "effectUsesControllers": false,
+      "effectUsesCustomEngineSDK": false,
+      "effectUsesCustomFonts": false,
+      "effectUsesCustomMaterial": false,
+      "effectUsesCustomMaterialAndShaderCodeAsset": false,
+      "effectUsesCustomPipeline": false,
+      "effectUsesDSP": false,
+      "effectUsesDate": false,
+      "effectUsesDebugPatch": false,
+      "effectUsesDeltaTime": true,
+      "effectUsesDepth": false,
+      "effectUsesDepthData": false,
+      "effectUsesDepthShaderRead": false,
+      "effectUsesDeviceMotion": false,
+      "effectUsesDiagnosticsScriptingModule": true,
+      "effectUsesDirectionalLightEstimation": false,
+      "effectUsesDspAudioAnalyzer": false,
+      "effectUsesDspBitCrusher": false,
+      "effectUsesDspCompressor": false,
+      "effectUsesDspDelay": false,
+      "effectUsesDspDenoiser": false,
+      "effectUsesDspDistortion": false,
+      "effectUsesDspEnergyMeter": false,
+      "effectUsesDspModulator": false,
+      "effectUsesDspParametricEqualizer": false,
+      "effectUsesDspPitchShifter": false,
+      "effectUsesDspReverb": false,
+      "effectUsesDspVocoder": false,
+      "effectUsesDynamicCapabilities": false,
+      "effectUsesDynamicInstructions": false,
+      "effectUsesDynamicScriptProperties": false,
+      "effectUsesDynamicText": false,
+      "effectUsesEmbeddedVideo": false,
+      "effectUsesEnvironmentTexturePatch": false,
+      "effectUsesExperienceControl": false,
+      "effectUsesExternalBlocks": false,
+      "effectUsesExternalFonts": false,
+      "effectUsesExternalMusicSelection": false,
+      "effectUsesExternalTextures": false,
+      "effectUsesExternalTexturesAudio": false,
+      "effectUsesExternalVideo": false,
+      "effectUsesExternalVideoStream": false,
+      "effectUsesFBA": false,
+      "effectUsesFaceDistortion": false,
+      "effectUsesFaceExpression52Blendshapes": false,
+      "effectUsesFaceExpressionExperimental": false,
+      "effectUsesFaceExpressionFitting": false,
+      "effectUsesFaceExtraction": false,
+      "effectUsesFaceTracker": false,
+      "effectUsesFaceTracker3D": false,
+      "effectUsesFaceTracker96": false,
+      "effectUsesFaceTrackingScripting2D": false,
+      "effectUsesFaceTrueScale": false,
+      "effectUsesFaceWave": false,
+      "effectUsesFacialExpressionRecognition": false,
+      "effectUsesFacialGestureRecognition": false,
+      "effectUsesFieldOfView": false,
+      "effectUsesFingerTracking": false,
+      "effectUsesFonts": false,
+      "effectUsesFormFactor": false,
+      "effectUsesFrameBrightness": false,
+      "effectUsesGalleryPicker": false,
+      "effectUsesGenerativeAI": false,
+      "effectUsesGenericML": false,
+      "effectUsesGlobalTransform": false,
+      "effectUsesGlslEs300Features": false,
+      "effectUsesGltfPbrShader": false,
+      "effectUsesGraphQL": false,
+      "effectUsesHairSegmentation": false,
+      "effectUsesHalfFloatRenderPass": false,
+      "effectUsesHandGestureKeypoints": false,
+      "effectUsesHandTracker": false,
+      "effectUsesHapticFeedback": false,
+      "effectUsesHeadsetInfo": false,
+      "effectUsesHmdNetworkingAPI": false,
+      "effectUsesI18n": false,
+      "effectUsesIdTracker": false,
+      "effectUsesImageAntiAliasing": false,
+      "effectUsesImageAssets": false,
+      "effectUsesImageBasedLighting": false,
+      "effectUsesInstruction": false,
+      "effectUsesIntent": false,
+      "effectUsesInterEffectLinking": false,
+      "effectUsesInternalScriptingAPI": false,
+      "effectUsesIrisTracking": false,
+      "effectUsesJavaScript": true,
+      "effectUsesJavaScriptRuntimeForPatches": false,
+      "effectUsesJavaScriptScripting": true,
+      "effectUsesJavaScriptShaders": false,
+      "effectUsesJavascriptToPatchesBridging": false,
+      "effectUsesLayers": false,
+      "effectUsesLocale": false,
+      "effectUsesLocation": false,
+      "effectUsesLocationAirportData": false,
+      "effectUsesMaterialsScriptingModule": true,
+      "effectUsesMaxParticipants": false,
+      "effectUsesMicrophone": false,
+      "effectUsesMicrophoneV2": false,
+      "effectUsesMovingTargetTracking": false,
+      "effectUsesMultipeer": false,
+      "effectUsesMultipeerMessaging": false,
+      "effectUsesMultiplane": false,
+      "effectUsesMultiplayer": false,
+      "effectUsesMultipleRenderTargets": false,
+      "effectUsesMusic": false,
+      "effectUsesNativeUIControl": false,
+      "effectUsesNativeUIControlEditableText": false,
+      "effectUsesNativeUIControlEditableTextExitCB": false,
+      "effectUsesNativeUIControlPicker": false,
+      "effectUsesNativeUIControlPickerRemoteImages": false,
+      "effectUsesNativeUIControlRawTextInput": false,
+      "effectUsesNativeUIControlSlider": false,
+      "effectUsesNativeUIControlSliderTypeColor": false,
+      "effectUsesNetworking": false,
+      "effectUsesNetworkingScriptAPI": false,
+      "effectUsesObjectCapture": false,
+      "effectUsesObjectTracking": false,
+      "effectUsesOpusCodec": false,
+      "effectUsesOverlayOutput": false,
+      "effectUsesPBRMaterial": false,
+      "effectUsesParticipant": false,
+      "effectUsesParticleSystem": false,
+      "effectUsesPeerOutput": false,
+      "effectUsesPeerVideoStream": false,
+      "effectUsesPermissions": false,
+      "effectUsesPersistence": false,
+      "effectUsesPersistenceCaptureScope": false,
+      "effectUsesPersistenceSharedScope": false,
+      "effectUsesPersonalization": false,
+      "effectUsesPhysics": false,
+      "effectUsesPhysicsSync": false,
+      "effectUsesPlaneNormal": false,
+      "effectUsesPlaneTrackerTrackTextureAPI": false,
+      "effectUsesPlatformEvents": false,
+      "effectUsesPlatformEventsDocumentScoped": false,
+      "effectUsesPlatformFunctions": false,
+      "effectUsesPlatformTextures": false,
+      "effectUsesPlaybackInfo": false,
+      "effectUsesPortalPose": false,
+      "effectUsesPreciseLocation": false,
+      "effectUsesPrefabScriptingModule": false,
+      "effectUsesPreviewCaptureOutputs": false,
+      "effectUsesQPL": false,
+      "effectUsesRGBCameraTexture": false,
+      "effectUsesRTRMapping": false,
+      "effectUsesRandomScriptingModule": false,
+      "effectUsesRawWristbandData": false,
+      "effectUsesReactiveScriptingModule": false,
+      "effectUsesRealScaleEstimation": false,
+      "effectUsesRealScaleEstimationWithFallback": false,
+      "effectUsesRecognition": false,
+      "effectUsesRecognitionTracking": false,
+      "effectUsesRecordedSignalsForSamplers": false,
+      "effectUsesRemote3DModels": false,
+      "effectUsesRenderPasses": false,
+      "effectUsesRenderSettingsHigh": false,
+      "effectUsesRingTryOn": false,
+      "effectUsesRotateVector": false,
+      "effectUsesSceneDepth": false,
+      "effectUsesSceneDepthWithFallback": false,
+      "effectUsesSceneObjectTags": false,
+      "effectUsesSceneRenderPassResolutionAspectRatio": false,
+      "effectUsesSceneScriptingModule": true,
+      "effectUsesScriptAnalytics": false,
+      "effectUsesScriptingDynamicInstantiation": false,
+      "effectUsesSegmentation": false,
+      "effectUsesSegmentationType": false,
+      "effectUsesShaderCode": false,
+      "effectUsesShadows": false,
+      "effectUsesSkinSegmentation": false,
+      "effectUsesSkinSmoothing": false,
+      "effectUsesSpaceSetup": false,
+      "effectUsesSpatialGesture": false,
+      "effectUsesSpatialHandTracking": false,
+      "effectUsesSplitScreen": false,
+      "effectUsesStaticTargetTracking": false,
+      "effectUsesStyleTransfer": false,
+      "effectUsesSupportedOrientations": false,
+      "effectUsesSvg": false,
+      "effectUsesSyncDomApis": true,
+      "effectUsesTextAssets": false,
+      "effectUsesTextCaptions": false,
+      "effectUsesTextExtrusion": false,
+      "effectUsesTexturesScriptingModule": true,
+      "effectUsesTimeScriptingModule": true,
+      "effectUsesToasterTracking": false,
+      "effectUsesTouchGestures": true,
+      "effectUsesTwoDimensionalText": false,
+      "effectUsesTypeScript": false,
+      "effectUsesUiCore": false,
+      "effectUsesUiPlanarBackend": false,
+      "effectUsesUnifiedTargetTracking": false,
+      "effectUsesUnitsScriptingModule": false,
+      "effectUsesVariadicMath": false,
+      "effectUsesVertexTextureFetch": false,
+      "effectUsesVisualShaders": false,
+      "effectUsesVisualShadersSdf": false,
+      "effectUsesVoiceInteraction": false,
+      "effectUsesWarpPostProcessor": false,
+      "effectUsesWarpPreProcessor": false,
+      "effectUsesWarpSmoothing": true,
+      "effectUsesWeather": false,
+      "effectUsesWebPTexture": false,
+      "effectUsesWebsockets": false,
+      "effectUsesWorldTracker": false,
+      "effectUsesWorldTrackerEnvironmentLight": false,
+      "effectUsesWorldTrackerJSAPI": false,
+      "effectUsesWorldTrackingWorldMap": false,
+      "effectUsesWorldUnderstanding": false,
+      "effectUsesWorldUnderstandingV2": false,
+      "effectUsesWriteableSignalSource": false,
+      "engineSDKVersion": "187.0",
+      "externalTexturesWhitelistedDomains": null,
+      "faceExpressionFittingMinVersion": 15,
+      "faceExpressionFittingRTRRetargetingMinVersion": 1,
+      "faceTrackerIsEnabled": false,
+      "faceTrackerMaxFaces": 1,
+      "faceTrackerMinVersion": 10,
+      "facewaveMinVersion": 1,
+      "hairSegmentationMinVersion": 1,
+      "handTrackerMaxHands": 2,
+      "handTrackerMinVersion": 3,
+      "instructionFindAnImageBackCameraEnabled": true,
+      "instructionFindAnImageFrontCameraEnabled": true,
+      "instructionFindBodyBackCameraEnabled": true,
+      "instructionFindBodyFrontCameraEnabled": true,
+      "instructionFindFaceBackCameraEnabled": true,
+      "instructionFindFaceFrontCameraEnabled": true,
+      "instructionFindHandBackCameraEnabled": true,
+      "instructionFindHandFrontCameraEnabled": true,
+      "instructionFindPersonBackCameraEnabled": true,
+      "instructionFindPersonFrontCameraEnabled": true,
+      "instructionTokens": null,
+      "interEffectLinkingEffectIds": null,
+      "internalScriptingAPIDelay": false,
+      "internalScriptingAPIDeprecatedParticles": false,
+      "internalScriptingAPIEventStream": false,
+      "internalScriptingAPIExperimentalCameraInfo": false,
+      "internalScriptingAPIGlobalTransform": false,
+      "manuallyEnabledItemsIds": [
+        "touchGesturesSupportsTap"
+      ],
+      "maxParticipantsCount": 0,
+      "multiclassSegmentationMinVersion": 3004,
+      "objectTrackerMaxObjects": 1,
+      "optionalCapabilityItemIds": [],
+      "persistenceWhitelistedKeys": null,
+      "personalizationSpecialOccasion": "none",
+      "platformUsage": {},
+      "recognitionMinVersion": 2,
+      "ringTryOnMinVersion": 1,
+      "sceneDepthMinVersion": 1,
+      "sceneDepthWithFallbackMinVersion": 1,
+      "segmentationMinVersion": 2,
+      "shaderPostProcessor": false,
+      "shaderPreProcessor": false,
+      "supportsLandscape": false,
+      "supportsPortrait": true,
+      "supportsWildcardDomainsWhitelisting": false,
+      "touchGesturesSupportsLongPress": false,
+      "touchGesturesSupportsPan": false,
+      "touchGesturesSupportsPinch": false,
+      "touchGesturesSupportsRawTouch": false,
+      "touchGesturesSupportsRotate": false,
+      "touchGesturesSupportsTap": true,
+      "whitelistedDomains": null,
+      "witAppId": null,
+      "witClientToken": null,
+      "worldTrackerBackCameraEnabled": true,
+      "worldTrackerFrontCameraEnabled": true,
+      "worldTrackerMode": "plane",
+      "worldTrackerUsesFaceTracker": false
+    },
+    {
+      "modelName": "target",
+      "identifier": "target:7209-48a5eac7-3ad7-4a88-86d2-81b622b24430",
+      "targetPlatforms": [
+        "instagram"
+      ],
+      "targetUseCases": [
+        "STORIES"
+      ]
+    },
+    {
+      "modelName": "scripting_config_model",
+      "identifier": "scripting_config_model:7217-48a5eac7-3ad7-4a88-86d2-81b622b24430",
+      "forceStrictModeCompilation": true
+    },
+    {
+      "modelName": "graphicsConfig",
+      "identifier": "graphicsConfig:7237-48a5eac7-3ad7-4a88-86d2-81b622b24430"
+    },
+    {
+      "modelName": "videos_model",
+      "identifier": "videos_model:7334-48a5eac7-3ad7-4a88-86d2-81b622b24430"
+    },
+    {
+      "modelName": "input_mappings_model",
+      "identifier": "input_mappings_model:7338-48a5eac7-3ad7-4a88-86d2-81b622b24430"
+    }
+  ]
+}

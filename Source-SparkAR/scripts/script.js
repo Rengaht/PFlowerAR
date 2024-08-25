@@ -53,6 +53,7 @@ const animation_blink = Animation.animate(timeDriver_blink, sampler_blink);
 
 var flower_tex;
 var poem_tex;
+var title_tex;
 
 function fadeAll(arr, delay, fadeout, callback){
 	if(Array.isArray(arr)){
@@ -112,6 +113,7 @@ async function randomResult(){
 	
 	flower_tex=await Textures.findFirst(`Flower_0${index_flower+1}`);
 	poem_tex= await Textures.findFirst(`poem-${index_poem+1}`);
+	title_tex= await Textures.findFirst(`title-${index_poem+1}`);
 	
 	
 }
@@ -120,7 +122,7 @@ async function randomResult(){
 ;(async function () {  // Enables async/await in JS [part 1]
 
   // To access scene objects
-	const [can0, can1, can2, hint, scan, bg, hint0,vase, flower, poem] = await Promise.all([
+	const [can0, can1, can2, hint, scan, bg, hint0,vase, flower, poem, poem_title] = await Promise.all([
     	Scene.root.findFirst('canvas0'),
 		Scene.root.findFirst('canvas1'),
 		Scene.root.findFirst('canvas2'),
@@ -139,6 +141,7 @@ async function randomResult(){
 		//Scene.root.findFirst('poem'),
 		Materials.findFirst('material-flower'),
 		Materials.findFirst('material-poem'),
+		Materials.findFirst('material-title'),
   	]);
 	
 	
@@ -154,6 +157,7 @@ async function randomResult(){
 	let res=await randomResult();
 	flower.texture=flower_tex;
 	poem.texture=poem_tex;
+	poem_title.texture=title_tex;
 	
 	fadeAll([hint, scan], 100, false, ()=>{
 		blink(hint);
@@ -187,7 +191,7 @@ async function randomResult(){
 					can1.hidden=true;
 					can2.hidden=false;
 				
-					fadeAll([poem],100);
+					fadeAll([poem, title],200);
 				
 					state=2;
 				
@@ -203,6 +207,7 @@ async function randomResult(){
 					randomResult().then(()=>{
 						flower.texture=flower_tex;
 						poem.texture=poem_tex;
+						poem_title.texture=title_tex;
 	
 						fadeAll([hint, scan], 100, false, ()=>{
 							blink(hint);
