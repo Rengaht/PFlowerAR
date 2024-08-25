@@ -3,7 +3,7 @@
   "name": "Effect",
   "identifier": "document:7153-48a5eac7-3ad7-4a88-86d2-81b622b24430",
   "id": "715148a5eac73ad74a8886d281b622b24430",
-  "revision": "2784b97cc5c41dee4633a13be03bfcef069f",
+  "revision": "35713b97cc5c41dee4633a13be03bfcef069f",
   "version": {
     "dev": 0,
     "patch": 0,
@@ -73,43 +73,76 @@
           "sectionFileLocation": "textures/Vase_01-2.texture"
         },
         {
-          "sectionFileLocation": "textures/poem-1.texture"
+          "sectionFileLocation": "textures/poem-1-2.texture"
         },
         {
-          "sectionFileLocation": "textures/poem-2.texture"
+          "sectionFileLocation": "textures/poem-2-2.texture"
         },
         {
-          "sectionFileLocation": "textures/poem-3.texture"
+          "sectionFileLocation": "textures/poem-3-2.texture"
         },
         {
-          "sectionFileLocation": "textures/poem-4.texture"
+          "sectionFileLocation": "textures/poem-4-2.texture"
         },
         {
-          "sectionFileLocation": "textures/poem-5.texture"
+          "sectionFileLocation": "textures/poem-5-2.texture"
         },
         {
-          "sectionFileLocation": "textures/poem-6.texture"
+          "sectionFileLocation": "textures/poem-6-2.texture"
         },
         {
-          "sectionFileLocation": "textures/poem-7.texture"
+          "sectionFileLocation": "textures/poem-7-2.texture"
         },
         {
-          "sectionFileLocation": "textures/poem-8.texture"
+          "sectionFileLocation": "textures/poem-8-2.texture"
         },
         {
-          "sectionFileLocation": "textures/poem-9.texture"
+          "sectionFileLocation": "textures/poem-9-2.texture"
         },
         {
-          "sectionFileLocation": "textures/poem-10.texture"
+          "sectionFileLocation": "textures/poem-10-2.texture"
         },
         {
-          "sectionFileLocation": "textures/poem-11.texture"
+          "sectionFileLocation": "textures/poem-11-2.texture"
         },
         {
-          "sectionFileLocation": "textures/poem-12.texture"
+          "sectionFileLocation": "textures/poem-12-2.texture"
         },
         {
-          "sectionFileLocation": "textures/poem-1(1).texture"
+          "sectionFileLocation": "textures/title-1.texture"
+        },
+        {
+          "sectionFileLocation": "textures/title-2.texture"
+        },
+        {
+          "sectionFileLocation": "textures/title-3.texture"
+        },
+        {
+          "sectionFileLocation": "textures/title-4.texture"
+        },
+        {
+          "sectionFileLocation": "textures/title-5.texture"
+        },
+        {
+          "sectionFileLocation": "textures/title-6.texture"
+        },
+        {
+          "sectionFileLocation": "textures/title-7.texture"
+        },
+        {
+          "sectionFileLocation": "textures/title-8.texture"
+        },
+        {
+          "sectionFileLocation": "textures/title-9.texture"
+        },
+        {
+          "sectionFileLocation": "textures/title-10.texture"
+        },
+        {
+          "sectionFileLocation": "textures/title-11.texture"
+        },
+        {
+          "sectionFileLocation": "textures/title-12.texture"
         }
       ]
     },
@@ -137,6 +170,9 @@
         },
         {
           "sectionFileLocation": "materials/material-poem.material"
+        },
+        {
+          "sectionFileLocation": "materials/material-title.material"
         }
       ]
     },
