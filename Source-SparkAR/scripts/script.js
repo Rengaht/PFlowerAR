@@ -20,9 +20,11 @@ const Scene = require('Scene');
 const TouchGestures = require('TouchGestures');
 const Textures = require('Textures');
 const Materials = require('Materials');
-const DeviceMotion = require('DeviceMotion');
-const CameraInfo = require('CameraInfo');
-const Reactive=require('Reactive');
+const Patches = require('Patches');
+
+//const DeviceMotion = require('DeviceMotion');
+//const CameraInfo = require('CameraInfo');
+//const Reactive=require('Reactive');
 
 const Time = require('Time');
 const Animation = require('Animation');
@@ -69,25 +71,7 @@ var pedal_tex=[];
 
 var pedal_block=[];
 
-async function resizeRect(name, width, aspectRatio){
-	
-	const rectangle=Scene.root.findFirst(name);
-	
-	const screenWidth = CameraInfo.previewSize.x;
-	const screenHeight = CameraInfo.previewSize.y;
-	
-	const rectWidth = Reactive.val(screenWidth.pinLastValue()*width);
-	const rectHeight = rectWidth.div(aspectRatio);
 
-	// Check if height exceeds screen height, adjust accordingly
-	const adjustedWidth = rectHeight.le(screenHeight).ifThenElse(rectWidth, screenHeight.mul(aspectRatio));
-	const adjustedHeight = adjustedWidth.div(aspectRatio);
-
-	// Apply the calculated width and height to the rectangle
-	rectangle.width = screenWidth;
-	rectangle.height = screenHeight;
-	
-}
 
 function fadeAll(arr, delay, fadeout, callback){
 	if(Array.isArray(arr)){
@@ -184,12 +168,12 @@ async function randomResult(){
 }
 function runPedal(callback){
 		
-	const timeDriver1 = Animation.timeDriver({ durationMilliseconds: fadeDuration, loopCount: 1, mirror: false });
+	const timeDriver1 = Animation.timeDriver({ durationMilliseconds: fadeDuration*1.5, loopCount: 1, mirror: false });
     const sampler1 = Animation.samplers.easeOutQuad(0, Boundary*2);
     const animation1 = Animation.animate(timeDriver1, sampler1);
 
-	const timeDriver2 = Animation.timeDriver({ durationMilliseconds: fadeDuration, loopCount: 1, mirror: false });
-    const sampler2 = Animation.samplers.easeOutQuad(Boundary*2, Boundary*4);
+	const timeDriver2 = Animation.timeDriver({ durationMilliseconds: fadeDuration*1.5, loopCount: 1, mirror: false });
+    const sampler2 = Animation.samplers.easeOutQuad(Boundary*2, Boundary*4.5);
     const animation2 = Animation.animate(timeDriver2, sampler2);
 
     for(var i=0;i<COUNT_PEDAL;++i){
@@ -219,7 +203,7 @@ function runPedal(callback){
 			
 			timeDriver2.start();
 			if(typeof callback=='function') callback();
-		},fadeDuration*.5);
+		},fadeDuration*1);
 	});
 	
 	timeDriver1.start();
@@ -272,13 +256,7 @@ async function createPedals(can, mat){
 
 ;(async function () {  // Enables async/await in JS [part 1]
 	
-	
-	const resize=await Promise.all([
-		//resizeRect('bg', 0.7, 260/50),
-		//resizeRect('scan0',0.7, 557/626),
-		resizeRect('bg', 0.7, 1),
-		resizeRect('scan0',0.7, 1),
-	]);
+
   // To access scene objects
 	const [can0, can1, can2, group,  hint, scan, bg, hint0,vase, flower, poem, poem_title] = await Promise.all([
     	Scene.root.findFirst('canvas0'),
@@ -404,41 +382,25 @@ async function createPedals(can, mat){
   	});
 
 	
-	// rotate
-	// Set thresholds for detecting rapid rotation changes (tune these values)
-	const rotationThreshold = 0.5; // Adjust based on sensitivity needs
-	const timeInterval = 2; // Time interval in milliseconds
-
-	// Access the device's rotation data
-	const deviceTransform = DeviceMotion.worldTransform;
-
-	// Calculate the rate of change in rotation (magnitude of the rotation vector's derivative)
-	const rotationChangeX = deviceTransform.rotationX.history(timeInterval).frame(-1);
-	const rotationChangeY = deviceTransform.rotationX.history(timeInterval).frame(-1);
-	const rotationChangeZ = deviceTransform.rotationX.history(timeInterval).frame(-1);
-	
-	//Diagnostics.log('rotation'+rotationChangeX+' '+rotationChangeY+' '+rotationChangeZ);
-
-	// Calculate the magnitude of the rotation change
-/*	const rotationChangeMagnitude = Reactive.sqrt(
-    	rotationChangeX.pow(2).add(
-        	rotationChangeY.pow(2).add(
-            	rotationChangeZ.pow(2)
-        	)
-    	)
-	);
-
-	// Detect if the magnitude of the rotation change exceeds the threshold
-	const shakeLikeMovementDetected = rotationChangeMagnitude.gt(rotationThreshold);
-
-	// Subscribe to the shake-like movement detection event
-	shakeLikeMovementDetected.monitor().subscribe(function(event) {
-    	if (event.newValue) {
-        	Diagnostics.log('Shake-like movement detected!');
-        	// Add any action you want to perform when a shake-like movement is detected
-    	}
+	// listen to rotate
+	 const onRotate = await Patches.outputs.getBoolean('onRotate');
+	onRotate.monitor().subscribe(()=>{
+		
+		Diagnostics.log('onRotate!');
+		
+		if(state==1){
+				fadeAll([bg, vase, flower, hint0], 0, true, ()=>{
+					can1.hidden=true;
+					can2.hidden=false;
+					
+					runPedal();
+					fadeAll([poem, poem_title],fadeDuration);				
+					
+					state=2;
+				
+				});
+		}
 	});
-*/
 	
 	
 })(); // Enables async/await in JS [part 2]

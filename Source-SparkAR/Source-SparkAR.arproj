@@ -3,7 +3,7 @@
   "name": "Effect",
   "identifier": "document:7153-48a5eac7-3ad7-4a88-86d2-81b622b24430",
   "id": "715148a5eac73ad74a8886d281b622b24430",
-  "revision": "62881f28bc87924724278b4284fde2607ff46",
+  "revision": "115730f28bc87924724278b4284fde2607ff46",
   "version": {
     "dev": 0,
     "patch": 0,
@@ -286,13 +286,24 @@
       "children": [
         {
           "modelName": "script_bridging_variables_model",
-          "identifier": "script_bridging_variables_model:7187-48a5eac7-3ad7-4a88-86d2-81b622b24430"
+          "identifier": "script_bridging_variables_model:7187-48a5eac7-3ad7-4a88-86d2-81b622b24430",
+          "scriptVariables": [
+            "script_patch_write_variable_model:68618-f28bc879-2472-4278-b428-4fde2607ff46"
+          ],
+          "children": [
+            {
+              "modelName": "script_patch_write_variable_model",
+              "name": "onRotate",
+              "identifier": "script_patch_write_variable_model:68618-f28bc879-2472-4278-b428-4fde2607ff46",
+              "type": "boolean"
+            }
+          ]
         },
         {
           "modelName": "script",
           "name": "script0",
           "identifier": "script:10515-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
-          "assetDataHash": "f3395f542565a94bab31c4885435afde",
+          "assetDataHash": "921e6dfa5f9359ec0b82e67bee0056c1",
           "assetLocator": "scripts/script.js",
           "isExternalAsset": true
         }
@@ -371,7 +382,7 @@
       "effectUsesBoundingBoxScripting": false,
       "effectUsesBoundingBoxUtilities": false,
       "effectUsesCameraControl": false,
-      "effectUsesCameraInfoScriptingModule": true,
+      "effectUsesCameraInfoScriptingModule": false,
       "effectUsesCameraShare": false,
       "effectUsesComponentEvaluation": true,
       "effectUsesComposedLocally": false,
@@ -465,7 +476,7 @@
       "effectUsesJavaScriptRuntimeForPatches": false,
       "effectUsesJavaScriptScripting": true,
       "effectUsesJavaScriptShaders": false,
-      "effectUsesJavascriptToPatchesBridging": false,
+      "effectUsesJavascriptToPatchesBridging": true,
       "effectUsesLayers": false,
       "effectUsesLocale": false,
       "effectUsesLocation": false,
@@ -523,7 +534,7 @@
       "effectUsesRTRMapping": false,
       "effectUsesRandomScriptingModule": false,
       "effectUsesRawWristbandData": false,
-      "effectUsesReactiveScriptingModule": true,
+      "effectUsesReactiveScriptingModule": false,
       "effectUsesRealScaleEstimation": false,
       "effectUsesRealScaleEstimationWithFallback": false,
       "effectUsesRecognition": false,
