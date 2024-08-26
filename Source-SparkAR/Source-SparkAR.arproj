@@ -3,7 +3,7 @@
   "name": "Effect",
   "identifier": "document:7153-48a5eac7-3ad7-4a88-86d2-81b622b24430",
   "id": "715148a5eac73ad74a8886d281b622b24430",
-  "revision": "390292b97cc5c41dee4633a13be03bfcef069f",
+  "revision": "62881f28bc87924724278b4284fde2607ff46",
   "version": {
     "dev": 0,
     "patch": 0,
@@ -33,12 +33,7 @@
   "projectFormatType": "separated_files",
   "usingPatchesV2": true,
   "visual_programming": {
-    "graphs": [
-      {
-        "modelName": "patch_graph",
-        "identifier": "patch_graph:7239-48a5eac7-3ad7-4a88-86d2-81b622b24430"
-      }
-    ]
+    "sectionFileLocation": "Source-SparkAR.patches"
   },
   "children": [
     {
@@ -297,7 +292,7 @@
           "modelName": "script",
           "name": "script0",
           "identifier": "script:10515-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
-          "assetDataHash": "04706d737fdccbfd2eb585b7120074e4",
+          "assetDataHash": "f3395f542565a94bab31c4885435afde",
           "assetLocator": "scripts/script.js",
           "isExternalAsset": true
         }
@@ -376,7 +371,7 @@
       "effectUsesBoundingBoxScripting": false,
       "effectUsesBoundingBoxUtilities": false,
       "effectUsesCameraControl": false,
-      "effectUsesCameraInfoScriptingModule": false,
+      "effectUsesCameraInfoScriptingModule": true,
       "effectUsesCameraShare": false,
       "effectUsesComponentEvaluation": true,
       "effectUsesComposedLocally": false,
@@ -528,7 +523,7 @@
       "effectUsesRTRMapping": false,
       "effectUsesRandomScriptingModule": false,
       "effectUsesRawWristbandData": false,
-      "effectUsesReactiveScriptingModule": false,
+      "effectUsesReactiveScriptingModule": true,
       "effectUsesRealScaleEstimation": false,
       "effectUsesRealScaleEstimationWithFallback": false,
       "effectUsesRecognition": false,
@@ -574,7 +569,7 @@
       "effectUsesUiPlanarBackend": false,
       "effectUsesUnifiedTargetTracking": false,
       "effectUsesUnitsScriptingModule": false,
-      "effectUsesVariadicMath": false,
+      "effectUsesVariadicMath": true,
       "effectUsesVertexTextureFetch": false,
       "effectUsesVisualShaders": false,
       "effectUsesVisualShadersSdf": false,

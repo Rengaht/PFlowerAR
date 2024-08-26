@@ -21,7 +21,8 @@ const TouchGestures = require('TouchGestures');
 const Textures = require('Textures');
 const Materials = require('Materials');
 const DeviceMotion = require('DeviceMotion');
-
+const CameraInfo = require('CameraInfo');
+const Reactive=require('Reactive');
 
 const Time = require('Time');
 const Animation = require('Animation');
@@ -67,6 +68,26 @@ var title_tex;
 var pedal_tex=[];
 
 var pedal_block=[];
+
+async function resizeRect(name, width, aspectRatio){
+	
+	const rectangle=Scene.root.findFirst(name);
+	
+	const screenWidth = CameraInfo.previewSize.x;
+	const screenHeight = CameraInfo.previewSize.y;
+	
+	const rectWidth = Reactive.val(screenWidth.pinLastValue()*width);
+	const rectHeight = rectWidth.div(aspectRatio);
+
+	// Check if height exceeds screen height, adjust accordingly
+	const adjustedWidth = rectHeight.le(screenHeight).ifThenElse(rectWidth, screenHeight.mul(aspectRatio));
+	const adjustedHeight = adjustedWidth.div(aspectRatio);
+
+	// Apply the calculated width and height to the rectangle
+	rectangle.width = screenWidth;
+	rectangle.height = screenHeight;
+	
+}
 
 function fadeAll(arr, delay, fadeout, callback){
 	if(Array.isArray(arr)){
@@ -250,7 +271,14 @@ async function createPedals(can, mat){
 
 
 ;(async function () {  // Enables async/await in JS [part 1]
-
+	
+	
+	const resize=await Promise.all([
+		//resizeRect('bg', 0.7, 260/50),
+		//resizeRect('scan0',0.7, 557/626),
+		resizeRect('bg', 0.7, 1),
+		resizeRect('scan0',0.7, 1),
+	]);
   // To access scene objects
 	const [can0, can1, can2, group,  hint, scan, bg, hint0,vase, flower, poem, poem_title] = await Promise.all([
     	Scene.root.findFirst('canvas0'),
@@ -297,11 +325,11 @@ async function createPedals(can, mat){
 	timeDriver_blink.start();
 	
 	let res=await randomResult();
-	flower.texture=flower_tex;
-	poem.texture=poem_tex;
-	poem_title.texture=title_tex;
+	flower.diffuse=flower_tex;
+	poem.diffuse=poem_tex;
+	poem_title.diffuse=title_tex;
 	
-	for(var i=0;i<NUM_PEDAL;++i) pedal_material[i].texture=pedal_tex[i];
+	for(var i=0;i<NUM_PEDAL;++i) pedal_material[i].diffuse=pedal_tex[i];
 	
 	await createPedals(group, pedal_material);
 	
@@ -316,7 +344,7 @@ async function createPedals(can, mat){
 		
 		switch(state){
 			case 0:
-				flower.diffuse=flower_tex;
+				//flower.diffuse=flower_tex;
 				
 				fadeAll([hint, scan], 500, true, ()=>{
 					
@@ -333,9 +361,8 @@ async function createPedals(can, mat){
 				
 				break;
 			case 1:
-				poem.diffuse=poem_tex;
+				
 		
-				//TODO : fade in/ out
 				fadeAll([bg, vase, flower, hint0], 0, true, ()=>{
 					can1.hidden=true;
 					can2.hidden=false;
@@ -376,5 +403,42 @@ async function createPedals(can, mat){
 
   	});
 
+	
+	// rotate
+	// Set thresholds for detecting rapid rotation changes (tune these values)
+	const rotationThreshold = 0.5; // Adjust based on sensitivity needs
+	const timeInterval = 2; // Time interval in milliseconds
 
+	// Access the device's rotation data
+	const deviceTransform = DeviceMotion.worldTransform;
+
+	// Calculate the rate of change in rotation (magnitude of the rotation vector's derivative)
+	const rotationChangeX = deviceTransform.rotationX.history(timeInterval).frame(-1);
+	const rotationChangeY = deviceTransform.rotationX.history(timeInterval).frame(-1);
+	const rotationChangeZ = deviceTransform.rotationX.history(timeInterval).frame(-1);
+	
+	//Diagnostics.log('rotation'+rotationChangeX+' '+rotationChangeY+' '+rotationChangeZ);
+
+	// Calculate the magnitude of the rotation change
+/*	const rotationChangeMagnitude = Reactive.sqrt(
+    	rotationChangeX.pow(2).add(
+        	rotationChangeY.pow(2).add(
+            	rotationChangeZ.pow(2)
+        	)
+    	)
+	);
+
+	// Detect if the magnitude of the rotation change exceeds the threshold
+	const shakeLikeMovementDetected = rotationChangeMagnitude.gt(rotationThreshold);
+
+	// Subscribe to the shake-like movement detection event
+	shakeLikeMovementDetected.monitor().subscribe(function(event) {
+    	if (event.newValue) {
+        	Diagnostics.log('Shake-like movement detected!');
+        	// Add any action you want to perform when a shake-like movement is detected
+    	}
+	});
+*/
+	
+	
 })(); // Enables async/await in JS [part 2]
