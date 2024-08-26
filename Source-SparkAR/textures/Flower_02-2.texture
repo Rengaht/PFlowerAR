@@ -1,0 +1,37 @@
+{
+  "modelName": "texture",
+  "name": "Flower_02",
+  "identifier": "texture:54992-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+  "alphaPremultiplicationMode": "should_premultiply",
+  "assetDataHash": "7a0f3f9cefc73cdfd7d48ec016850c2f",
+  "assetLocator": "textures/Flower_02.png",
+  "colorEncoding": "linear",
+  "compressionQuality": "high",
+  "coordMapping": "none",
+  "excludeDuringExport": false,
+  "excludeFromPackage": false,
+  "filter": "bilinear",
+  "folder": "",
+  "hasOfflineMipmaps": false,
+  "height": 960,
+  "importIssues": {},
+  "isExternalAsset": true,
+  "smartTextureTargetSizeLimit": "largest",
+  "targetSize": "largest",
+  "uWrapMode": "clamp",
+  "vWrapMode": "clamp",
+  "width": 540,
+  "children": [
+    {
+      "modelName": "data_texture_metadata_model",
+      "name": "data_texture_metadata_model0",
+      "assetDataHash": "7a0f3f9cefc73cdfd7d48ec016850c2f",
+      "colorCount": 31607,
+      "detectedAlphaChannel": "eight_bit_full_range",
+      "detectedOriginalFormat": "png",
+      "entropyOfDistribution": 3.6294020702095615,
+      "pixelsHigh": 960,
+      "pixelsWide": 540
+    }
+  ]
+}

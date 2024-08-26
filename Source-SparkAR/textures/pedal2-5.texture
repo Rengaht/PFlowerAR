@@ -1,0 +1,37 @@
+{
+  "modelName": "texture",
+  "name": "pedal2-5",
+  "identifier": "texture:55298-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+  "alphaPremultiplicationMode": "should_premultiply",
+  "assetDataHash": "5fcf10c4abc7da08ccec58ea999dc8db",
+  "assetLocator": "textures/pedal2-5.png",
+  "colorEncoding": "linear",
+  "compressionQuality": "high",
+  "coordMapping": "none",
+  "excludeDuringExport": false,
+  "excludeFromPackage": false,
+  "filter": "bilinear",
+  "folder": "",
+  "hasOfflineMipmaps": false,
+  "height": 137,
+  "importIssues": {},
+  "isExternalAsset": true,
+  "smartTextureTargetSizeLimit": "largest",
+  "targetSize": "largest",
+  "uWrapMode": "clamp",
+  "vWrapMode": "clamp",
+  "width": 137,
+  "children": [
+    {
+      "modelName": "data_texture_metadata_model",
+      "name": "data_texture_metadata_model0",
+      "assetDataHash": "5fcf10c4abc7da08ccec58ea999dc8db",
+      "colorCount": 1118,
+      "detectedAlphaChannel": "eight_bit_full_range",
+      "detectedOriginalFormat": "png",
+      "entropyOfDistribution": 1.6041837084745398,
+      "pixelsHigh": 137,
+      "pixelsWide": 137
+    }
+  ]
+}

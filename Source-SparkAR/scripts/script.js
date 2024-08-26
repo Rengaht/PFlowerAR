@@ -20,12 +20,16 @@ const Scene = require('Scene');
 const TouchGestures = require('TouchGestures');
 const Textures = require('Textures');
 const Materials = require('Materials');
+const DeviceMotion = require('DeviceMotion');
+
 
 const Time = require('Time');
 const Animation = require('Animation');
+const Blocks = require('Blocks');
 
 // Use export keyword to make a symbol available in scripting debug console
 export const Diagnostics = require('Diagnostics');
+
 
 // To use variables and functions across files, use export/import keyword
 // export const animationDuration = 10;
@@ -35,6 +39,10 @@ export const Diagnostics = require('Diagnostics');
 	
 const NUM_FLOWER=4;
 const NUM_POEM=12;
+const NUM_PEDAL=6;
+const COUNT_PEDAL=30;
+
+const Boundary=0.3;
 	
 var index_flower;
 var index_poem;	
@@ -45,6 +53,8 @@ var state=0;
 // Duration of fade-in effect (in milliseconds)
 const fadeDuration = 250; // 1 second
 
+
+
 // blink
 const timeDriver_blink = Animation.timeDriver({ durationMilliseconds: 1000, loopCount: Infinity, mirror: true });
 const sampler_blink = Animation.samplers.easeInOutQuad(1, 0.5);
@@ -54,6 +64,9 @@ const animation_blink = Animation.animate(timeDriver_blink, sampler_blink);
 var flower_tex;
 var poem_tex;
 var title_tex;
+var pedal_tex=[];
+
+var pedal_block=[];
 
 function fadeAll(arr, delay, fadeout, callback){
 	if(Array.isArray(arr)){
@@ -104,6 +117,27 @@ function blink(mat) {
 	mat.opacity=animation_blink;
     		
 }
+function getTitle(idx){
+	switch(idx){
+		case 2:
+		case 3:
+		case 8:
+			return 3;
+		case 4:
+		case 7:
+		case 10:
+			return 2;
+		case 1:
+		case 5:
+		case 6:
+		case 9:
+		case 11:
+			return 1;
+		case 12:
+			return 0;
+	}
+
+}
 
 async function randomResult(){
 	index_flower=Math.floor(Math.random()*NUM_FLOWER);
@@ -113,19 +147,117 @@ async function randomResult(){
 	
 	flower_tex=await Textures.findFirst(`Flower_0${index_flower+1}`);
 	poem_tex= await Textures.findFirst(`poem-${index_poem+1}`);
-	title_tex= await Textures.findFirst(`title-${index_poem+1}`);
 	
+	Diagnostics.log('title= '+getTitle(index_poem));
 	
+	title_tex= await Textures.findFirst(`title-${getTitle(index_poem)}`);
+	
+	// load pedals
+	pedal_tex=[];
+	for(var i=0;i<NUM_PEDAL;++i){
+		let t=await Textures.findFirst(`pedal${index_poem}-${i+1}`);
+		pedal_tex.push(t);
+	}
+		
+	
+}
+function runPedal(callback){
+		
+	const timeDriver1 = Animation.timeDriver({ durationMilliseconds: fadeDuration, loopCount: 1, mirror: false });
+    const sampler1 = Animation.samplers.easeOutQuad(0, Boundary*2);
+    const animation1 = Animation.animate(timeDriver1, sampler1);
+
+	const timeDriver2 = Animation.timeDriver({ durationMilliseconds: fadeDuration, loopCount: 1, mirror: false });
+    const sampler2 = Animation.samplers.easeOutQuad(Boundary*2, Boundary*4);
+    const animation2 = Animation.animate(timeDriver2, sampler2);
+
+    for(var i=0;i<COUNT_PEDAL;++i){
+		
+    	let origin=pedal_block[i].__position;
+		
+		const positionAnimation = animation1.mul(origin[2]).clamp(0, Boundary*2).add(origin[1]);
+    	pedal_block[i].transform.y = positionAnimation;
+		
+	}
+	
+	timeDriver1.onCompleted().subscribe(function() {
+    	
+		for(var i=0;i<COUNT_PEDAL;++i){
+		
+    		let origin=pedal_block[i].__position;
+		
+			const positionAnimation = animation2.mul(origin[2]).clamp(Boundary*2, Boundary*4).add(origin[1]);
+			
+    		pedal_block[i].transform.y = positionAnimation;
+		
+		}
+    	
+		setTimeout(()=>{
+			
+			Diagnostics.log('leave animation');
+			
+			timeDriver2.start();
+			if(typeof callback=='function') callback();
+		},fadeDuration*.5);
+	});
+	
+	timeDriver1.start();
+		
+}
+
+async function createPedals(can, mat){
+	
+	for(var i=0;i<COUNT_PEDAL;++i){
+		//var block= await Blocks.instantiate('plan0');
+		let w=0.08+0.01*Math.random();
+		
+		var block=await Scene.create("Plane", {
+            "name": "Plane"+i,
+            "width": w,
+            "height": w,
+            //"y": i/COUNT_PEDAL-0.5,
+            "hidden": false,
+        });
+		
+		let col=4;
+		
+		let x=(i%col/col+(Math.random()*.2-.1)-0.5)*.25;//+(Math.random()*.2-.1);
+		let y=-(Math.floor(i/col)+1+(Math.random()*.4-.2))*Boundary/col-Boundary;
+		
+		//let x=(i%col/col-0.5)*.25;//+(Math.random()*.2-.1);
+		//let y=-Math.floor(i/col)*Boundary/col-Boundary;
+		
+		let v=Math.random()*2+1;
+		
+		block.transform.x=x;
+		block.transform.y=y;
+		block.transform.z=0;
+		block.transform.rotationZ=(Math.random()-.5)*Math.PI;
+		
+	
+        can.addChild(block);
+        //block.addChild(dynamicPlane);
+		let indx=Math.floor(Math.random()*NUM_PEDAL);
+		block.material=mat[indx];
+		
+		block.__position=[x,y, v];
+		
+		
+		
+		pedal_block.push(block);
+    }	
 }
 
 
 ;(async function () {  // Enables async/await in JS [part 1]
 
   // To access scene objects
-	const [can0, can1, can2, hint, scan, bg, hint0,vase, flower, poem, poem_title] = await Promise.all([
+	const [can0, can1, can2, group,  hint, scan, bg, hint0,vase, flower, poem, poem_title] = await Promise.all([
     	Scene.root.findFirst('canvas0'),
 		Scene.root.findFirst('canvas1'),
 		Scene.root.findFirst('canvas2'),
+		
+		Scene.root.findFirst('group'),
 		
 		//Scene.root.findFirst('bg'),
 		//Scene.root.findFirst('hint0'),
@@ -142,8 +274,18 @@ async function randomResult(){
 		Materials.findFirst('material-flower'),
 		Materials.findFirst('material-poem'),
 		Materials.findFirst('material-title'),
+		
+		//Scene.root.findFirst('plane0'),
   	]);
-	
+
+	const pedal_material = await Promise.all([
+    	Materials.findFirst('material-pedal-1'),
+		Materials.findFirst('material-pedal-2'),
+		Materials.findFirst('material-pedal-3'),
+		Materials.findFirst('material-pedal-4'),
+		Materials.findFirst('material-pedal-5'),
+		Materials.findFirst('material-pedal-6'),
+  	]);
 	
 	
   // To access class properties
@@ -158,6 +300,13 @@ async function randomResult(){
 	flower.texture=flower_tex;
 	poem.texture=poem_tex;
 	poem_title.texture=title_tex;
+	
+	for(var i=0;i<NUM_PEDAL;++i) pedal_material[i].texture=pedal_tex[i];
+	
+	await createPedals(group, pedal_material);
+	
+	//runPedal();
+	
 	
 	fadeAll([hint, scan], 100, false, ()=>{
 		blink(hint);
@@ -190,31 +339,35 @@ async function randomResult(){
 				fadeAll([bg, vase, flower, hint0], 0, true, ()=>{
 					can1.hidden=true;
 					can2.hidden=false;
-				
-					fadeAll([poem, title],200);
-				
+					
+					runPedal();
+					fadeAll([poem, poem_title],fadeDuration);				
+					
 					state=2;
 				
 				});
 				
 				break;	
 			case 2:
-				fadeAll([poem], 0, true, ()=>{
+				/*fadeAll([poem, poem_title], 0, true, ()=>{
 				
 					can2.hidden=true;
 					can0.hidden=false;
 					
 					randomResult().then(()=>{
+	
 						flower.texture=flower_tex;
 						poem.texture=poem_tex;
 						poem_title.texture=title_tex;
+						for(var i=0;i<NUM_PEDAL;++i) pedal_material.texture[i]=pedal_tex[i];
+	
 	
 						fadeAll([hint, scan], 100, false, ()=>{
 							blink(hint);
 						});
 					});
 					state=0;
-				});
+				});*/
 			
 				break;
 		}		

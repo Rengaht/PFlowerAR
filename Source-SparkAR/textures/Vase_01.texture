@@ -1,0 +1,37 @@
+{
+  "modelName": "texture",
+  "name": "Vase_01",
+  "identifier": "texture:55004-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+  "alphaPremultiplicationMode": "should_premultiply",
+  "assetDataHash": "41d7910ddf3a0422921119ff997cfb7f",
+  "assetLocator": "textures/Vase_01.png",
+  "colorEncoding": "linear",
+  "compressionQuality": "high",
+  "coordMapping": "none",
+  "excludeDuringExport": false,
+  "excludeFromPackage": false,
+  "filter": "bilinear",
+  "folder": "",
+  "hasOfflineMipmaps": false,
+  "height": 960,
+  "importIssues": {},
+  "isExternalAsset": true,
+  "smartTextureTargetSizeLimit": "largest",
+  "targetSize": "largest",
+  "uWrapMode": "clamp",
+  "vWrapMode": "clamp",
+  "width": 540,
+  "children": [
+    {
+      "modelName": "data_texture_metadata_model",
+      "name": "data_texture_metadata_model0",
+      "assetDataHash": "41d7910ddf3a0422921119ff997cfb7f",
+      "colorCount": 43524,
+      "detectedAlphaChannel": "eight_bit_full_range",
+      "detectedOriginalFormat": "png",
+      "entropyOfDistribution": 3.0206269097960514,
+      "pixelsHigh": 960,
+      "pixelsWide": 540
+    }
+  ]
+}

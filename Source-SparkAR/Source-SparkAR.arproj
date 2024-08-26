@@ -3,7 +3,7 @@
   "name": "Effect",
   "identifier": "document:7153-48a5eac7-3ad7-4a88-86d2-81b622b24430",
   "id": "715148a5eac73ad74a8886d281b622b24430",
-  "revision": "35713b97cc5c41dee4633a13be03bfcef069f",
+  "revision": "390292b97cc5c41dee4633a13be03bfcef069f",
   "version": {
     "dev": 0,
     "patch": 0,
@@ -55,94 +55,163 @@
           "sectionFileLocation": "textures/hint-2.texture"
         },
         {
-          "sectionFileLocation": "textures/BG_01(1).texture"
+          "sectionFileLocation": "textures/poem-1.texture"
         },
         {
-          "sectionFileLocation": "textures/Flower_01.texture"
+          "sectionFileLocation": "textures/poem-2.texture"
         },
         {
-          "sectionFileLocation": "textures/Flower_02.texture"
+          "sectionFileLocation": "textures/poem-3.texture"
         },
         {
-          "sectionFileLocation": "textures/Flower_03.texture"
+          "sectionFileLocation": "textures/poem-4.texture"
         },
         {
-          "sectionFileLocation": "textures/Flower_04.texture"
+          "sectionFileLocation": "textures/poem-5.texture"
         },
         {
-          "sectionFileLocation": "textures/Vase_01-2.texture"
+          "sectionFileLocation": "textures/poem-6.texture"
         },
         {
-          "sectionFileLocation": "textures/poem-1-2.texture"
+          "sectionFileLocation": "textures/poem-7.texture"
         },
         {
-          "sectionFileLocation": "textures/poem-2-2.texture"
+          "sectionFileLocation": "textures/poem-8.texture"
         },
         {
-          "sectionFileLocation": "textures/poem-3-2.texture"
+          "sectionFileLocation": "textures/poem-9.texture"
         },
         {
-          "sectionFileLocation": "textures/poem-4-2.texture"
+          "sectionFileLocation": "textures/poem-10.texture"
         },
         {
-          "sectionFileLocation": "textures/poem-5-2.texture"
+          "sectionFileLocation": "textures/poem-11.texture"
         },
         {
-          "sectionFileLocation": "textures/poem-6-2.texture"
+          "sectionFileLocation": "textures/poem-12.texture"
         },
         {
-          "sectionFileLocation": "textures/poem-7-2.texture"
+          "sectionFileLocation": "textures/title-0.texture"
         },
         {
-          "sectionFileLocation": "textures/poem-8-2.texture"
+          "sectionFileLocation": "textures/title-1-2.texture"
         },
         {
-          "sectionFileLocation": "textures/poem-9-2.texture"
+          "sectionFileLocation": "textures/title-2-2.texture"
         },
         {
-          "sectionFileLocation": "textures/poem-10-2.texture"
+          "sectionFileLocation": "textures/title-3-2.texture"
         },
         {
-          "sectionFileLocation": "textures/poem-11-2.texture"
+          "sectionFileLocation": "textures/BG_01.texture"
         },
         {
-          "sectionFileLocation": "textures/poem-12-2.texture"
+          "sectionFileLocation": "textures/Flower_01-2.texture"
         },
         {
-          "sectionFileLocation": "textures/title-1.texture"
+          "sectionFileLocation": "textures/Flower_02-2.texture"
         },
         {
-          "sectionFileLocation": "textures/title-2.texture"
+          "sectionFileLocation": "textures/Flower_03-2.texture"
         },
         {
-          "sectionFileLocation": "textures/title-3.texture"
+          "sectionFileLocation": "textures/Flower_04-2.texture"
         },
         {
-          "sectionFileLocation": "textures/title-4.texture"
+          "sectionFileLocation": "textures/Vase_01.texture"
         },
         {
-          "sectionFileLocation": "textures/title-5.texture"
+          "sectionFileLocation": "textures/pedal1-1.texture"
         },
         {
-          "sectionFileLocation": "textures/title-6.texture"
+          "sectionFileLocation": "textures/pedal1-2.texture"
         },
         {
-          "sectionFileLocation": "textures/title-7.texture"
+          "sectionFileLocation": "textures/pedal1-3.texture"
         },
         {
-          "sectionFileLocation": "textures/title-8.texture"
+          "sectionFileLocation": "textures/pedal1-4.texture"
         },
         {
-          "sectionFileLocation": "textures/title-9.texture"
+          "sectionFileLocation": "textures/pedal1-5.texture"
         },
         {
-          "sectionFileLocation": "textures/title-10.texture"
+          "sectionFileLocation": "textures/pedal1-6.texture"
         },
         {
-          "sectionFileLocation": "textures/title-11.texture"
+          "sectionFileLocation": "textures/pedal1-7.texture"
         },
         {
-          "sectionFileLocation": "textures/title-12.texture"
+          "sectionFileLocation": "textures/pedal1-8.texture"
+        },
+        {
+          "sectionFileLocation": "textures/pedal2-1.texture"
+        },
+        {
+          "sectionFileLocation": "textures/pedal2-2.texture"
+        },
+        {
+          "sectionFileLocation": "textures/pedal2-3.texture"
+        },
+        {
+          "sectionFileLocation": "textures/pedal2-4.texture"
+        },
+        {
+          "sectionFileLocation": "textures/pedal2-5.texture"
+        },
+        {
+          "sectionFileLocation": "textures/pedal2-6.texture"
+        },
+        {
+          "sectionFileLocation": "textures/pedal2-7.texture"
+        },
+        {
+          "sectionFileLocation": "textures/pedal3-1.texture"
+        },
+        {
+          "sectionFileLocation": "textures/pedal3-2.texture"
+        },
+        {
+          "sectionFileLocation": "textures/pedal3-3.texture"
+        },
+        {
+          "sectionFileLocation": "textures/pedal3-4.texture"
+        },
+        {
+          "sectionFileLocation": "textures/pedal3-5.texture"
+        },
+        {
+          "sectionFileLocation": "textures/pedal3-6.texture"
+        },
+        {
+          "sectionFileLocation": "textures/pedal3-7.texture"
+        },
+        {
+          "sectionFileLocation": "textures/pedal4-1.texture"
+        },
+        {
+          "sectionFileLocation": "textures/pedal4-2.texture"
+        },
+        {
+          "sectionFileLocation": "textures/pedal4-3.texture"
+        },
+        {
+          "sectionFileLocation": "textures/pedal4-4.texture"
+        },
+        {
+          "sectionFileLocation": "textures/pedal4-5.texture"
+        },
+        {
+          "sectionFileLocation": "textures/pedal4-6.texture"
+        },
+        {
+          "sectionFileLocation": "textures/pedal4-7.texture"
+        },
+        {
+          "sectionFileLocation": "textures/pedal4-8.texture"
+        },
+        {
+          "sectionFileLocation": "textures/pedal4-9.texture"
         }
       ]
     },
@@ -151,7 +220,7 @@
       "identifier": "materials:7161-48a5eac7-3ad7-4a88-86d2-81b622b24430",
       "children": [
         {
-          "sectionFileLocation": "materials/material-hint.material"
+          "sectionFileLocation": "materials/material-hint-3.material"
         },
         {
           "sectionFileLocation": "materials/material-scan-frame.material"
@@ -172,7 +241,25 @@
           "sectionFileLocation": "materials/material-poem.material"
         },
         {
-          "sectionFileLocation": "materials/material-title.material"
+          "sectionFileLocation": "materials/material-title-2.material"
+        },
+        {
+          "sectionFileLocation": "materials/material-pedal-1.material"
+        },
+        {
+          "sectionFileLocation": "materials/material-pedal-2-2.material"
+        },
+        {
+          "sectionFileLocation": "materials/material-pedal-3-2.material"
+        },
+        {
+          "sectionFileLocation": "materials/material-pedal-4-2.material"
+        },
+        {
+          "sectionFileLocation": "materials/material-pedal-5-2.material"
+        },
+        {
+          "sectionFileLocation": "materials/material-pedal-6-2.material"
         }
       ]
     },
@@ -183,6 +270,13 @@
       "modelName": "layers",
       "identifier": "layers:7169-48a5eac7-3ad7-4a88-86d2-81b622b24430",
       "children": [
+        {
+          "modelName": "layer",
+          "name": "layer1",
+          "identifier": "layer:168588-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+          "color": "0xffeb7dbd",
+          "generationIndex": 1
+        },
         {
           "modelName": "layer",
           "name": "layer0",
@@ -203,7 +297,7 @@
           "modelName": "script",
           "name": "script0",
           "identifier": "script:10515-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
-          "assetDataHash": "7614cde322da163ea9e78d09461cfdd9",
+          "assetDataHash": "04706d737fdccbfd2eb585b7120074e4",
           "assetLocator": "scripts/script.js",
           "isExternalAsset": true
         }
@@ -274,7 +368,7 @@
       "effectUsesAutomaticAlphaSort": false,
       "effectUsesAutomaticInstructions": true,
       "effectUsesBlockModulesConfigExtras": false,
-      "effectUsesBlocks": false,
+      "effectUsesBlocks": true,
       "effectUsesBlocksDownloadable": false,
       "effectUsesBlocksScripting": false,
       "effectUsesBodyTracking": false,
@@ -284,7 +378,7 @@
       "effectUsesCameraControl": false,
       "effectUsesCameraInfoScriptingModule": false,
       "effectUsesCameraShare": false,
-      "effectUsesComponentEvaluation": false,
+      "effectUsesComponentEvaluation": true,
       "effectUsesComposedLocally": false,
       "effectUsesComposedMaterial": false,
       "effectUsesControllers": false,
@@ -300,7 +394,7 @@
       "effectUsesDepth": false,
       "effectUsesDepthData": false,
       "effectUsesDepthShaderRead": false,
-      "effectUsesDeviceMotion": false,
+      "effectUsesDeviceMotion": true,
       "effectUsesDiagnosticsScriptingModule": true,
       "effectUsesDirectionalLightEstimation": false,
       "effectUsesDspAudioAnalyzer": false,
@@ -451,7 +545,7 @@
       "effectUsesSceneRenderPassResolutionAspectRatio": false,
       "effectUsesSceneScriptingModule": true,
       "effectUsesScriptAnalytics": false,
-      "effectUsesScriptingDynamicInstantiation": false,
+      "effectUsesScriptingDynamicInstantiation": true,
       "effectUsesSegmentation": false,
       "effectUsesSegmentationType": false,
       "effectUsesShaderCode": false,
@@ -527,7 +621,8 @@
       "internalScriptingAPIExperimentalCameraInfo": false,
       "internalScriptingAPIGlobalTransform": false,
       "manuallyEnabledItemsIds": [
-        "touchGesturesSupportsTap"
+        "touchGesturesSupportsTap",
+        "effectUsesScriptingDynamicInstantiation"
       ],
       "maxParticipantsCount": 0,
       "multiclassSegmentationMinVersion": 3004,
