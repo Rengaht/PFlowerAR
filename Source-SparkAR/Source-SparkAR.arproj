@@ -3,7 +3,7 @@
   "name": "Effect",
   "identifier": "document:7153-48a5eac7-3ad7-4a88-86d2-81b622b24430",
   "id": "715148a5eac73ad74a8886d281b622b24430",
-  "revision": "13517639f9532ede46409ca6459ad8aaa6ea4b",
+  "revision": "31268ced51380582c4189aeea96776cbe65bb",
   "version": {
     "dev": 0,
     "patch": 0,
@@ -303,7 +303,7 @@
           "modelName": "script",
           "name": "script0",
           "identifier": "script:10515-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
-          "assetDataHash": "6a5fc384b4364af10d9f141e37d5788a",
+          "assetDataHash": "6c78020d7a80df4a3de27e0fd19f687a",
           "assetLocator": "scripts/script.js",
           "isExternalAsset": true
         }

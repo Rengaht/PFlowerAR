@@ -43,7 +43,7 @@ export const Diagnostics = require('Diagnostics');
 const NUM_FLOWER=4;
 const NUM_POEM=12;
 const NUM_PEDAL=6;
-const COUNT_PEDAL=24;
+const COUNT_PEDAL=64;
 
 const Boundary=0.3;
 	
@@ -199,8 +199,8 @@ async function createPedals(can, mat){
 	
 	for(var i=0;i<COUNT_PEDAL;++i){
 		//var block= await Blocks.instantiate('plan0');
-		let w=0.1+0.1*Math.random();
-		if(index_flower==3) w*=3;//
+		let w=0.08+0.02*Math.random();
+		if(index_flower==3) w*=2;//
 		
 		var block=await Scene.create("Plane", {
             "name": "Plane"+i,
@@ -212,7 +212,7 @@ async function createPedals(can, mat){
 		
 		let col=4;
 		
-		let x=(i%col/col+(Math.random()*.2-.1)-0.5)*.25;//+(Math.random()*.2-.1);
+		let x=(i%col/col+(Math.random()*.25-.125)-0.5)*.25;//+(Math.random()*.2-.1);
 		let y=-(Math.floor(i/col)+1+(Math.random()*.4-.2))*Boundary/col-Boundary;
 		
 		//let x=(i%col/col-0.5)*.25;//+(Math.random()*.2-.1);
@@ -331,15 +331,18 @@ async function createPedals(can, mat){
 				
 				
 				fadeAll([bg, vase, flower, hint0], 0, true, ()=>{
+					poem.opacity=0;
+					poem_title.opacity=0;
+
 					can1.hidden=true;
 					can2.hidden=false;
 					
-					fadeAll(pedal_material, fadeDuration*.5,true, ()=>{	
+					fadeAll(pedal_material, fadeDuration*.5,false, ()=>{	
 					
 						runPedal();
-						fadeAll(pedal_material, fadeDuration*2, true, ()=>{
+						fadeAll(pedal_material, fadeDuration, true, ()=>{
 						
-							fadeAll([poem, poem_title]);
+							fadeAll([poem, poem_title],0,false);
 						});
 					});
 					
@@ -365,15 +368,18 @@ async function createPedals(can, mat){
 		
 		if(state==1){
 				fadeAll([bg, vase, flower, hint0], 0, true, ()=>{
+					poem.opacity=0;
+					poem_title.opacity=0;
+
 					can1.hidden=true;
 					can2.hidden=false;
 					
-					fadeAll(pedal_material, fadeDuration*.5,true, ()=>{	
+					fadeAll(pedal_material, fadeDuration*.5,false, ()=>{	
 					
 						runPedal();
 						fadeAll(pedal_material, fadeDuration*2, true, ()=>{
 						
-							fadeAll([poem, poem_title]);
+							fadeAll([poem, poem_title],0,false);
 						});
 					});
 					

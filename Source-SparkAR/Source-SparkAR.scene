@@ -92,7 +92,7 @@
                 "scale": false
               },
               "cameraVisibility": "back|front",
-              "height": 577,
+              "height": 517,
               "hidden": false,
               "hitTestingEnabled": false,
               "layerIdentifier": "layer0",
@@ -105,14 +105,14 @@
                 "rx": 0,
                 "ry": 0,
                 "rz": 0,
-                "sx": 0.000866551068611443,
-                "sy": 0.000866551068611443,
-                "sz": 0.000866551068611443,
+                "sx": 0.0009671180159784853,
+                "sy": 0.0009671180159784853,
+                "sz": 0.0009671180159784853,
                 "x": 0,
                 "y": 0,
                 "z": 0
               },
-              "width": 316,
+              "width": 260,
               "children": [
                 {
                   "modelName": "rectangle_model",
@@ -131,7 +131,7 @@
                       "multiplier": 1,
                       "unitBase": 10
                     },
-                    "value": 46.01941680908203
+                    "value": 37.86407470703125
                   },
                   "hidden": false,
                   "hitTestingEnabled": false,
@@ -213,8 +213,8 @@
                     "sx": 0.9999996423721313,
                     "sy": 0.9999987483024597,
                     "sz": 0.9999988675117493,
-                    "x": 63.19999694824219,
-                    "y": 85.15082550048828,
+                    "x": 52,
+                    "y": 77.98130798339844,
                     "z": -0.1659851223230362
                   },
                   "usesFlexibleHeight": false,
@@ -225,7 +225,7 @@
                       "multiplier": 1,
                       "unitBase": 10
                     },
-                    "value": 189.60000610351562
+                    "value": 156
                   }
                 },
                 {
@@ -245,7 +245,7 @@
                       "multiplier": 1,
                       "unitBase": 10
                     },
-                    "value": 265.8828125
+                    "value": 218.76438903808594
                   },
                   "hidden": false,
                   "hitTestingEnabled": false,
@@ -327,8 +327,8 @@
                     "sx": 0.9999998807907104,
                     "sy": 0.9999995231628418,
                     "sz": 0.9999995827674866,
-                    "x": 39.5,
-                    "y": 155.55857849121094,
+                    "x": 32.5,
+                    "y": 149.11781311035156,
                     "z": 0.00003051758176297881
                   },
                   "usesFlexibleHeight": false,
@@ -339,7 +339,7 @@
                       "multiplier": 1,
                       "unitBase": 10
                     },
-                    "value": 237
+                    "value": 195
                   }
                 }
               ]
@@ -354,7 +354,7 @@
                 "scale": false
               },
               "cameraVisibility": "back|front",
-              "height": 577,
+              "height": 517,
               "hidden": true,
               "hitTestingEnabled": false,
               "layerIdentifier": "layer0",
@@ -367,14 +367,14 @@
                 "rx": 0,
                 "ry": 0,
                 "rz": 0,
-                "sx": 0.000866551068611443,
-                "sy": 0.000866551068611443,
-                "sz": 0.000866551068611443,
+                "sx": 0.0009671180159784853,
+                "sy": 0.0009671180159784853,
+                "sz": 0.0009671180159784853,
                 "x": 0,
                 "y": 0,
                 "z": 0
               },
-              "width": 316,
+              "width": 260,
               "children": [
                 {
                   "modelName": "rectangle_model",
@@ -507,7 +507,7 @@
                       "multiplier": 1,
                       "unitBase": 10
                     },
-                    "value": 561.77783203125
+                    "value": 462.22222900390625
                   },
                   "hidden": false,
                   "hitTestingEnabled": false,
@@ -590,7 +590,7 @@
                     "sy": 1.0000004768371582,
                     "sz": 1.000000238418579,
                     "x": 0,
-                    "y": 7.611114501953125,
+                    "y": 27.388885498046875,
                     "z": -0.00006103516352595761
                   },
                   "usesFlexibleHeight": false,
@@ -601,7 +601,7 @@
                       "multiplier": 1,
                       "unitBase": 10
                     },
-                    "value": 316
+                    "value": 260
                   },
                   "children": [
                     {
@@ -704,7 +704,7 @@
                         "sy": 1,
                         "sz": 0.9999999403953552,
                         "x": 0,
-                        "y": -0.287994384765625,
+                        "y": -0.2369842529296875,
                         "z": 0.03996238112449646
                       },
                       "usesFlexibleHeight": true,
@@ -737,7 +737,7 @@
                       "multiplier": 1,
                       "unitBase": 10
                     },
-                    "value": 37.920005798339844
+                    "value": 31.20000457763672
                   },
                   "hidden": false,
                   "hitTestingEnabled": false,
@@ -819,8 +819,8 @@
                     "sx": 1,
                     "sy": 1,
                     "sz": 1,
-                    "x": 63.19999694824219,
-                    "y": 48.80042266845703,
+                    "x": 52,
+                    "y": 45.114280700683594,
                     "z": -0.000030517578125
                   },
                   "usesFlexibleHeight": false,
@@ -831,7 +831,7 @@
                       "multiplier": 1,
                       "unitBase": 10
                     },
-                    "value": 189.60000610351562
+                    "value": 156
                   }
                 }
               ]
@@ -846,7 +846,7 @@
                 "scale": false
               },
               "cameraVisibility": "back|front",
-              "height": 577,
+              "height": 517,
               "hidden": true,
               "hitTestingEnabled": false,
               "layerIdentifier": "layer0",
@@ -859,14 +859,14 @@
                 "rx": 0,
                 "ry": 0,
                 "rz": 0,
-                "sx": 0.000866551068611443,
-                "sy": 0.000866551068611443,
-                "sz": 0.000866551068611443,
+                "sx": 0.0009671180159784853,
+                "sy": 0.0009671180159784853,
+                "sz": 0.0009671180159784853,
                 "x": 0,
                 "y": 0,
                 "z": 0
               },
-              "width": 316,
+              "width": 260,
               "children": [
                 {
                   "modelName": "rectangle_model",
@@ -885,7 +885,7 @@
                       "multiplier": 1,
                       "unitBase": 10
                     },
-                    "value": 561.77783203125
+                    "value": 462.22222900390625
                   },
                   "hidden": false,
                   "hitTestingEnabled": false,
@@ -968,7 +968,7 @@
                     "sy": 1.0000001192092896,
                     "sz": 1.0000001192092896,
                     "x": 0,
-                    "y": 7.611114501953125,
+                    "y": 27.388885498046875,
                     "z": -0.00006103516352595761
                   },
                   "usesFlexibleHeight": false,
@@ -979,7 +979,7 @@
                       "multiplier": 1,
                       "unitBase": 10
                     },
-                    "value": 316
+                    "value": 260
                   },
                   "children": [
                     {
