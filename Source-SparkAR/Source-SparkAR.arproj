@@ -3,7 +3,7 @@
   "name": "Effect",
   "identifier": "document:7153-48a5eac7-3ad7-4a88-86d2-81b622b24430",
   "id": "715148a5eac73ad74a8886d281b622b24430",
-  "revision": "97380ae577ef6f5454c6a9964b86fb6c69c12",
+  "revision": "159457ae577ef6f5454c6a9964b86fb6c69c12",
   "version": {
     "dev": 0,
     "patch": 0,
@@ -215,46 +215,46 @@
       "identifier": "materials:7161-48a5eac7-3ad7-4a88-86d2-81b622b24430",
       "children": [
         {
-          "sectionFileLocation": "materials/material-hint-3.material"
+          "sectionFileLocation": "materials/material-hint.material"
         },
         {
-          "sectionFileLocation": "materials/material-scan-frame.material"
+          "sectionFileLocation": "materials/material-scan-frame-2.material"
         },
         {
-          "sectionFileLocation": "materials/material-bg.material"
+          "sectionFileLocation": "materials/material-bg-2.material"
         },
         {
-          "sectionFileLocation": "materials/material-hint-2.material"
+          "sectionFileLocation": "materials/material-hint-2-2.material"
         },
         {
-          "sectionFileLocation": "materials/material-vase.material"
+          "sectionFileLocation": "materials/material-vase-2.material"
         },
         {
-          "sectionFileLocation": "materials/material-flower.material"
+          "sectionFileLocation": "materials/material-flower-2.material"
         },
         {
-          "sectionFileLocation": "materials/material-poem.material"
+          "sectionFileLocation": "materials/material-poem-2.material"
         },
         {
-          "sectionFileLocation": "materials/material-title-2.material"
+          "sectionFileLocation": "materials/material-title.material"
         },
         {
-          "sectionFileLocation": "materials/material-pedal-1.material"
+          "sectionFileLocation": "materials/material-pedal-1-2.material"
         },
         {
-          "sectionFileLocation": "materials/material-pedal-2-2.material"
+          "sectionFileLocation": "materials/material-pedal-2-3.material"
         },
         {
-          "sectionFileLocation": "materials/material-pedal-3-2.material"
+          "sectionFileLocation": "materials/material-pedal-3-3.material"
         },
         {
-          "sectionFileLocation": "materials/material-pedal-4-2.material"
+          "sectionFileLocation": "materials/material-pedal-4-3.material"
         },
         {
-          "sectionFileLocation": "materials/material-pedal-5-2.material"
+          "sectionFileLocation": "materials/material-pedal-5-3.material"
         },
         {
-          "sectionFileLocation": "materials/material-pedal-6-2.material"
+          "sectionFileLocation": "materials/material-pedal-6-3.material"
         }
       ]
     },
@@ -303,7 +303,7 @@
           "modelName": "script",
           "name": "script0",
           "identifier": "script:10515-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
-          "assetDataHash": "eafafcea788c7b72e48d19ebef094b7d",
+          "assetDataHash": "18b2b9f906b3003eb4bea6e2c0e31a3a",
           "assetLocator": "scripts/script.js",
           "isExternalAsset": true
         }

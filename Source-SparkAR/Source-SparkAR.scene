@@ -131,7 +131,7 @@
                       "multiplier": 1,
                       "unitBase": 10
                     },
-                    "value": 21.84466552734375
+                    "value": 21.84466
                   },
                   "hidden": false,
                   "hitTestingEnabled": false,
@@ -139,7 +139,7 @@
                   "isMaterialIdentifierEnabled": true,
                   "layerIdentifier": "layer0",
                   "locksAspectRatio": false,
-                  "materialIdentifier": "defaultMaterial:79989-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+                  "materialIdentifier": "defaultMaterial:152320-ae577ef6-f545-4c6a-9964-b86fb6c69c12",
                   "outputVisibility": "preview|capture",
                   "physicsEnabled": false,
                   "pinnedBottom": false,
@@ -253,7 +253,7 @@
                   "isMaterialIdentifierEnabled": true,
                   "layerIdentifier": "layer0",
                   "locksAspectRatio": false,
-                  "materialIdentifier": "defaultMaterial:8761-48a5eac7-3ad7-4a88-86d2-81b622b24430",
+                  "materialIdentifier": "defaultMaterial:152318-ae577ef6-f545-4c6a-9964-b86fb6c69c12",
                   "outputVisibility": "preview|capture",
                   "physicsEnabled": false,
                   "pinnedBottom": false,
@@ -401,7 +401,7 @@
                   "isMaterialIdentifierEnabled": true,
                   "layerIdentifier": "layer0",
                   "locksAspectRatio": false,
-                  "materialIdentifier": "defaultMaterial:9859-48a5eac7-3ad7-4a88-86d2-81b622b24430",
+                  "materialIdentifier": "defaultMaterial:152324-ae577ef6-f545-4c6a-9964-b86fb6c69c12",
                   "outputVisibility": "preview|capture",
                   "physicsEnabled": false,
                   "pinnedBottom": false,
@@ -507,7 +507,7 @@
                       "multiplier": 1,
                       "unitBase": 10
                     },
-                    "value": 266.6666259765625
+                    "value": 266.66666
                   },
                   "hidden": false,
                   "hitTestingEnabled": false,
@@ -515,7 +515,7 @@
                   "isMaterialIdentifierEnabled": true,
                   "layerIdentifier": "layer0",
                   "locksAspectRatio": false,
-                  "materialIdentifier": "defaultMaterial:5695-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+                  "materialIdentifier": "defaultMaterial:152336-ae577ef6-f545-4c6a-9964-b86fb6c69c12",
                   "outputVisibility": "preview|capture",
                   "physicsEnabled": false,
                   "pinnedBottom": false,
@@ -562,7 +562,7 @@
                       "multiplier": 1,
                       "unitBase": 20
                     },
-                    "value": 0
+                    "value": 5.393629775286312E-7
                   },
                   "positionX": {
                     "unit": {
@@ -629,7 +629,7 @@
                       "isMaterialIdentifierEnabled": true,
                       "layerIdentifier": "layer1",
                       "locksAspectRatio": false,
-                      "materialIdentifier": "defaultMaterial:1503-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+                      "materialIdentifier": "defaultMaterial:152334-ae577ef6-f545-4c6a-9964-b86fb6c69c12",
                       "outputVisibility": "preview|capture",
                       "physicsEnabled": false,
                       "pinnedBottom": false,
@@ -745,7 +745,7 @@
                   "isMaterialIdentifierEnabled": true,
                   "layerIdentifier": "layer1",
                   "locksAspectRatio": false,
-                  "materialIdentifier": "defaultMaterial:10140-48a5eac7-3ad7-4a88-86d2-81b622b24430",
+                  "materialIdentifier": "defaultMaterial:152328-ae577ef6-f545-4c6a-9964-b86fb6c69c12",
                   "outputVisibility": "preview|capture",
                   "physicsEnabled": false,
                   "pinnedBottom": false,
@@ -885,7 +885,7 @@
                       "multiplier": 1,
                       "unitBase": 10
                     },
-                    "value": 266.6666259765625
+                    "value": 266.66666
                   },
                   "hidden": false,
                   "hitTestingEnabled": false,
@@ -893,7 +893,7 @@
                   "isMaterialIdentifierEnabled": true,
                   "layerIdentifier": "layer0",
                   "locksAspectRatio": false,
-                  "materialIdentifier": "defaultMaterial:6493-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+                  "materialIdentifier": "defaultMaterial:152322-ae577ef6-f545-4c6a-9964-b86fb6c69c12",
                   "outputVisibility": "preview|capture",
                   "physicsEnabled": false,
                   "pinnedBottom": false,
@@ -940,7 +940,7 @@
                       "multiplier": 1,
                       "unitBase": 20
                     },
-                    "value": 0
+                    "value": 5.393629775286312E-7
                   },
                   "positionX": {
                     "unit": {
@@ -1007,7 +1007,7 @@
                       "isMaterialIdentifierEnabled": true,
                       "layerIdentifier": "layer1",
                       "locksAspectRatio": false,
-                      "materialIdentifier": "defaultMaterial:76978-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+                      "materialIdentifier": "defaultMaterial:152326-ae577ef6-f545-4c6a-9964-b86fb6c69c12",
                       "outputVisibility": "preview|capture",
                       "physicsEnabled": false,
                       "pinnedBottom": false,
@@ -1147,7 +1147,7 @@
                   "horizontalSpacing": 0,
                   "isMaterialIdentifierEnabled": true,
                   "layerIdentifier": "layer1",
-                  "materialIdentifier": "defaultMaterial:77346-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+                  "materialIdentifier": "defaultMaterial:152340-ae577ef6-f545-4c6a-9964-b86fb6c69c12",
                   "outputVisibility": "preview|capture",
                   "physicsEnabled": false,
                   "receiveShadow": false,

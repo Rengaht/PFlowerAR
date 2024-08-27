@@ -1,14 +1,14 @@
 {
   "modelName": "defaultMaterial",
-  "name": "material-title",
-  "identifier": "defaultMaterial:76978-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+  "name": "material-flower",
+  "identifier": "defaultMaterial:152336-ae577ef6-f545-4c6a-9964-b86fb6c69c12",
   "alphaTestEnabled": false,
   "alphaTestThreshold": 0,
   "blendMode": "alpha",
   "colorEncoding": "linear",
   "cullMode": "back",
   "diffuseFactor": "0xffffffff",
-  "diffuseTextureName": "texture:54750-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+  "diffuseTextureName": "texture:54988-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
   "diffuseTextureTransform": {
     "offsetU": 0,
     "offsetV": 0,
@@ -34,7 +34,7 @@
   "isNormalTextureIdentifierEnabled": false,
   "isReflectiveTextureIdentifierEnabled": false,
   "isSpecularTextureIdentifierEnabled": false,
-  "lightingEnabled": true,
+  "lightingEnabled": false,
   "multiplyMode": "alpha_only",
   "multiplyTextureTransform": {
     "offsetU": 0,
@@ -51,7 +51,7 @@
     "scaleU": 1,
     "scaleV": 1
   },
-  "readDepth": true,
+  "readDepth": false,
   "reflectiveTextureTransform": {
     "offsetU": 0,
     "offsetV": 0,
@@ -68,7 +68,7 @@
     "scaleV": 1
   },
   "transparency": 1,
-  "writeDepth": true,
+  "writeDepth": false,
   "writesToColorBufferAlpha": true,
   "writesToColorBufferBlue": true,
   "writesToColorBufferGreen": true,

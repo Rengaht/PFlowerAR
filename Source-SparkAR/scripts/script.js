@@ -103,7 +103,7 @@ function fade(mat, delay, fadeout) {
     // Create an animation driver that goes from 0 to 1 over the fadeDuration
     
     // Start the time driver after a delay
-    Time.setTimeout(function() {
+    //Time.setTimeout(function() {
     	const timeDriver = Animation.timeDriver({ durationMilliseconds: fadeDuration, loopCount: 1, mirror: false });
     	const sampler = fadeout? Animation.samplers.easeInQuad(1, 0):Animation.samplers.easeOutQuad(0, 1);
 
@@ -115,7 +115,7 @@ function fade(mat, delay, fadeout) {
 		
 		//Diagnostics.log('timer start: '+delay);
 		
-    }, delay);
+    //}, delay);
 }
 function blink(mat) {
     
@@ -160,7 +160,7 @@ async function randomResult(){
 	// load pedals
 	pedal_tex=[];
 	for(var i=0;i<NUM_PEDAL;++i){
-		let t=await Textures.findFirst(`pedal${index_flower}-${i+1}`);
+		let t=await Textures.findFirst(`pedal${index_flower+1}-${i+1}`);
 		pedal_tex.push(t);
 	}
 		
