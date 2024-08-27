@@ -3,7 +3,7 @@
   "name": "Effect",
   "identifier": "document:7153-48a5eac7-3ad7-4a88-86d2-81b622b24430",
   "id": "715148a5eac73ad74a8886d281b622b24430",
-  "revision": "115730f28bc87924724278b4284fde2607ff46",
+  "revision": "97380ae577ef6f5454c6a9964b86fb6c69c12",
   "version": {
     "dev": 0,
     "patch": 0,
@@ -303,7 +303,7 @@
           "modelName": "script",
           "name": "script0",
           "identifier": "script:10515-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
-          "assetDataHash": "921e6dfa5f9359ec0b82e67bee0056c1",
+          "assetDataHash": "eafafcea788c7b72e48d19ebef094b7d",
           "assetLocator": "scripts/script.js",
           "isExternalAsset": true
         }
@@ -374,7 +374,7 @@
       "effectUsesAutomaticAlphaSort": false,
       "effectUsesAutomaticInstructions": true,
       "effectUsesBlockModulesConfigExtras": false,
-      "effectUsesBlocks": true,
+      "effectUsesBlocks": false,
       "effectUsesBlocksDownloadable": false,
       "effectUsesBlocksScripting": false,
       "effectUsesBodyTracking": false,

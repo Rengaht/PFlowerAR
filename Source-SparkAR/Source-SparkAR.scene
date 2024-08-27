@@ -92,7 +92,7 @@
                 "scale": false
               },
               "cameraVisibility": "back|front",
-              "height": 844,
+              "height": 325,
               "hidden": false,
               "hitTestingEnabled": false,
               "layerIdentifier": "layer0",
@@ -105,14 +105,14 @@
                 "rx": 0,
                 "ry": 0,
                 "rz": 0,
-                "sx": 0.0005924170836806297,
-                "sy": 0.0005924170836806297,
-                "sz": 0.0005924170836806297,
+                "sx": 0.0015384615398943424,
+                "sy": 0.0015384615398943424,
+                "sz": 0.0015384615398943424,
                 "x": 0,
                 "y": 0,
                 "z": 0
               },
-              "width": 390,
+              "width": 150,
               "children": [
                 {
                   "modelName": "rectangle_model",
@@ -131,7 +131,7 @@
                       "multiplier": 1,
                       "unitBase": 10
                     },
-                    "value": 56.79612731933594
+                    "value": 21.84466552734375
                   },
                   "hidden": false,
                   "hitTestingEnabled": false,
@@ -213,8 +213,8 @@
                     "sx": 0.9999996423721313,
                     "sy": 0.9999987483024597,
                     "sz": 0.9999988675117493,
-                    "x": 78,
-                    "y": 129.81251525878906,
+                    "x": 30,
+                    "y": 49.99998474121094,
                     "z": -0.1659851223230362
                   },
                   "usesFlexibleHeight": false,
@@ -225,7 +225,7 @@
                       "multiplier": 1,
                       "unitBase": 10
                     },
-                    "value": 234
+                    "value": 90
                   }
                 },
                 {
@@ -245,7 +245,7 @@
                       "multiplier": 1,
                       "unitBase": 10
                     },
-                    "value": 328.14654541015625
+                    "value": 126.210205078125
                   },
                   "hidden": false,
                   "hitTestingEnabled": false,
@@ -327,8 +327,8 @@
                     "sx": 0.9999998807907104,
                     "sy": 0.9999995231628418,
                     "sz": 0.9999995827674866,
-                    "x": 48.75,
-                    "y": 257.92669677734375,
+                    "x": 18.75,
+                    "y": 99.3948974609375,
                     "z": 0.00003051758176297881
                   },
                   "usesFlexibleHeight": false,
@@ -339,7 +339,7 @@
                       "multiplier": 1,
                       "unitBase": 10
                     },
-                    "value": 292.5
+                    "value": 112.5
                   }
                 }
               ]
@@ -354,7 +354,7 @@
                 "scale": false
               },
               "cameraVisibility": "back|front",
-              "height": 844,
+              "height": 325,
               "hidden": true,
               "hitTestingEnabled": false,
               "layerIdentifier": "layer0",
@@ -367,14 +367,14 @@
                 "rx": 0,
                 "ry": 0,
                 "rz": 0,
-                "sx": 0.0005924170836806297,
-                "sy": 0.0005924170836806297,
-                "sz": 0.0005924170836806297,
+                "sx": 0.0015384615398943424,
+                "sy": 0.0015384615398943424,
+                "sz": 0.0015384615398943424,
                 "x": 0,
                 "y": 0,
                 "z": 0
               },
-              "width": 390,
+              "width": 150,
               "children": [
                 {
                   "modelName": "rectangle_model",
@@ -507,7 +507,7 @@
                       "multiplier": 1,
                       "unitBase": 10
                     },
-                    "value": 693.333251953125
+                    "value": 266.6666259765625
                   },
                   "hidden": false,
                   "hitTestingEnabled": false,
@@ -590,7 +590,7 @@
                     "sy": 1.0000004768371582,
                     "sz": 1.000000238418579,
                     "x": 0,
-                    "y": 75.33334350585938,
+                    "y": 29.166671752929688,
                     "z": -0.00006103516352595761
                   },
                   "usesFlexibleHeight": false,
@@ -601,7 +601,7 @@
                       "multiplier": 1,
                       "unitBase": 10
                     },
-                    "value": 390
+                    "value": 150
                   },
                   "children": [
                     {
@@ -627,7 +627,7 @@
                       "hitTestingEnabled": false,
                       "horizontalAlignment": "center",
                       "isMaterialIdentifierEnabled": true,
-                      "layerIdentifier": "layer0",
+                      "layerIdentifier": "layer1",
                       "locksAspectRatio": false,
                       "materialIdentifier": "defaultMaterial:1503-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
                       "outputVisibility": "preview|capture",
@@ -676,7 +676,7 @@
                           "multiplier": 1,
                           "unitBase": 20
                         },
-                        "value": -0.05126315381100683
+                        "value": -0.051269539073110826
                       },
                       "positionX": {
                         "unit": {
@@ -704,7 +704,7 @@
                         "sy": 1,
                         "sz": 0.9999999403953552,
                         "x": 0,
-                        "y": -0.355438232421875,
+                        "y": -0.13671875,
                         "z": 0.03996238112449646
                       },
                       "usesFlexibleHeight": true,
@@ -737,13 +737,13 @@
                       "multiplier": 1,
                       "unitBase": 10
                     },
-                    "value": 46.79999542236328
+                    "value": 18
                   },
                   "hidden": false,
                   "hitTestingEnabled": false,
                   "horizontalAlignment": "center",
                   "isMaterialIdentifierEnabled": true,
-                  "layerIdentifier": "layer0",
+                  "layerIdentifier": "layer1",
                   "locksAspectRatio": false,
                   "materialIdentifier": "defaultMaterial:10140-48a5eac7-3ad7-4a88-86d2-81b622b24430",
                   "outputVisibility": "preview|capture",
@@ -814,13 +814,13 @@
                   "tags": [],
                   "transform": {
                     "rx": 0,
-                    "ry": -0,
+                    "ry": 0,
                     "rz": 0,
                     "sx": 1,
                     "sy": 1,
                     "sz": 1,
-                    "x": 78,
-                    "y": 75.71575164794922,
+                    "x": 30,
+                    "y": 29.166610717773438,
                     "z": -0.000030517578125
                   },
                   "usesFlexibleHeight": false,
@@ -831,7 +831,7 @@
                       "multiplier": 1,
                       "unitBase": 10
                     },
-                    "value": 234
+                    "value": 90
                   }
                 }
               ]
@@ -846,7 +846,7 @@
                 "scale": false
               },
               "cameraVisibility": "back|front",
-              "height": 844,
+              "height": 325,
               "hidden": true,
               "hitTestingEnabled": false,
               "layerIdentifier": "layer0",
@@ -859,14 +859,14 @@
                 "rx": 0,
                 "ry": 0,
                 "rz": 0,
-                "sx": 0.0005924170836806297,
-                "sy": 0.0005924170836806297,
-                "sz": 0.0005924170836806297,
+                "sx": 0.0015384615398943424,
+                "sy": 0.0015384615398943424,
+                "sz": 0.0015384615398943424,
                 "x": 0,
                 "y": 0,
                 "z": 0
               },
-              "width": 390,
+              "width": 150,
               "children": [
                 {
                   "modelName": "rectangle_model",
@@ -885,7 +885,7 @@
                       "multiplier": 1,
                       "unitBase": 10
                     },
-                    "value": 693.333251953125
+                    "value": 266.6666259765625
                   },
                   "hidden": false,
                   "hitTestingEnabled": false,
@@ -968,7 +968,7 @@
                     "sy": 1.0000001192092896,
                     "sz": 1.0000001192092896,
                     "x": 0,
-                    "y": 75.33334350585938,
+                    "y": 29.166671752929688,
                     "z": -0.00006103516352595761
                   },
                   "usesFlexibleHeight": false,
@@ -979,7 +979,7 @@
                       "multiplier": 1,
                       "unitBase": 10
                     },
-                    "value": 390
+                    "value": 150
                   },
                   "children": [
                     {
@@ -1005,7 +1005,7 @@
                       "hitTestingEnabled": false,
                       "horizontalAlignment": "center",
                       "isMaterialIdentifierEnabled": true,
-                      "layerIdentifier": "layer0",
+                      "layerIdentifier": "layer1",
                       "locksAspectRatio": false,
                       "materialIdentifier": "defaultMaterial:76978-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
                       "outputVisibility": "preview|capture",
@@ -1076,7 +1076,7 @@
                       "tags": [],
                       "transform": {
                         "rx": 0,
-                        "ry": -0,
+                        "ry": 0,
                         "rz": 0,
                         "sx": 1,
                         "sy": 0.9999998211860657,

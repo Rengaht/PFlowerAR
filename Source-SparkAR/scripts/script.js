@@ -28,7 +28,7 @@ const Patches = require('Patches');
 
 const Time = require('Time');
 const Animation = require('Animation');
-const Blocks = require('Blocks');
+//const Blocks = require('Blocks');
 
 // Use export keyword to make a symbol available in scripting debug console
 export const Diagnostics = require('Diagnostics');
@@ -43,7 +43,7 @@ export const Diagnostics = require('Diagnostics');
 const NUM_FLOWER=4;
 const NUM_POEM=12;
 const NUM_PEDAL=6;
-const COUNT_PEDAL=30;
+const COUNT_PEDAL=24;
 
 const Boundary=0.3;
 	
@@ -54,7 +54,7 @@ var state=0;
 
 
 // Duration of fade-in effect (in milliseconds)
-const fadeDuration = 250; // 1 second
+const fadeDuration = 330; // 1 second
 
 
 
@@ -203,7 +203,7 @@ function runPedal(callback){
 			
 			timeDriver2.start();
 			if(typeof callback=='function') callback();
-		},fadeDuration*1);
+		},fadeDuration*.5);
 	});
 	
 	timeDriver1.start();
@@ -352,28 +352,6 @@ async function createPedals(can, mat){
 				
 				});
 				
-				break;	
-			case 2:
-				/*fadeAll([poem, poem_title], 0, true, ()=>{
-				
-					can2.hidden=true;
-					can0.hidden=false;
-					
-					randomResult().then(()=>{
-	
-						flower.texture=flower_tex;
-						poem.texture=poem_tex;
-						poem_title.texture=title_tex;
-						for(var i=0;i<NUM_PEDAL;++i) pedal_material.texture[i]=pedal_tex[i];
-	
-	
-						fadeAll([hint, scan], 100, false, ()=>{
-							blink(hint);
-						});
-					});
-					state=0;
-				});*/
-			
 				break;
 		}		
 	
