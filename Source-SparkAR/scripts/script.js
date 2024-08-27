@@ -54,7 +54,7 @@ var state=0;
 
 
 // Duration of fade-in effect (in milliseconds)
-const fadeDuration = 330; // 1 second
+const fadeDuration = 800; // 1 second
 
 
 
@@ -82,7 +82,7 @@ function fadeAll(arr, delay, fadeout, callback){
 		if(typeof callback =='function'){
 				setTimeout(()=>{
 					
-					Diagnostics.log('callback');
+					//Diagnostics.log('callback');
 					
 					callback();
 					
@@ -103,7 +103,7 @@ function fade(mat, delay, fadeout) {
     // Create an animation driver that goes from 0 to 1 over the fadeDuration
     
     // Start the time driver after a delay
-    //Time.setTimeout(function() {
+    Time.setTimeout(function() {
     	const timeDriver = Animation.timeDriver({ durationMilliseconds: fadeDuration, loopCount: 1, mirror: false });
     	const sampler = fadeout? Animation.samplers.easeInQuad(1, 0):Animation.samplers.easeOutQuad(0, 1);
 
@@ -115,7 +115,7 @@ function fade(mat, delay, fadeout) {
 		
 		//Diagnostics.log('timer start: '+delay);
 		
-    //}, delay);
+    }, delay);
 }
 function blink(mat) {
     
@@ -123,7 +123,7 @@ function blink(mat) {
     		
 }
 function getTitle(idx){
-	switch(idx){
+	switch(idx+1){
 		case 2:
 		case 3:
 		case 8:
@@ -168,13 +168,13 @@ async function randomResult(){
 }
 function runPedal(callback){
 		
-	const timeDriver1 = Animation.timeDriver({ durationMilliseconds: fadeDuration*1.5, loopCount: 1, mirror: false });
+	const timeDriver1 = Animation.timeDriver({ durationMilliseconds: fadeDuration, loopCount: 1, mirror: false });
     const sampler1 = Animation.samplers.easeOutQuad(0, Boundary*2);
     const animation1 = Animation.animate(timeDriver1, sampler1);
 
-	const timeDriver2 = Animation.timeDriver({ durationMilliseconds: fadeDuration*1.5, loopCount: 1, mirror: false });
-    const sampler2 = Animation.samplers.easeOutQuad(Boundary*2, Boundary*4.5);
-    const animation2 = Animation.animate(timeDriver2, sampler2);
+	//const timeDriver2 = Animation.timeDriver({ durationMilliseconds: fadeDuration, loopCount: 1, mirror: false });
+    //const sampler2 = Animation.samplers.easeOutQuad(1,0);
+    //const animation2 = Animation.animate(timeDriver2, sampler2);
 
     for(var i=0;i<COUNT_PEDAL;++i){
 		
@@ -186,24 +186,9 @@ function runPedal(callback){
 	}
 	
 	timeDriver1.onCompleted().subscribe(function() {
-    	
-		for(var i=0;i<COUNT_PEDAL;++i){
 		
-    		let origin=pedal_block[i].__position;
-		
-			const positionAnimation = animation2.mul(origin[2]).clamp(Boundary*2, Boundary*4).add(origin[1]);
-			
-    		pedal_block[i].transform.y = positionAnimation;
-		
-		}
-    	
-		setTimeout(()=>{
-			
-			Diagnostics.log('leave animation');
-			
-			timeDriver2.start();
-			if(typeof callback=='function') callback();
-		},fadeDuration*.5);
+		if(typeof callback=='function') callback();
+	
 	});
 	
 	timeDriver1.start();
@@ -214,7 +199,8 @@ async function createPedals(can, mat){
 	
 	for(var i=0;i<COUNT_PEDAL;++i){
 		//var block= await Blocks.instantiate('plan0');
-		let w=0.08+0.01*Math.random();
+		let w=0.1+0.1*Math.random();
+		if(index_flower==3) w*=3;//
 		
 		var block=await Scene.create("Plane", {
             "name": "Plane"+i,
@@ -307,7 +293,10 @@ async function createPedals(can, mat){
 	poem.diffuse=poem_tex;
 	poem_title.diffuse=title_tex;
 	
-	for(var i=0;i<NUM_PEDAL;++i) pedal_material[i].diffuse=pedal_tex[i];
+	for(var i=0;i<NUM_PEDAL;++i){
+		pedal_material[i].diffuse=pedal_tex[i];
+		pedal_material[i].opacity=0;
+	}
 	
 	await createPedals(group, pedal_material);
 	
@@ -329,7 +318,7 @@ async function createPedals(can, mat){
 					can1.hidden=false;
 					can0.hidden=true;
 				
-					fadeAll([bg, vase, flower, hint0] ,1000, false, ()=>{
+					fadeAll([bg, vase, flower, hint0] ,1200, false, ()=>{
 						blink(hint0);
 					});
 					
@@ -340,13 +329,21 @@ async function createPedals(can, mat){
 				break;
 			case 1:
 				
-		
+				
 				fadeAll([bg, vase, flower, hint0], 0, true, ()=>{
 					can1.hidden=true;
 					can2.hidden=false;
 					
-					runPedal();
-					fadeAll([poem, poem_title],fadeDuration);				
+					fadeAll(pedal_material, fadeDuration*.5,true, ()=>{	
+					
+						runPedal();
+						fadeAll(pedal_material, fadeDuration*2, true, ()=>{
+						
+							fadeAll([poem, poem_title]);
+						});
+					});
+					
+					
 					
 					state=2;
 				
@@ -371,8 +368,14 @@ async function createPedals(can, mat){
 					can1.hidden=true;
 					can2.hidden=false;
 					
-					runPedal();
-					fadeAll([poem, poem_title],fadeDuration);				
+					fadeAll(pedal_material, fadeDuration*.5,true, ()=>{	
+					
+						runPedal();
+						fadeAll(pedal_material, fadeDuration*2, true, ()=>{
+						
+							fadeAll([poem, poem_title]);
+						});
+					});
 					
 					state=2;
 				
