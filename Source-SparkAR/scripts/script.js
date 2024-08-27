@@ -180,7 +180,7 @@ function runPedal(callback){
 		
     	let origin=pedal_block[i].__position;
 		
-		const positionAnimation = animation1.mul(origin[2]).clamp(0, Boundary*2).add(origin[1]);
+		const positionAnimation = animation1.mul(origin[2]).add(origin[1]).clamp(-Boundary, Boundary);
     	pedal_block[i].transform.y = positionAnimation;
 		
 	}
