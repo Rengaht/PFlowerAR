@@ -160,7 +160,7 @@ async function randomResult(){
 	// load pedals
 	pedal_tex=[];
 	for(var i=0;i<NUM_PEDAL;++i){
-		let t=await Textures.findFirst(`pedal${index_poem}-${i+1}`);
+		let t=await Textures.findFirst(`pedal${index_flower}-${i+1}`);
 		pedal_tex.push(t);
 	}
 		
