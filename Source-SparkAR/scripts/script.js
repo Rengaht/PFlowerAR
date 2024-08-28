@@ -54,7 +54,7 @@ var state=0;
 
 
 // Duration of fade-in effect (in milliseconds)
-const fadeDuration = 800; // 1 second
+const fadeDuration = 1500; // 1 second
 
 
 
