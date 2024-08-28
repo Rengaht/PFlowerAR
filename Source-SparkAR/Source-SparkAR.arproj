@@ -3,7 +3,7 @@
   "name": "Effect",
   "identifier": "document:7153-48a5eac7-3ad7-4a88-86d2-81b622b24430",
   "id": "715148a5eac73ad74a8886d281b622b24430",
-  "revision": "30337df10b2957f184deeaaa9dcd03600f5c5",
+  "revision": "92156df10b2957f184deeaaa9dcd03600f5c5",
   "version": {
     "dev": 0,
     "patch": 0,
@@ -116,97 +116,97 @@
           "sectionFileLocation": "textures/Vase_01.texture"
         },
         {
-          "sectionFileLocation": "textures/pedal1-1.texture"
+          "sectionFileLocation": "textures/pedal1-1-2.texture"
         },
         {
-          "sectionFileLocation": "textures/pedal1-2.texture"
+          "sectionFileLocation": "textures/pedal1-2-2.texture"
         },
         {
-          "sectionFileLocation": "textures/pedal1-3.texture"
+          "sectionFileLocation": "textures/pedal1-3-2.texture"
         },
         {
-          "sectionFileLocation": "textures/pedal1-4.texture"
+          "sectionFileLocation": "textures/pedal1-4-2.texture"
         },
         {
-          "sectionFileLocation": "textures/pedal1-5.texture"
+          "sectionFileLocation": "textures/pedal1-5-2.texture"
         },
         {
-          "sectionFileLocation": "textures/pedal1-6.texture"
+          "sectionFileLocation": "textures/pedal1-6-2.texture"
         },
         {
-          "sectionFileLocation": "textures/pedal1-7.texture"
+          "sectionFileLocation": "textures/pedal1-7-2.texture"
         },
         {
-          "sectionFileLocation": "textures/pedal1-8.texture"
+          "sectionFileLocation": "textures/pedal1-8-2.texture"
         },
         {
-          "sectionFileLocation": "textures/pedal2-1.texture"
+          "sectionFileLocation": "textures/pedal2-1-2.texture"
         },
         {
-          "sectionFileLocation": "textures/pedal2-2.texture"
+          "sectionFileLocation": "textures/pedal2-2-2.texture"
         },
         {
-          "sectionFileLocation": "textures/pedal2-3.texture"
+          "sectionFileLocation": "textures/pedal2-3-2.texture"
         },
         {
-          "sectionFileLocation": "textures/pedal2-4.texture"
+          "sectionFileLocation": "textures/pedal2-4-2.texture"
         },
         {
-          "sectionFileLocation": "textures/pedal2-5.texture"
+          "sectionFileLocation": "textures/pedal2-5-2.texture"
         },
         {
-          "sectionFileLocation": "textures/pedal2-6.texture"
+          "sectionFileLocation": "textures/pedal2-6-2.texture"
         },
         {
-          "sectionFileLocation": "textures/pedal2-7.texture"
+          "sectionFileLocation": "textures/pedal2-7-2.texture"
         },
         {
-          "sectionFileLocation": "textures/pedal3-1.texture"
+          "sectionFileLocation": "textures/pedal3-1-2.texture"
         },
         {
-          "sectionFileLocation": "textures/pedal3-2.texture"
+          "sectionFileLocation": "textures/pedal3-2-2.texture"
         },
         {
-          "sectionFileLocation": "textures/pedal3-3.texture"
+          "sectionFileLocation": "textures/pedal3-3-2.texture"
         },
         {
-          "sectionFileLocation": "textures/pedal3-4.texture"
+          "sectionFileLocation": "textures/pedal3-4-2.texture"
         },
         {
-          "sectionFileLocation": "textures/pedal3-5.texture"
+          "sectionFileLocation": "textures/pedal3-5-2.texture"
         },
         {
-          "sectionFileLocation": "textures/pedal3-6.texture"
+          "sectionFileLocation": "textures/pedal3-6-2.texture"
         },
         {
-          "sectionFileLocation": "textures/pedal3-7.texture"
+          "sectionFileLocation": "textures/pedal3-7-2.texture"
         },
         {
-          "sectionFileLocation": "textures/pedal4-1.texture"
+          "sectionFileLocation": "textures/pedal4-1-2.texture"
         },
         {
-          "sectionFileLocation": "textures/pedal4-2.texture"
+          "sectionFileLocation": "textures/pedal4-2-2.texture"
         },
         {
-          "sectionFileLocation": "textures/pedal4-3.texture"
+          "sectionFileLocation": "textures/pedal4-3-2.texture"
         },
         {
-          "sectionFileLocation": "textures/pedal4-4.texture"
+          "sectionFileLocation": "textures/pedal4-4-2.texture"
         },
         {
-          "sectionFileLocation": "textures/pedal4-5.texture"
+          "sectionFileLocation": "textures/pedal4-5-2.texture"
         },
         {
-          "sectionFileLocation": "textures/pedal4-6.texture"
+          "sectionFileLocation": "textures/pedal4-6-2.texture"
         },
         {
-          "sectionFileLocation": "textures/pedal4-7.texture"
+          "sectionFileLocation": "textures/pedal4-7-2.texture"
         },
         {
-          "sectionFileLocation": "textures/pedal4-8.texture"
+          "sectionFileLocation": "textures/pedal4-8-2.texture"
         },
         {
-          "sectionFileLocation": "textures/pedal4-9.texture"
+          "sectionFileLocation": "textures/pedal4-9-2.texture"
         }
       ]
     },
@@ -303,7 +303,7 @@
           "modelName": "script",
           "name": "script0",
           "identifier": "script:10515-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
-          "assetDataHash": "965c8c525f8d69923d291fa635f144af",
+          "assetDataHash": "ebd325d632ca4bacb86e533bf6ab02c2",
           "assetLocator": "scripts/script.js",
           "isExternalAsset": true
         }

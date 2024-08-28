@@ -1,10 +1,10 @@
 {
   "modelName": "texture",
-  "name": "pedal2-1",
-  "identifier": "texture:55282-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
+  "name": "pedal2-2",
+  "identifier": "texture:75871-df10b295-7f18-4dee-aaa9-dcd03600f5c5",
   "alphaPremultiplicationMode": "should_premultiply",
-  "assetDataHash": "c180d073c2c4aa895fc0417c6356bc05",
-  "assetLocator": "textures/pedal2-1.png",
+  "assetDataHash": "c8252f528172d16f07adf2fb59eef1b1",
+  "assetLocator": "textures/pedal2-2.png",
   "colorEncoding": "linear",
   "compressionQuality": "high",
   "coordMapping": "none",
@@ -25,11 +25,11 @@
     {
       "modelName": "data_texture_metadata_model",
       "name": "data_texture_metadata_model0",
-      "assetDataHash": "c180d073c2c4aa895fc0417c6356bc05",
-      "colorCount": 2600,
+      "assetDataHash": "c8252f528172d16f07adf2fb59eef1b1",
+      "colorCount": 252,
       "detectedAlphaChannel": "eight_bit_full_range",
       "detectedOriginalFormat": "png",
-      "entropyOfDistribution": 4.786224347287988,
+      "entropyOfDistribution": 1.9681182711905587,
       "pixelsHigh": 137,
       "pixelsWide": 137
     }

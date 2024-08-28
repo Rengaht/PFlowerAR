@@ -43,9 +43,9 @@ export const Diagnostics = require('Diagnostics');
 const NUM_FLOWER=4;
 const NUM_POEM=12;
 const NUM_PEDAL=6;
-const COUNT_PEDAL=64;
+const COUNT_PEDAL=96;
 
-const Boundary=0.3;
+const Boundary=0.28;
 	
 var index_flower;
 var index_poem;	
@@ -54,7 +54,7 @@ var state=0;
 
 
 // Duration of fade-in effect (in milliseconds)
-const fadeDuration = 1500; // 1 second
+const fadeDuration = 1000; // 1 second
 
 
 
@@ -168,7 +168,7 @@ async function randomResult(){
 }
 function runPedal(callback){
 		
-	const timeDriver1 = Animation.timeDriver({ durationMilliseconds: fadeDuration, loopCount: 1, mirror: false });
+	const timeDriver1 = Animation.timeDriver({ durationMilliseconds: fadeDuration*1.5, loopCount: 1, mirror: false });
     const sampler1 = Animation.samplers.easeOutQuad(0, Boundary*2);
     const animation1 = Animation.animate(timeDriver1, sampler1);
 
@@ -196,8 +196,8 @@ function runPedal(callback){
 }
 
 async function createPedals(can, mat){
-	let col=6;		
-	let size=1/col*.5;
+	let col=8;		
+	let size=1/col*.6;
 
 	for(var i=0;i<COUNT_PEDAL;++i){
 		//var block= await Blocks.instantiate('plan0');
