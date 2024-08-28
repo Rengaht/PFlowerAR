@@ -196,10 +196,12 @@ function runPedal(callback){
 }
 
 async function createPedals(can, mat){
-	
+	let col=6;		
+	let size=1/col*.5;
+
 	for(var i=0;i<COUNT_PEDAL;++i){
 		//var block= await Blocks.instantiate('plan0');
-		let w=0.08+0.02*Math.random();
+		let w=size+size*.5*Math.random();
 		if(index_flower==3) w*=2;//
 		
 		var block=await Scene.create("Plane", {
@@ -210,7 +212,6 @@ async function createPedals(can, mat){
             "hidden": false,
         });
 		
-		let col=4;
 		
 		let x=(i%col/col+(Math.random()*.25-.125)-0.5)*.25;//+(Math.random()*.2-.1);
 		let y=-(Math.floor(i/col)+1+(Math.random()*.4-.2))*Boundary/col-Boundary;
