@@ -42,10 +42,10 @@ export const Diagnostics = require('Diagnostics');
 
 const NUM_FLOWER = 4;
 const NUM_POEM = 12;
-const NUM_PEDAL = 6;
-const COUNT_PEDAL = 32;
+const NUM_PEDAL = 3;
+const COUNT_PEDAL = 16;
 
-const Boundary = 0.3;
+const Boundary = 0.32;
 
 var index_flower;
 var index_poem;
@@ -56,7 +56,7 @@ var transition = false;
 
 // Duration of fade-in effect (in milliseconds)
 const fadeDuration = 1000; // 1 second
-const pauseDuration=2000;
+const pauseDuration=2500;
 
 
 // blink
@@ -172,8 +172,8 @@ async function randomResult() {
 }
 function runPedal(callback) {
 
-	const timeDriver1 = Animation.timeDriver({ durationMilliseconds: pauseDuration, loopCount: 1, mirror: false });
-	const sampler1 = Animation.samplers.easeOutQuad(0, Boundary * 2);
+	const timeDriver1 = Animation.timeDriver({ durationMilliseconds: pauseDuration*1.5, loopCount: 1, mirror: false });
+	const sampler1 = Animation.samplers.easeOutQuad(0, Boundary * 1.5);
 	const animation1 = Animation.animate(timeDriver1, sampler1);
 
 	//const timeDriver2 = Animation.timeDriver({ durationMilliseconds: fadeDuration, loopCount: 1, mirror: false });
@@ -201,7 +201,7 @@ function runPedal(callback) {
 
 async function createPedals(can, mat) {
 	let col = 8;
-	let size = 1 / col * .6;
+	let size = 1 / col * .8;
 
 	for (var i = 0; i < COUNT_PEDAL; ++i) {
 		//var block= await Blocks.instantiate('plan0');
@@ -233,7 +233,7 @@ async function createPedals(can, mat) {
 
 		can.addChild(block);
 		//block.addChild(dynamicPlane);
-		let indx = Math.floor(Math.random() * NUM_PEDAL);
+		let indx = Math.floor(Math.random() * mat.length);
 		block.material = mat[indx];
 
 		block.__position = [x, y, v];
@@ -248,10 +248,11 @@ async function createPedals(can, mat) {
 
 ; (async function () {  // Enables async/await in JS [part 1]
 
-
+	const can0 = await Scene.root.findFirst('canvas0');
+	can0.hidden = true;
 	// To access scene objects
-	const [can0, can1, can2, group, hint, scan, bg, hint0, vase, flower, poem, poem_title] = await Promise.all([
-		Scene.root.findFirst('canvas0'),
+	const [can1, can2, group, hint, scan, bg, hint0, vase, flower, poem, poem_title] = await Promise.all([
+		// Scene.root.findFirst('canvas0'),
 		Scene.root.findFirst('canvas1'),
 		Scene.root.findFirst('canvas2'),
 
@@ -288,9 +289,9 @@ async function createPedals(can, mat) {
 		Materials.findFirst('material-pedal-1'),
 		Materials.findFirst('material-pedal-2'),
 		Materials.findFirst('material-pedal-3'),
-		Materials.findFirst('material-pedal-4'),
-		Materials.findFirst('material-pedal-5'),
-		Materials.findFirst('material-pedal-6'),
+		// Materials.findFirst('material-pedal-4'),
+		// Materials.findFirst('material-pedal-5'),
+		// Materials.findFirst('material-pedal-6'),
 	]);
 
 
@@ -308,7 +309,7 @@ async function createPedals(can, mat) {
 	poem.diffuse = poem_tex;
 	poem_title.diffuse = title_tex;
 
-	for (var i = 0; i < NUM_PEDAL; ++i) {
+	for (var i = 0; i < pedal_material.length; ++i) {
 		pedal_material[i].diffuse = pedal_tex[i];
 		pedal_material[i].opacity = 0;
 	}
@@ -316,7 +317,7 @@ async function createPedals(can, mat) {
 	await createPedals(group, pedal_material);
 
 	//runPedal();
-
+	can0.hidden = false;
 
 	fadeAll([hint, scan], 100, false, () => {
 		blink(hint);
@@ -339,16 +340,16 @@ async function createPedals(can, mat) {
 	function transformToPoem(){
 		
 		transition = true;
-		
+		fadeAll([hint0], 0, true);
 		fadeAll([flower], 0, false, () => {
 
-			fadeAll([vase, flower, hint0], pauseDuration, true, () => {
+			fadeAll([hint0, flower, vase], pauseDuration, true, () => {
 		
 				
 				fadeAll(pedal_material, fadeDuration * .5, false, () => {
 
 					runPedal();
-					fadeAll([bg, ...pedal_material], pauseDuration, true, () => {
+					fadeAll([bg, ...pedal_material], pauseDuration*1.5, true, () => {
 						can1.hidden = true;
 						can2.hidden = false;
 
@@ -363,6 +364,7 @@ async function createPedals(can, mat) {
 
 			});
 		});
+	
 	}
 
 
