@@ -11,7 +11,7 @@
     "outDir": "/Users/reng/Library/Caches/Facebook/Spark AR Studio/Scripting/out-dir",
     "paths": {
       "*": [
-        "skylight-typedefs/effect/6b653d43a85aa00/*",
+        "skylight-typedefs/effect/de6b42f37a3048a8/*",
         "skylight-node_modules/*"
       ]
     },

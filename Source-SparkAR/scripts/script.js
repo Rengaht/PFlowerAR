@@ -43,9 +43,9 @@ export const Diagnostics = require('Diagnostics');
 const NUM_FLOWER = 4;
 const NUM_POEM = 12;
 const NUM_PEDAL = 3;
-const COUNT_PEDAL = 16;
+const COUNT_PEDAL = 32;
 
-const Boundary = 0.32;
+const Boundary = 0.35;
 
 var index_flower;
 var index_poem;
@@ -56,7 +56,7 @@ var transition = false;
 
 // Duration of fade-in effect (in milliseconds)
 const fadeDuration = 1000; // 1 second
-const pauseDuration=2500;
+const pauseDuration= 2200;
 
 
 // blink
@@ -172,8 +172,8 @@ async function randomResult() {
 }
 function runPedal(callback) {
 
-	const timeDriver1 = Animation.timeDriver({ durationMilliseconds: pauseDuration*1.5, loopCount: 1, mirror: false });
-	const sampler1 = Animation.samplers.easeOutQuad(0, Boundary * 1.5);
+	const timeDriver1 = Animation.timeDriver({ durationMilliseconds: pauseDuration*1.8, loopCount: 1, mirror: false });
+	const sampler1 = Animation.samplers.easeInOutQuad(0, -Boundary * 1.5);
 	const animation1 = Animation.animate(timeDriver1, sampler1);
 
 	//const timeDriver2 = Animation.timeDriver({ durationMilliseconds: fadeDuration, loopCount: 1, mirror: false });
@@ -184,7 +184,7 @@ function runPedal(callback) {
 
 		let origin = pedal_block[i].__position;
 
-		const positionAnimation = animation1.mul(origin[2]).add(origin[1]).clamp(-Boundary, Boundary);
+		const positionAnimation = animation1.mul(origin[2]).add(origin[1]).clamp(-Boundary, Boundary*1.5);
 		pedal_block[i].transform.y = positionAnimation;
 
 	}
@@ -218,7 +218,7 @@ async function createPedals(can, mat) {
 
 
 		let x = (i % col / col + (Math.random() * .25 - .125) - 0.5) * .25;//+(Math.random()*.2-.1);
-		let y = -(Math.floor(i / col) + 1 + (Math.random() * .4 - .2)) * Boundary / col - Boundary;
+		let y = (Math.floor(i / col) + 1 + (Math.random() * .4 - .2)) * Boundary / col + Boundary;
 
 		//let x=(i%col/col-0.5)*.25;//+(Math.random()*.2-.1);
 		//let y=-Math.floor(i/col)*Boundary/col-Boundary;
@@ -329,6 +329,7 @@ async function createPedals(can, mat) {
 
 					can1.hidden = false;
 					can0.hidden = true;
+					flower.opacity = 0;
 
 					fadeAll([bg, vase, hint0], 1200, false, () => {
 						blink(hint0);

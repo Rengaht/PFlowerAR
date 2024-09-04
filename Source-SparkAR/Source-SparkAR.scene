@@ -93,7 +93,7 @@
               },
               "cameraVisibility": "back|front",
               "height": 325,
-              "hidden": false,
+              "hidden": true,
               "hitTestingEnabled": false,
               "layerIdentifier": "layer0",
               "outputVisibility": "preview|capture",
