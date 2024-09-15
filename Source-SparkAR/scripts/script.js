@@ -251,7 +251,7 @@ async function createPedals(can, mat) {
 	const can0 = await Scene.root.findFirst('canvas0');
 	can0.hidden = true;
 	// To access scene objects
-	const [can1, can2, group, hint, scan, bg, hint0, vase, flower, poem, poem_title] = await Promise.all([
+	const [can1, can2, group, hint, scan, bg, hint0, vase, flower, poem, poem_title, hint3] = await Promise.all([
 		// Scene.root.findFirst('canvas0'),
 		Scene.root.findFirst('canvas1'),
 		Scene.root.findFirst('canvas2'),
@@ -274,6 +274,7 @@ async function createPedals(can, mat) {
 		Materials.findFirst('material-poem'),
 		Materials.findFirst('material-title'),
 
+		Materials.findFirst('material-hint-3'),
 		//Scene.root.findFirst('plane0'),
 	]);
 
@@ -283,6 +284,7 @@ async function createPedals(can, mat) {
 	poem.opacity = 0;
 	poem_title.opacity = 0;
 	flower.opacity = 0;
+	hint3.opacity = 0;
 
 
 	const pedal_material = await Promise.all([
@@ -341,29 +343,28 @@ async function createPedals(can, mat) {
 	function transformToPoem(){
 		
 		transition = true;
-		fadeAll([hint0], 0, true);
-		fadeAll([flower], 0, false, () => {
+		fadeAll([hint0], pauseDuration*0.1, true);
+		fadeAll([flower], pauseDuration*0.1, false, () => {
 
-			fadeAll([hint0, flower, vase], pauseDuration, true, () => {
-		
-				
-				fadeAll(pedal_material, fadeDuration * .5, false, () => {
-
+			
+				fadeAll([flower],pauseDuration, true);
+				fadeAll([vase], pauseDuration, true, () => {
+					
 					runPedal();
-					fadeAll([bg, ...pedal_material], pauseDuration*1.5, true, () => {
-						can1.hidden = true;
-						can2.hidden = false;
+						
+					fadeAll(pedal_material, 0, false, () => {
+						
+						fadeAll([bg, ...pedal_material], pauseDuration*1.5, true, () => {
+							can1.hidden = true;
+							can2.hidden = false;
 
-						fadeAll([poem, poem_title], 0, false), ()=>{
-							transition = false;
-						};
+							fadeAll([poem, poem_title, hint3], 0, false), ()=>{
+								transition = false;
+							};
+						});
 					});
 				});
 
-
-
-
-			});
 		});
 	
 	}

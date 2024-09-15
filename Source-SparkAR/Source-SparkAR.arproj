@@ -3,7 +3,7 @@
   "name": "Effect",
   "identifier": "document:7153-48a5eac7-3ad7-4a88-86d2-81b622b24430",
   "id": "715148a5eac73ad74a8886d281b622b24430",
-  "revision": "685089ef8e74510c24331992465dc9c7e6eb9",
+  "revision": "39549a1dff43cf9dc44ad99bfe3e253be2e2c",
   "version": {
     "dev": 0,
     "patch": 0,
@@ -41,13 +41,7 @@
       "identifier": "textures:7159-48a5eac7-3ad7-4a88-86d2-81b622b24430",
       "children": [
         {
-          "sectionFileLocation": "textures/hint.texture"
-        },
-        {
           "sectionFileLocation": "textures/scan.texture"
-        },
-        {
-          "sectionFileLocation": "textures/hint-2.texture"
         },
         {
           "sectionFileLocation": "textures/poem-1.texture"
@@ -150,6 +144,15 @@
         },
         {
           "sectionFileLocation": "textures/pedal4-3.texture"
+        },
+        {
+          "sectionFileLocation": "textures/hint-3.texture"
+        },
+        {
+          "sectionFileLocation": "textures/hint-2-2.texture"
+        },
+        {
+          "sectionFileLocation": "textures/hint-3-2.texture"
         }
       ]
     },
@@ -246,7 +249,7 @@
           "modelName": "script",
           "name": "script0",
           "identifier": "script:10515-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
-          "assetDataHash": "f2cd69513ab2137fc83e3c04f9419960",
+          "assetDataHash": "d00d9c3040759ae3d76a3bb6e97fa5c1",
           "assetLocator": "scripts/script.js",
           "isExternalAsset": true
         }

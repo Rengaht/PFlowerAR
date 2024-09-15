@@ -8,7 +8,6 @@
   "colorEncoding": "linear",
   "cullMode": "back",
   "diffuseFactor": "0xffffffff",
-  "diffuseTextureName": "texture:10463-48a5eac7-3ad7-4a88-86d2-81b622b24430",
   "diffuseTextureTransform": {
     "offsetU": 0,
     "offsetV": 0,
