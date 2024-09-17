@@ -285,8 +285,7 @@ async function createPedals(can, mat) {
 	poem_title.opacity = 0;
 	flower.opacity = 0;
 	hint3.opacity = 0;
-
-
+	
 	const pedal_material = await Promise.all([
 		Materials.findFirst('material-pedal-1'),
 		Materials.findFirst('material-pedal-2'),
@@ -346,9 +345,10 @@ async function createPedals(can, mat) {
 		fadeAll([hint0], pauseDuration*0.1, true);
 		fadeAll([flower], pauseDuration*0.1, false, () => {
 
-			
-				fadeAll([flower],pauseDuration, true);
-				fadeAll([vase], pauseDuration, true, () => {
+
+				fadeAll([vase],pauseDuration*2, true);
+				fadeAll([flower], pauseDuration*2, true);
+				setTimeout (() => {
 					
 					runPedal();
 						
@@ -363,7 +363,7 @@ async function createPedals(can, mat) {
 							};
 						});
 					});
-				});
+				}, pauseDuration*0.5);
 
 		});
 	
@@ -379,6 +379,7 @@ async function createPedals(can, mat) {
 			case 0:
 				//flower.diffuse=flower_tex;
 				transformToFlower();
+
 				state = 1;
 				
 

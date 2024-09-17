@@ -1,14 +1,14 @@
 {
   "modelName": "defaultMaterial",
-  "name": "material-hint-2",
-  "identifier": "defaultMaterial:152328-ae577ef6-f545-4c6a-9964-b86fb6c69c12",
+  "name": "material-hint-3",
+  "identifier": "defaultMaterial:46044-a1dff43c-f9dc-44ad-99bf-e3e253be2e2c",
   "alphaTestEnabled": false,
   "alphaTestThreshold": 0,
   "blendMode": "alpha",
   "colorEncoding": "linear",
   "cullMode": "back",
   "diffuseFactor": "0xffffffff",
-  "diffuseTextureName": "texture:42107-a1dff43c-f9dc-44ad-99bf-e3e253be2e2c",
+  "diffuseTextureName": "texture:166267-a1dff43c-f9dc-44ad-99bf-e3e253be2e2c",
   "diffuseTextureTransform": {
     "offsetU": 0,
     "offsetV": 0,
@@ -51,7 +51,7 @@
     "scaleU": 1,
     "scaleV": 1
   },
-  "readDepth": false,
+  "readDepth": true,
   "reflectiveTextureTransform": {
     "offsetU": 0,
     "offsetV": 0,
@@ -68,7 +68,7 @@
     "scaleV": 1
   },
   "transparency": 1,
-  "writeDepth": false,
+  "writeDepth": true,
   "writesToColorBufferAlpha": true,
   "writesToColorBufferBlue": true,
   "writesToColorBufferGreen": true,

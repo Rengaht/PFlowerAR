@@ -1,9 +1,9 @@
 {
   "modelName": "texture",
   "name": "hint-3",
-  "identifier": "texture:43075-a1dff43c-f9dc-44ad-99bf-e3e253be2e2c",
+  "identifier": "texture:166267-a1dff43c-f9dc-44ad-99bf-e3e253be2e2c",
   "alphaPremultiplicationMode": "should_premultiply",
-  "assetDataHash": "519b6ba0f62e37b2cceaee9005462d8e",
+  "assetDataHash": "66b2fc094e19b6627c680d994676cad4",
   "assetLocator": "textures/hint-3.png",
   "colorEncoding": "linear",
   "compressionQuality": "high",
@@ -25,11 +25,11 @@
     {
       "modelName": "data_texture_metadata_model",
       "name": "data_texture_metadata_model0",
-      "assetDataHash": "519b6ba0f62e37b2cceaee9005462d8e",
+      "assetDataHash": "66b2fc094e19b6627c680d994676cad4",
       "colorCount": 16,
       "detectedAlphaChannel": "eight_bit_full_range",
       "detectedOriginalFormat": "png",
-      "entropyOfDistribution": 0.7125305293378893,
+      "entropyOfDistribution": 0.8255838400467774,
       "pixelsHigh": 209,
       "pixelsWide": 859
     }

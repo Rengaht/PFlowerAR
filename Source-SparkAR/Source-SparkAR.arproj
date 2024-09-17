@@ -3,7 +3,7 @@
   "name": "Effect",
   "identifier": "document:7153-48a5eac7-3ad7-4a88-86d2-81b622b24430",
   "id": "715148a5eac73ad74a8886d281b622b24430",
-  "revision": "39549a1dff43cf9dc44ad99bfe3e253be2e2c",
+  "revision": "290662a1dff43cf9dc44ad99bfe3e253be2e2c",
   "version": {
     "dev": 0,
     "patch": 0,
@@ -152,7 +152,7 @@
           "sectionFileLocation": "textures/hint-2-2.texture"
         },
         {
-          "sectionFileLocation": "textures/hint-3-2.texture"
+          "sectionFileLocation": "textures/hint-3-3.texture"
         }
       ]
     },
@@ -201,6 +201,9 @@
         },
         {
           "sectionFileLocation": "materials/material-pedal-6-3.material"
+        },
+        {
+          "sectionFileLocation": "materials/material-hint-3-2.material"
         }
       ]
     },
@@ -249,7 +252,7 @@
           "modelName": "script",
           "name": "script0",
           "identifier": "script:10515-b97cc5c4-1dee-4633-a13b-e03bfcef069f",
-          "assetDataHash": "d00d9c3040759ae3d76a3bb6e97fa5c1",
+          "assetDataHash": "19767847f4df2e7c22db65e7e7e97579",
           "assetLocator": "scripts/script.js",
           "isExternalAsset": true
         }
